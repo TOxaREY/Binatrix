@@ -319,15 +319,28 @@
                                                     <action selector="pasterButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ocx-vL-iMw"/>
                                                 </connections>
                                             </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Inc-pV-5VH">
+                                                <rect key="frame" x="20" y="93" width="35" height="35"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="35" id="mHK-cF-Siu"/>
+                                                    <constraint firstAttribute="height" constant="35" id="wwu-BF-aPB"/>
+                                                </constraints>
+                                                <state key="normal" image="if_edit-clear_118917"/>
+                                                <connections>
+                                                    <action selector="clearButton:" destination="k9v-Ky-D3i" eventType="touchUpInside" id="saT-Hz-ajo"/>
+                                                </connections>
+                                            </button>
                                         </subviews>
                                         <constraints>
                                             <constraint firstAttribute="trailing" secondItem="TFp-h4-0q8" secondAttribute="trailing" id="0sC-eZ-ALv"/>
                                             <constraint firstItem="TFp-h4-0q8" firstAttribute="leading" secondItem="kgw-BP-7Ag" secondAttribute="leading" id="2bT-mW-EAw"/>
                                             <constraint firstItem="P4h-Oe-9L5" firstAttribute="centerY" secondItem="kgw-BP-7Ag" secondAttribute="centerY" id="Iht-qq-v0T"/>
                                             <constraint firstAttribute="bottom" secondItem="ob3-6M-Rpu" secondAttribute="bottom" constant="15" id="Iry-Zt-Eo3"/>
+                                            <constraint firstAttribute="bottom" secondItem="Inc-pV-5VH" secondAttribute="bottom" constant="15" id="L4v-mZ-9TG"/>
                                             <constraint firstAttribute="bottom" secondItem="TFp-h4-0q8" secondAttribute="bottom" id="SOX-J6-zYa"/>
                                             <constraint firstItem="P4h-Oe-9L5" firstAttribute="centerX" secondItem="kgw-BP-7Ag" secondAttribute="centerX" id="cIE-7L-fGi"/>
                                             <constraint firstAttribute="trailing" secondItem="ob3-6M-Rpu" secondAttribute="trailing" constant="20" id="eUL-zI-d8k"/>
+                                            <constraint firstItem="Inc-pV-5VH" firstAttribute="leading" secondItem="kgw-BP-7Ag" secondAttribute="leading" constant="20" id="fTg-fc-80c"/>
                                             <constraint firstItem="TFp-h4-0q8" firstAttribute="top" secondItem="kgw-BP-7Ag" secondAttribute="top" id="lje-QE-1lI"/>
                                         </constraints>
                                     </view>
@@ -388,7 +401,9 @@
                         <viewLayoutGuide key="safeArea" id="ga8-B3-Tus"/>
                     </view>
                     <connections>
+                        <outlet property="button" destination="wcE-gk-Yza" id="GqX-b7-Enw"/>
                         <outlet property="goToVC3" destination="Rsm-KG-gwb" id="f8y-lA-2L8"/>
+                        <outlet property="image" destination="TFp-h4-0q8" id="Mqf-vr-29c"/>
                         <outlet property="resultBi" destination="0Lw-wp-H04" id="85y-XB-bbV"/>
                         <outlet property="textF2" destination="P4h-Oe-9L5" id="Bfw-dd-JSf"/>
                     </connections>
@@ -599,7 +614,7 @@
         <image name="if_edit-paste_118923" width="512" height="512"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="upf-MM-Rdb"/>
+        <segue reference="VJg-Qt-1ts"/>
         <segue reference="BHi-7O-37t"/>
     </inferredMetricsTieBreakers>
 </document>

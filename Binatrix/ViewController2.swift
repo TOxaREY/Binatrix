@@ -22,21 +22,29 @@ class ViewController2: UIViewController {
                 i += 1
             }
             if i == 2 {
+                image.flash()
                 ((textF2.text)!).removeLast()
             }
         }
     }
     
     func wrong() {
-        textF2.text = "wrong"
+        image.flash()
+        textF2.text = "( ཀ͝ ∧ ཀ͝ )"
         calculatingBiFunction()
         DispatchQueue.main.asyncAfter(deadline: .now() + 1.3) {
             self.textF2.text?.removeAll()
         }
     }
+    @IBOutlet weak var button: UIButton!
+    @IBOutlet weak var image: UIImageView!
     @IBOutlet weak var textF2: UITextField!
     @IBOutlet weak var resultBi: UILabel!
     @IBOutlet weak var goToVC3: UILabel!
+    @IBAction func clearButton(_ sender: Any) {
+        textF2.text?.removeAll()
+        calculatingBiFunction()
+    }
     @IBAction func pasterButton2(_ sender: Any) {
         let pasteBoardString: String? = UIPasteboard.general.string
 //        print(pasteBoardString)
@@ -80,6 +88,7 @@ class ViewController2: UIViewController {
    
     @IBAction func textF2Dec(_ sender: Any) {
         if ((textF2.text)!).count > 18 {
+            image.flash()
             ((textF2.text)!).removeLast()
         }
         dotta()
@@ -92,12 +101,16 @@ class ViewController2: UIViewController {
         calculatingBi.decimalNumber = ((textF2.text)!).doubleValue
         calculatingBi.calculatingBinary()
         goToVC3.attributedText = NSAttributedString(string: NSLocalizedString("binary numbers calculator", comment: "binary numbers calculator") , attributes: attributes)
-        if (textF2.text)! == "wrong" {
+        if (textF2.text)! == "( ཀ͝ ∧ ཀ͝ )" {
+            button.isEnabled = true
             resultBi.attributedText = NSAttributedString(string: NSLocalizedString("convert Bin --> Dec", comment: "convert Bin --> Dec") , attributes: attributes)
         } else {
         if ((textF2.text)!).count != 0 {
+            button.isEnabled = false
             resultBi.text = calculatingBi.binaryNumberString + calculatingBi.binaryNumberResidueString
-        } else { resultBi.attributedText = NSAttributedString(string: NSLocalizedString("convert Bin --> Dec", comment: "convert Bin --> Dec") , attributes: attributes)
+        } else {
+            button.isEnabled = true
+            resultBi.attributedText = NSAttributedString(string: NSLocalizedString("convert Bin --> Dec", comment: "convert Bin --> Dec") , attributes: attributes)
         }
         }
     }

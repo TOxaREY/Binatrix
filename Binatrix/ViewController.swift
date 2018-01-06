@@ -10,9 +10,9 @@ extension UIImageView {
     func flash() {
         
         let flash = CABasicAnimation(keyPath: "opacity")
-        flash.duration = 0.5
+        flash.duration = 0.3
         flash.fromValue = 1
-        flash.toValue = 0.1
+        flash.toValue = 0
         flash.timingFunction = CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseInEaseOut)
         flash.autoreverses = true
         flash.repeatCount = 2
@@ -66,9 +66,9 @@ class ViewController: UIViewController {
     @IBOutlet weak var image: UIImageView!
     func wrong() {
         image.flash()
-        textF.text = "wrong"
+        textF.text = "( ཀ͝ ∧ ཀ͝ )"
         calculatingDecFunction()
-        DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1.2) {
             self.textF.text?.removeAll()
         }
     }
@@ -133,7 +133,7 @@ class ViewController: UIViewController {
         calculatingDec.binaryNumber = ((textF.text)!).doubleValue
         calculatingDec.calculatingDecimal()
         goToVC3.attributedText = NSAttributedString(string: NSLocalizedString("binary numbers calculator", comment: "binary numbers calculator") , attributes: attributes)
-        if (textF.text)! == "wrong" {
+        if (textF.text)! == "( ཀ͝ ∧ ཀ͝ )" {
             button.isEnabled = true
             resultDec.attributedText = NSAttributedString(string: NSLocalizedString("convert Dec --> Bin", comment: "convert Dec --> Bin") , attributes: attributes)
         } else {
