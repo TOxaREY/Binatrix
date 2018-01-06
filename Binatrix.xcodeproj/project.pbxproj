@@ -1,0 +1,555 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E34F049891CB6E8D80DC073C /* Pods_Binatrix.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E3E933E4E3B91EDE5EB785B2 /* Pods_Binatrix.framework */; };
+		F214387E1F94D4EC00924351 /* n.sks in Resources */ = {isa = PBXBuildFile; fileRef = F214387D1F94D4EC00924351 /* n.sks */; };
+		F21438801F94D53A00924351 /* a.sks in Resources */ = {isa = PBXBuildFile; fileRef = F214387F1F94D53A00924351 /* a.sks */; };
+		F21438821F94D57A00924351 /* r.sks in Resources */ = {isa = PBXBuildFile; fileRef = F21438811F94D57A00924351 /* r.sks */; };
+		F21438841F94D5C500924351 /* y.sks in Resources */ = {isa = PBXBuildFile; fileRef = F21438831F94D5C500924351 /* y.sks */; };
+		F21438861F94D95E00924351 /* u.sks in Resources */ = {isa = PBXBuildFile; fileRef = F21438851F94D95E00924351 /* u.sks */; };
+		F21438881F94D9AF00924351 /* m.sks in Resources */ = {isa = PBXBuildFile; fileRef = F21438871F94D9AF00924351 /* m.sks */; };
+		F214388A1F94D9EE00924351 /* e.sks in Resources */ = {isa = PBXBuildFile; fileRef = F21438891F94D9EE00924351 /* e.sks */; };
+		F215CDC11F7E94E40010E457 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F215CDC01F7E94E40010E457 /* AppDelegate.swift */; };
+		F215CDC31F7E94E40010E457 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F215CDC21F7E94E40010E457 /* ViewController.swift */; };
+		F215CDC61F7E94E40010E457 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F215CDC41F7E94E40010E457 /* Main.storyboard */; };
+		F215CDC81F7E94E40010E457 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F215CDC71F7E94E40010E457 /* Assets.xcassets */; };
+		F215CDCB1F7E94E40010E457 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F215CDC91F7E94E40010E457 /* LaunchScreen.storyboard */; };
+		F215CDD31F7E95F40010E457 /* ViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = F215CDD21F7E95F40010E457 /* ViewController2.swift */; };
+		F215CDD51F7E96040010E457 /* ViewController3.swift in Sources */ = {isa = PBXBuildFile; fileRef = F215CDD41F7E96040010E457 /* ViewController3.swift */; };
+		F21CB0AB1F7EABB600DF84B1 /* Calculating.swift in Sources */ = {isa = PBXBuildFile; fileRef = F21CB0AA1F7EABB600DF84B1 /* Calculating.swift */; };
+		F26539C31F94CB8000775049 /* i.sks in Resources */ = {isa = PBXBuildFile; fileRef = F26539C21F94CB8000775049 /* i.sks */; };
+		F28A50C41F94B54300BF564F /* Effect.swift in Sources */ = {isa = PBXBuildFile; fileRef = F28A50C31F94B54300BF564F /* Effect.swift */; };
+		F28A50C61F94B58700BF564F /* uno.sks in Resources */ = {isa = PBXBuildFile; fileRef = F28A50C51F94B58700BF564F /* uno.sks */; };
+		F28A50C81F94B59800BF564F /* zero.sks in Resources */ = {isa = PBXBuildFile; fileRef = F28A50C71F94B59800BF564F /* zero.sks */; };
+		F2BC97B71F94C1F100A76748 /* b.sks in Resources */ = {isa = PBXBuildFile; fileRef = F2BC97B61F94C1F100A76748 /* b.sks */; };
+		F2BC97B91F94C2A500A76748 /* Title.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2BC97B81F94C2A500A76748 /* Title.swift */; };
+		F2C42AE61F9B70DD006C7684 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F2C42AE51F9B70DD006C7684 /* GoogleService-Info.plist */; };
+		F2D068211F90C3FC00512B09 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F2D068231F90C3FC00512B09 /* InfoPlist.strings */; };
+		F2D068271F90C3FD00512B09 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = F2D068291F90C3FD00512B09 /* Localizable.strings */; };
+		F2E337281F9BA33D00B6CAF5 /* RangeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2E337271F9BA33D00B6CAF5 /* RangeManager.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		4B1D8C0B68583C7C422F6644 /* Pods-Binatrix.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Binatrix.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Binatrix/Pods-Binatrix.debug.xcconfig"; sourceTree = "<group>"; };
+		DE8F591B4B68B42EA64BF73C /* Pods-Binatrix.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Binatrix.release.xcconfig"; path = "Pods/Target Support Files/Pods-Binatrix/Pods-Binatrix.release.xcconfig"; sourceTree = "<group>"; };
+		E3E933E4E3B91EDE5EB785B2 /* Pods_Binatrix.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Binatrix.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F203459F1F9DEA3000560BE4 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Main.strings; sourceTree = "<group>"; };
+		F214387D1F94D4EC00924351 /* n.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = n.sks; sourceTree = "<group>"; };
+		F214387F1F94D53A00924351 /* a.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = a.sks; sourceTree = "<group>"; };
+		F21438811F94D57A00924351 /* r.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = r.sks; sourceTree = "<group>"; };
+		F21438831F94D5C500924351 /* y.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = y.sks; sourceTree = "<group>"; };
+		F21438851F94D95E00924351 /* u.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = u.sks; sourceTree = "<group>"; };
+		F21438871F94D9AF00924351 /* m.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = m.sks; sourceTree = "<group>"; };
+		F21438891F94D9EE00924351 /* e.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = e.sks; sourceTree = "<group>"; };
+		F215CDBD1F7E94E40010E457 /* Binatrix.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Binatrix.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F215CDC01F7E94E40010E457 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F215CDC21F7E94E40010E457 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F215CDC51F7E94E40010E457 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F215CDC71F7E94E40010E457 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F215CDCA1F7E94E40010E457 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F215CDCC1F7E94E40010E457 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F215CDD21F7E95F40010E457 /* ViewController2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController2.swift; sourceTree = "<group>"; };
+		F215CDD41F7E96040010E457 /* ViewController3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController3.swift; sourceTree = "<group>"; };
+		F21CB0AA1F7EABB600DF84B1 /* Calculating.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Calculating.swift; sourceTree = "<group>"; };
+		F254D7901F9DF90200550114 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
+		F254D7911F9DF90300550114 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		F254D7921F9DF90300550114 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		F254D7931F9DF90E00550114 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
+		F254D7941F9DF90E00550114 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		F254D7951F9DF90E00550114 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		F254D7961F9DF91900550114 /* pt-PT */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-PT"; path = "pt-PT.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		F254D7971F9DF91900550114 /* pt-PT */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-PT"; path = "pt-PT.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
+		F254D7981F9DF91900550114 /* pt-PT */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-PT"; path = "pt-PT.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
+		F26539C21F94CB8000775049 /* i.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = i.sks; sourceTree = "<group>"; };
+		F27A7FD31FC9AD5200624150 /* Binatrix.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Binatrix.entitlements; sourceTree = "<group>"; };
+		F28A50C31F94B54300BF564F /* Effect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Effect.swift; sourceTree = "<group>"; };
+		F28A50C51F94B58700BF564F /* uno.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = uno.sks; sourceTree = "<group>"; };
+		F28A50C71F94B59800BF564F /* zero.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = zero.sks; sourceTree = "<group>"; };
+		F29A99921F9B5DE7009ECDFB /* Binatrix-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Binatrix-Bridging-Header.h"; sourceTree = "<group>"; };
+		F2BC97B61F94C1F100A76748 /* b.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = b.sks; sourceTree = "<group>"; };
+		F2BC97B81F94C2A500A76748 /* Title.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Title.swift; sourceTree = "<group>"; };
+		F2C42AE51F9B70DD006C7684 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		F2D0681E1F90BD6E00512B09 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Main.strings; sourceTree = "<group>"; };
+		F2D068221F90C3FC00512B09 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		F2D068241F90C3FC00512B09 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		F2D068281F90C3FD00512B09 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
+		F2E337201F9B9D8000B6CAF5 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Main.strings; sourceTree = "<group>"; };
+		F2E337261F9B9E1600B6CAF5 /* pt-PT */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-PT"; path = "pt-PT.lproj/Main.strings"; sourceTree = "<group>"; };
+		F2E337271F9BA33D00B6CAF5 /* RangeManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RangeManager.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F215CDBA1F7E94E40010E457 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E34F049891CB6E8D80DC073C /* Pods_Binatrix.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		844D4D6E24C906813987644C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E3E933E4E3B91EDE5EB785B2 /* Pods_Binatrix.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A0E07731771D1D21E2ADC2C9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4B1D8C0B68583C7C422F6644 /* Pods-Binatrix.debug.xcconfig */,
+				DE8F591B4B68B42EA64BF73C /* Pods-Binatrix.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		F215CDB41F7E94E40010E457 = {
+			isa = PBXGroup;
+			children = (
+				F215CDBF1F7E94E40010E457 /* Binatrix */,
+				F215CDBE1F7E94E40010E457 /* Products */,
+				A0E07731771D1D21E2ADC2C9 /* Pods */,
+				844D4D6E24C906813987644C /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		F215CDBE1F7E94E40010E457 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F215CDBD1F7E94E40010E457 /* Binatrix.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F215CDBF1F7E94E40010E457 /* Binatrix */ = {
+			isa = PBXGroup;
+			children = (
+				F27A7FD31FC9AD5200624150 /* Binatrix.entitlements */,
+				F2C42AE51F9B70DD006C7684 /* GoogleService-Info.plist */,
+				F29A99921F9B5DE7009ECDFB /* Binatrix-Bridging-Header.h */,
+				F2E337271F9BA33D00B6CAF5 /* RangeManager.swift */,
+				F215CDCC1F7E94E40010E457 /* Info.plist */,
+				F2D068291F90C3FD00512B09 /* Localizable.strings */,
+				F2D068231F90C3FC00512B09 /* InfoPlist.strings */,
+				F215CDC01F7E94E40010E457 /* AppDelegate.swift */,
+				F21CB0AA1F7EABB600DF84B1 /* Calculating.swift */,
+				F215CDD21F7E95F40010E457 /* ViewController2.swift */,
+				F215CDD41F7E96040010E457 /* ViewController3.swift */,
+				F215CDC21F7E94E40010E457 /* ViewController.swift */,
+				F28A50C31F94B54300BF564F /* Effect.swift */,
+				F28A50C51F94B58700BF564F /* uno.sks */,
+				F28A50C71F94B59800BF564F /* zero.sks */,
+				F2BC97B81F94C2A500A76748 /* Title.swift */,
+				F2BC97B61F94C1F100A76748 /* b.sks */,
+				F26539C21F94CB8000775049 /* i.sks */,
+				F214387D1F94D4EC00924351 /* n.sks */,
+				F214387F1F94D53A00924351 /* a.sks */,
+				F21438811F94D57A00924351 /* r.sks */,
+				F21438831F94D5C500924351 /* y.sks */,
+				F21438851F94D95E00924351 /* u.sks */,
+				F21438871F94D9AF00924351 /* m.sks */,
+				F21438891F94D9EE00924351 /* e.sks */,
+				F215CDC41F7E94E40010E457 /* Main.storyboard */,
+				F215CDC71F7E94E40010E457 /* Assets.xcassets */,
+				F215CDC91F7E94E40010E457 /* LaunchScreen.storyboard */,
+			);
+			path = Binatrix;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F215CDBC1F7E94E40010E457 /* Binatrix */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F215CDCF1F7E94E40010E457 /* Build configuration list for PBXNativeTarget "Binatrix" */;
+			buildPhases = (
+				05E32BD80C62977A5F66A042 /* [CP] Check Pods Manifest.lock */,
+				F215CDB91F7E94E40010E457 /* Sources */,
+				F215CDBA1F7E94E40010E457 /* Frameworks */,
+				F215CDBB1F7E94E40010E457 /* Resources */,
+				2E95C1626043F14AA3F3CE9E /* [CP] Embed Pods Frameworks */,
+				43F415DAE3AB05D8312AF9E3 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Binatrix;
+			productName = BN;
+			productReference = F215CDBD1F7E94E40010E457 /* Binatrix.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F215CDB51F7E94E40010E457 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0900;
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = "REYNIKOV ANTON";
+				TargetAttributes = {
+					F215CDBC1F7E94E40010E457 = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.SafariKeychain = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = F215CDB81F7E94E40010E457 /* Build configuration list for PBXProject "Binatrix" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F215CDB41F7E94E40010E457;
+			productRefGroup = F215CDBE1F7E94E40010E457 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F215CDBC1F7E94E40010E457 /* Binatrix */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F215CDBB1F7E94E40010E457 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F21438801F94D53A00924351 /* a.sks in Resources */,
+				F28A50C61F94B58700BF564F /* uno.sks in Resources */,
+				F2D068271F90C3FD00512B09 /* Localizable.strings in Resources */,
+				F21438881F94D9AF00924351 /* m.sks in Resources */,
+				F21438861F94D95E00924351 /* u.sks in Resources */,
+				F2BC97B71F94C1F100A76748 /* b.sks in Resources */,
+				F26539C31F94CB8000775049 /* i.sks in Resources */,
+				F215CDCB1F7E94E40010E457 /* LaunchScreen.storyboard in Resources */,
+				F21438821F94D57A00924351 /* r.sks in Resources */,
+				F214388A1F94D9EE00924351 /* e.sks in Resources */,
+				F21438841F94D5C500924351 /* y.sks in Resources */,
+				F2D068211F90C3FC00512B09 /* InfoPlist.strings in Resources */,
+				F2C42AE61F9B70DD006C7684 /* GoogleService-Info.plist in Resources */,
+				F214387E1F94D4EC00924351 /* n.sks in Resources */,
+				F28A50C81F94B59800BF564F /* zero.sks in Resources */,
+				F215CDC81F7E94E40010E457 /* Assets.xcassets in Resources */,
+				F215CDC61F7E94E40010E457 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		05E32BD80C62977A5F66A042 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Binatrix-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2E95C1626043F14AA3F3CE9E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Binatrix/Pods-Binatrix-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${PODS_ROOT}/YandexMobileMetrica/dynamic/YandexMobileMetrica.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YandexMobileMetrica.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Binatrix/Pods-Binatrix-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		43F415DAE3AB05D8312AF9E3 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Binatrix/Pods-Binatrix-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F215CDB91F7E94E40010E457 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F28A50C41F94B54300BF564F /* Effect.swift in Sources */,
+				F215CDC31F7E94E40010E457 /* ViewController.swift in Sources */,
+				F2BC97B91F94C2A500A76748 /* Title.swift in Sources */,
+				F215CDC11F7E94E40010E457 /* AppDelegate.swift in Sources */,
+				F215CDD51F7E96040010E457 /* ViewController3.swift in Sources */,
+				F2E337281F9BA33D00B6CAF5 /* RangeManager.swift in Sources */,
+				F215CDD31F7E95F40010E457 /* ViewController2.swift in Sources */,
+				F21CB0AB1F7EABB600DF84B1 /* Calculating.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		F215CDC41F7E94E40010E457 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F215CDC51F7E94E40010E457 /* Base */,
+				F2D0681E1F90BD6E00512B09 /* ru */,
+				F2E337201F9B9D8000B6CAF5 /* fr */,
+				F2E337261F9B9E1600B6CAF5 /* pt-PT */,
+				F203459F1F9DEA3000560BE4 /* es */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F215CDC91F7E94E40010E457 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F215CDCA1F7E94E40010E457 /* Base */,
+				F2D068241F90C3FC00512B09 /* ru */,
+				F254D7921F9DF90300550114 /* es */,
+				F254D7951F9DF90E00550114 /* fr */,
+				F254D7981F9DF91900550114 /* pt-PT */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		F2D068231F90C3FC00512B09 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F2D068221F90C3FC00512B09 /* ru */,
+				F254D7911F9DF90300550114 /* es */,
+				F254D7941F9DF90E00550114 /* fr */,
+				F254D7971F9DF91900550114 /* pt-PT */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		F2D068291F90C3FD00512B09 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F2D068281F90C3FD00512B09 /* ru */,
+				F254D7901F9DF90200550114 /* es */,
+				F254D7931F9DF90E00550114 /* fr */,
+				F254D7961F9DF91900550114 /* pt-PT */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F215CDCD1F7E94E40010E457 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/reynikovanton/Desktop/APP/development/Binatrix/Binatrix/Binatrix-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F215CDCE1F7E94E40010E457 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/reynikovanton/Desktop/APP/development/Binatrix/Binatrix/Binatrix-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F215CDD01F7E94E40010E457 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4B1D8C0B68583C7C422F6644 /* Pods-Binatrix.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Binatrix/Binatrix.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = EB6R5QS764;
+				INFOPLIST_FILE = "$(SRCROOT)/Binatrix/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = deltaTOxaREY.Binatrix;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/reynikovanton/Desktop/APP/app store/Binatrix/Binatrix/Binatrix-Bridging-Header.h";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		F215CDD11F7E94E40010E457 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DE8F591B4B68B42EA64BF73C /* Pods-Binatrix.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Binatrix/Binatrix.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = EB6R5QS764;
+				INFOPLIST_FILE = "$(SRCROOT)/Binatrix/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = deltaTOxaREY.Binatrix;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/reynikovanton/Desktop/APP/app store/Binatrix/Binatrix/Binatrix-Bridging-Header.h";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F215CDB81F7E94E40010E457 /* Build configuration list for PBXProject "Binatrix" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F215CDCD1F7E94E40010E457 /* Debug */,
+				F215CDCE1F7E94E40010E457 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F215CDCF1F7E94E40010E457 /* Build configuration list for PBXNativeTarget "Binatrix" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F215CDD01F7E94E40010E457 /* Debug */,
+				F215CDD11F7E94E40010E457 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F215CDB51F7E94E40010E457 /* Project object */;
+}

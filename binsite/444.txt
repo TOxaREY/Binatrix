@@ -1,0 +1,1 @@
+App "Binary number" a simple method  converting a binary number to a decimal number or vice versa.

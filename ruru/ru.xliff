@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 http://docs.oasis-open.org/xliff/v1.2/os/xliff-core-1.2-strict.xsd">
+  <file original="BNCC/Base.lproj/LaunchScreen.storyboard" source-language="en" datatype="plaintext" target-language="ru">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="9.0" build-num="9A235"/>
+    </header>
+    <body/>
+  </file>
+  <file original="BNCC/Base.lproj/Main.storyboard" source-language="en" datatype="plaintext" target-language="ru">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="9.0" build-num="9A235"/>
+    </header>
+    <body>
+      <trans-unit id="0Lw-wp-H04.text">
+        <source>Label</source>
+        <target>Label</target>
+        <note>Class = "UILabel"; text = "Label"; ObjectID = "0Lw-wp-H04";</note>
+      </trans-unit>
+      <trans-unit id="7MH-fT-z4T.text">
+        <source>Binary number</source>
+        <target>Binary number</target>
+        <note>Class = "UILabel"; text = "Binary number"; ObjectID = "7MH-fT-z4T";</note>
+      </trans-unit>
+      <trans-unit id="LVw-QH-BY2.text">
+        <source>Binary number</source>
+        <target>Binary number</target>
+        <note>Class = "UILabel"; text = "Binary number"; ObjectID = "LVw-QH-BY2";</note>
+      </trans-unit>
+      <trans-unit id="LwB-6y-jLw.text">
+        <source>Label</source>
+        <target>Label</target>
+        <note>Class = "UILabel"; text = "Label"; ObjectID = "LwB-6y-jLw";</note>
+      </trans-unit>
+      <trans-unit id="PR3-6g-y8X.text">
+        <source>Binary number</source>
+        <target>Binary number</target>
+        <note>Class = "UILabel"; text = "Binary number"; ObjectID = "PR3-6g-y8X";</note>
+      </trans-unit>
+      <trans-unit id="Rsm-KG-gwb.text">
+        <source>Label</source>
+        <target>Label</target>
+        <note>Class = "UILabel"; text = "Label"; ObjectID = "Rsm-KG-gwb";</note>
+      </trans-unit>
+      <trans-unit id="X9P-np-qEK.text">
+        <source>Label</source>
+        <target>Label</target>
+        <note>Class = "UILabel"; text = "Label"; ObjectID = "X9P-np-qEK";</note>
+      </trans-unit>
+      <trans-unit id="klw-7x-zKY.text">
+        <source>Label</source>
+        <target>Label</target>
+        <note>Class = "UILabel"; text = "Label"; ObjectID = "klw-7x-zKY";</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="BNCC/Info.plist" source-language="en" datatype="plaintext" target-language="ru">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="9.0" build-num="9A235"/>
+    </header>
+    <body>
+      <trans-unit id="CFBundleName">
+        <source>$(PRODUCT_NAME)</source>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="BNCC/Localizable.strings" source-language="en" datatype="plaintext" target-language="ru">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="9.0" build-num="9A235"/>
+    </header>
+    <body>
+      <trans-unit id="back to convert">
+        <source>back to convert</source>
+        <target>назад в конвертер</target>
+        <note>back to convert</note>
+      </trans-unit>
+      <trans-unit id="binary numbers calculator">
+        <source>binary numbers calculator</source>
+        <target>калькулятор двоичных чисел</target>
+        <note>binary numbers calculator</note>
+      </trans-unit>
+      <trans-unit id="convert Bin --&gt; Dec">
+        <source>convert Bin --&gt; Dec</source>
+        <target>конверт Двоич --&gt; Десят</target>
+        <note>convert Bin --&gt; Dec</note>
+      </trans-unit>
+      <trans-unit id="convert Dec --&gt; Bin">
+        <source>convert Dec --&gt; Bin</source>
+        <target>конверт Десят --&gt; Двоич</target>
+        <note>convert Dec --&gt; Bin</note>
+      </trans-unit>
+      <trans-unit id="enter a binary number">
+        <source>enter a binary number</source>
+        <target>введите двоичное число</target>
+        <note>enter a binary number</note>
+      </trans-unit>
+      <trans-unit id="enter a decimal number">
+        <source>enter a decimal number</source>
+        <target>введите десятичное число</target>
+        <note>enter a decimal number</note>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>
