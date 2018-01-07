@@ -47,6 +47,7 @@ class ViewController2: UIViewController {
     @IBAction func clearButton(_ sender: Any) {
         textF2.text?.removeAll()
         calculatingBiFunction()
+        view.endEditing(true)
     }
     @IBAction func copyButton(_ sender: Any) {
         image2.flash2()
@@ -113,6 +114,7 @@ class ViewController2: UIViewController {
             button.isEnabled = true
             clearButtonImage.isHidden = true
             copyButtonImage.isHidden = true
+            view.endEditing(true)
             resultBi.attributedText = NSAttributedString(string: NSLocalizedString("convert Bin --> Dec", comment: "convert Bin --> Dec") , attributes: attributes)
         } else {
         if ((textF2.text)!).count != 0 {
@@ -124,6 +126,7 @@ class ViewController2: UIViewController {
             button.isEnabled = true
             clearButtonImage.isHidden = true
             copyButtonImage.isHidden = true
+            view.endEditing(true)
             resultBi.attributedText = NSAttributedString(string: NSLocalizedString("convert Bin --> Dec", comment: "convert Bin --> Dec") , attributes: attributes)
         }
         }
