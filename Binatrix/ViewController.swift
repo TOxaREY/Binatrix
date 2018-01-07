@@ -18,6 +18,16 @@ extension UIImageView {
         flash.repeatCount = 2
         layer.add(flash, forKey: nil)
     }
+    func flash2() {
+        let flash = CABasicAnimation(keyPath: "opacity")
+        flash.duration = 0.5
+        flash.fromValue = 2
+        flash.toValue = 0
+        flash.timingFunction = CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseInEaseOut)
+        flash.autoreverses = true
+        flash.repeatCount = 0
+        layer.add(flash, forKey: nil)
+    }
 }
 extension String {
     var doubleValue: Double {
@@ -61,9 +71,6 @@ class ViewController: UIViewController {
             }
         }
      }
-
-    @IBOutlet weak var button: UIButton!
-    @IBOutlet weak var image: UIImageView!
     func wrong() {
         image.flash()
         textF.text = "( ཀ͝ ∧ ཀ͝ )"
@@ -72,12 +79,21 @@ class ViewController: UIViewController {
             self.textF.text?.removeAll()
         }
     }
+    @IBOutlet weak var button: UIButton!
+    @IBOutlet weak var image: UIImageView!
+    @IBOutlet weak var image2: UIImageView!
     @IBOutlet weak var textF: UITextField!
     @IBOutlet weak var resultDec: UILabel!
     @IBOutlet weak var goToVC3: UILabel!
+    @IBOutlet weak var clearButtonImage: UIButton!
+    @IBOutlet weak var copyButtonImage: UIButton!
     @IBAction func clearButton(_ sender: Any) {
         textF.text?.removeAll()
         calculatingDecFunction()
+    }
+    @IBAction func copyButton(_ sender: Any) {
+        image2.flash2()
+        UIPasteboard.general.string = resultDec.text
     }
     @IBAction func pasterButton(_ sender: Any) {
         let pasteBoardString: String? = UIPasteboard.general.string
@@ -135,13 +151,19 @@ class ViewController: UIViewController {
         goToVC3.attributedText = NSAttributedString(string: NSLocalizedString("binary numbers calculator", comment: "binary numbers calculator") , attributes: attributes)
         if (textF.text)! == "( ཀ͝ ∧ ཀ͝ )" {
             button.isEnabled = true
+            clearButtonImage.isHidden = true
+            copyButtonImage.isHidden = true
             resultDec.attributedText = NSAttributedString(string: NSLocalizedString("convert Dec --> Bin", comment: "convert Dec --> Bin") , attributes: attributes)
         } else {
         if ((textF.text)!).count != 0 {
+            clearButtonImage.isHidden = false
             button.isEnabled = false
+            copyButtonImage.isHidden = false
             resultDec.text = calculatingDec.decimalNumberString + calculatingDec.decimalNumberResidueString
         } else {
             button.isEnabled = true
+            clearButtonImage.isHidden = true
+            copyButtonImage.isHidden = true
             resultDec.attributedText = NSAttributedString(string: NSLocalizedString("convert Dec --> Bin", comment: "convert Dec --> Bin") , attributes: attributes)
         }
         }
@@ -149,6 +171,8 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         RateManager.showRatesController()
+        clearButtonImage.isHidden = true
+        copyButtonImage.isHidden = true
         let font = UIFont(name: "Menlo", size: 20.0)!
         let attributes = [NSAttributedStringKey.foregroundColor: UIColor.darkGray, NSAttributedStringKey.font: font]
         textF.attributedPlaceholder = NSAttributedString(string: NSLocalizedString("enter a binary number", comment: "enter a binary number"), attributes: attributes)

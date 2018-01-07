@@ -8,13 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		E34F049891CB6E8D80DC073C /* Pods_Binatrix.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E3E933E4E3B91EDE5EB785B2 /* Pods_Binatrix.framework */; };
-		F214387E1F94D4EC00924351 /* n.sks in Resources */ = {isa = PBXBuildFile; fileRef = F214387D1F94D4EC00924351 /* n.sks */; };
-		F21438801F94D53A00924351 /* a.sks in Resources */ = {isa = PBXBuildFile; fileRef = F214387F1F94D53A00924351 /* a.sks */; };
-		F21438821F94D57A00924351 /* r.sks in Resources */ = {isa = PBXBuildFile; fileRef = F21438811F94D57A00924351 /* r.sks */; };
-		F21438841F94D5C500924351 /* y.sks in Resources */ = {isa = PBXBuildFile; fileRef = F21438831F94D5C500924351 /* y.sks */; };
-		F21438861F94D95E00924351 /* u.sks in Resources */ = {isa = PBXBuildFile; fileRef = F21438851F94D95E00924351 /* u.sks */; };
-		F21438881F94D9AF00924351 /* m.sks in Resources */ = {isa = PBXBuildFile; fileRef = F21438871F94D9AF00924351 /* m.sks */; };
-		F214388A1F94D9EE00924351 /* e.sks in Resources */ = {isa = PBXBuildFile; fileRef = F21438891F94D9EE00924351 /* e.sks */; };
 		F215CDC11F7E94E40010E457 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F215CDC01F7E94E40010E457 /* AppDelegate.swift */; };
 		F215CDC31F7E94E40010E457 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F215CDC21F7E94E40010E457 /* ViewController.swift */; };
 		F215CDC61F7E94E40010E457 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F215CDC41F7E94E40010E457 /* Main.storyboard */; };
@@ -23,12 +16,9 @@
 		F215CDD31F7E95F40010E457 /* ViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = F215CDD21F7E95F40010E457 /* ViewController2.swift */; };
 		F215CDD51F7E96040010E457 /* ViewController3.swift in Sources */ = {isa = PBXBuildFile; fileRef = F215CDD41F7E96040010E457 /* ViewController3.swift */; };
 		F21CB0AB1F7EABB600DF84B1 /* Calculating.swift in Sources */ = {isa = PBXBuildFile; fileRef = F21CB0AA1F7EABB600DF84B1 /* Calculating.swift */; };
-		F26539C31F94CB8000775049 /* i.sks in Resources */ = {isa = PBXBuildFile; fileRef = F26539C21F94CB8000775049 /* i.sks */; };
 		F28A50C41F94B54300BF564F /* Effect.swift in Sources */ = {isa = PBXBuildFile; fileRef = F28A50C31F94B54300BF564F /* Effect.swift */; };
 		F28A50C61F94B58700BF564F /* uno.sks in Resources */ = {isa = PBXBuildFile; fileRef = F28A50C51F94B58700BF564F /* uno.sks */; };
 		F28A50C81F94B59800BF564F /* zero.sks in Resources */ = {isa = PBXBuildFile; fileRef = F28A50C71F94B59800BF564F /* zero.sks */; };
-		F2BC97B71F94C1F100A76748 /* b.sks in Resources */ = {isa = PBXBuildFile; fileRef = F2BC97B61F94C1F100A76748 /* b.sks */; };
-		F2BC97B91F94C2A500A76748 /* Title.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2BC97B81F94C2A500A76748 /* Title.swift */; };
 		F2C42AE61F9B70DD006C7684 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F2C42AE51F9B70DD006C7684 /* GoogleService-Info.plist */; };
 		F2D068211F90C3FC00512B09 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F2D068231F90C3FC00512B09 /* InfoPlist.strings */; };
 		F2D068271F90C3FD00512B09 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = F2D068291F90C3FD00512B09 /* Localizable.strings */; };
@@ -40,13 +30,6 @@
 		DE8F591B4B68B42EA64BF73C /* Pods-Binatrix.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Binatrix.release.xcconfig"; path = "Pods/Target Support Files/Pods-Binatrix/Pods-Binatrix.release.xcconfig"; sourceTree = "<group>"; };
 		E3E933E4E3B91EDE5EB785B2 /* Pods_Binatrix.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Binatrix.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F203459F1F9DEA3000560BE4 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Main.strings; sourceTree = "<group>"; };
-		F214387D1F94D4EC00924351 /* n.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = n.sks; sourceTree = "<group>"; };
-		F214387F1F94D53A00924351 /* a.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = a.sks; sourceTree = "<group>"; };
-		F21438811F94D57A00924351 /* r.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = r.sks; sourceTree = "<group>"; };
-		F21438831F94D5C500924351 /* y.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = y.sks; sourceTree = "<group>"; };
-		F21438851F94D95E00924351 /* u.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = u.sks; sourceTree = "<group>"; };
-		F21438871F94D9AF00924351 /* m.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = m.sks; sourceTree = "<group>"; };
-		F21438891F94D9EE00924351 /* e.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = e.sks; sourceTree = "<group>"; };
 		F215CDBD1F7E94E40010E457 /* Binatrix.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Binatrix.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F215CDC01F7E94E40010E457 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F215CDC21F7E94E40010E457 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -66,14 +49,11 @@
 		F254D7961F9DF91900550114 /* pt-PT */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-PT"; path = "pt-PT.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		F254D7971F9DF91900550114 /* pt-PT */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-PT"; path = "pt-PT.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
 		F254D7981F9DF91900550114 /* pt-PT */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-PT"; path = "pt-PT.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
-		F26539C21F94CB8000775049 /* i.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = i.sks; sourceTree = "<group>"; };
 		F27A7FD31FC9AD5200624150 /* Binatrix.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Binatrix.entitlements; sourceTree = "<group>"; };
 		F28A50C31F94B54300BF564F /* Effect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Effect.swift; sourceTree = "<group>"; };
 		F28A50C51F94B58700BF564F /* uno.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = uno.sks; sourceTree = "<group>"; };
 		F28A50C71F94B59800BF564F /* zero.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = zero.sks; sourceTree = "<group>"; };
 		F29A99921F9B5DE7009ECDFB /* Binatrix-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Binatrix-Bridging-Header.h"; sourceTree = "<group>"; };
-		F2BC97B61F94C1F100A76748 /* b.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = b.sks; sourceTree = "<group>"; };
-		F2BC97B81F94C2A500A76748 /* Title.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Title.swift; sourceTree = "<group>"; };
 		F2C42AE51F9B70DD006C7684 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		F2D0681E1F90BD6E00512B09 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Main.strings; sourceTree = "<group>"; };
 		F2D068221F90C3FC00512B09 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/InfoPlist.strings; sourceTree = "<group>"; };
@@ -149,16 +129,6 @@
 				F28A50C31F94B54300BF564F /* Effect.swift */,
 				F28A50C51F94B58700BF564F /* uno.sks */,
 				F28A50C71F94B59800BF564F /* zero.sks */,
-				F2BC97B81F94C2A500A76748 /* Title.swift */,
-				F2BC97B61F94C1F100A76748 /* b.sks */,
-				F26539C21F94CB8000775049 /* i.sks */,
-				F214387D1F94D4EC00924351 /* n.sks */,
-				F214387F1F94D53A00924351 /* a.sks */,
-				F21438811F94D57A00924351 /* r.sks */,
-				F21438831F94D5C500924351 /* y.sks */,
-				F21438851F94D95E00924351 /* u.sks */,
-				F21438871F94D9AF00924351 /* m.sks */,
-				F21438891F94D9EE00924351 /* e.sks */,
 				F215CDC41F7E94E40010E457 /* Main.storyboard */,
 				F215CDC71F7E94E40010E457 /* Assets.xcassets */,
 				F215CDC91F7E94E40010E457 /* LaunchScreen.storyboard */,
@@ -233,20 +203,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F21438801F94D53A00924351 /* a.sks in Resources */,
 				F28A50C61F94B58700BF564F /* uno.sks in Resources */,
 				F2D068271F90C3FD00512B09 /* Localizable.strings in Resources */,
-				F21438881F94D9AF00924351 /* m.sks in Resources */,
-				F21438861F94D95E00924351 /* u.sks in Resources */,
-				F2BC97B71F94C1F100A76748 /* b.sks in Resources */,
-				F26539C31F94CB8000775049 /* i.sks in Resources */,
 				F215CDCB1F7E94E40010E457 /* LaunchScreen.storyboard in Resources */,
-				F21438821F94D57A00924351 /* r.sks in Resources */,
-				F214388A1F94D9EE00924351 /* e.sks in Resources */,
-				F21438841F94D5C500924351 /* y.sks in Resources */,
 				F2D068211F90C3FC00512B09 /* InfoPlist.strings in Resources */,
 				F2C42AE61F9B70DD006C7684 /* GoogleService-Info.plist in Resources */,
-				F214387E1F94D4EC00924351 /* n.sks in Resources */,
 				F28A50C81F94B59800BF564F /* zero.sks in Resources */,
 				F215CDC81F7E94E40010E457 /* Assets.xcassets in Resources */,
 				F215CDC61F7E94E40010E457 /* Main.storyboard in Resources */,
@@ -320,7 +281,6 @@
 			files = (
 				F28A50C41F94B54300BF564F /* Effect.swift in Sources */,
 				F215CDC31F7E94E40010E457 /* ViewController.swift in Sources */,
-				F2BC97B91F94C2A500A76748 /* Title.swift in Sources */,
 				F215CDC11F7E94E40010E457 /* AppDelegate.swift in Sources */,
 				F215CDD51F7E96040010E457 /* ViewController3.swift in Sources */,
 				F2E337281F9BA33D00B6CAF5 /* RangeManager.swift in Sources */,

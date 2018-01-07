@@ -38,13 +38,21 @@ class ViewController2: UIViewController {
     }
     @IBOutlet weak var button: UIButton!
     @IBOutlet weak var image: UIImageView!
+    @IBOutlet weak var image2: UIImageView!
     @IBOutlet weak var textF2: UITextField!
     @IBOutlet weak var resultBi: UILabel!
     @IBOutlet weak var goToVC3: UILabel!
+    @IBOutlet weak var clearButtonImage: UIButton!
+    @IBOutlet weak var copyButtonImage: UIButton!
     @IBAction func clearButton(_ sender: Any) {
         textF2.text?.removeAll()
         calculatingBiFunction()
     }
+    @IBAction func copyButton(_ sender: Any) {
+        image2.flash2()
+        UIPasteboard.general.string = resultBi.text
+    }
+    
     @IBAction func pasterButton2(_ sender: Any) {
         let pasteBoardString: String? = UIPasteboard.general.string
 //        print(pasteBoardString)
@@ -103,19 +111,27 @@ class ViewController2: UIViewController {
         goToVC3.attributedText = NSAttributedString(string: NSLocalizedString("binary numbers calculator", comment: "binary numbers calculator") , attributes: attributes)
         if (textF2.text)! == "( ཀ͝ ∧ ཀ͝ )" {
             button.isEnabled = true
+            clearButtonImage.isHidden = true
+            copyButtonImage.isHidden = true
             resultBi.attributedText = NSAttributedString(string: NSLocalizedString("convert Bin --> Dec", comment: "convert Bin --> Dec") , attributes: attributes)
         } else {
         if ((textF2.text)!).count != 0 {
+            clearButtonImage.isHidden = false
             button.isEnabled = false
+            copyButtonImage.isHidden = false
             resultBi.text = calculatingBi.binaryNumberString + calculatingBi.binaryNumberResidueString
         } else {
             button.isEnabled = true
+            clearButtonImage.isHidden = true
+            copyButtonImage.isHidden = true
             resultBi.attributedText = NSAttributedString(string: NSLocalizedString("convert Bin --> Dec", comment: "convert Bin --> Dec") , attributes: attributes)
         }
         }
     }
     override func viewDidLoad() {
         super.viewDidLoad()
+        clearButtonImage.isHidden = true
+        copyButtonImage.isHidden = true
         let font = UIFont(name: "Menlo", size: 20.0)!
         let attributes = [NSAttributedStringKey.foregroundColor: UIColor.darkGray, NSAttributedStringKey.font: font]
         textF2.attributedPlaceholder = NSAttributedString(string: NSLocalizedString("enter a decimal number", comment: "enter a decimal number") , attributes: attributes)
