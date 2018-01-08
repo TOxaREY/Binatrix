@@ -30,7 +30,7 @@ class ViewController2: UIViewController {
     
     func wrong() {
         image.flash()
-        textF2.text = "( ཀ͝ ∧ ཀ͝ )"
+        textF2.text = "invalid value"
         calculatingBiFunction()
         DispatchQueue.main.asyncAfter(deadline: .now() + 1.3) {
             self.textF2.text?.removeAll()
@@ -110,7 +110,7 @@ class ViewController2: UIViewController {
         calculatingBi.decimalNumber = ((textF2.text)!).doubleValue
         calculatingBi.calculatingBinary()
         goToVC3.attributedText = NSAttributedString(string: NSLocalizedString("binary numbers calculator", comment: "binary numbers calculator") , attributes: attributes)
-        if (textF2.text)! == "( ཀ͝ ∧ ཀ͝ )" {
+        if (textF2.text)! == "invalid value" {
             button.isEnabled = true
             clearButtonImage.isHidden = true
             copyButtonImage.isHidden = true
