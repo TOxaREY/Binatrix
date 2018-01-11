@@ -7,6 +7,7 @@
 //
 
 import UIKit
+
 class ViewController3: UIViewController {
     override var supportedInterfaceOrientations: UIInterfaceOrientationMask {
         return UIInterfaceOrientationMask.portrait
@@ -20,11 +21,6 @@ class ViewController3: UIViewController {
     var biTwoDecTwo:Double = 0.0
     var stringMinus:String = ""
     var lol:String = "\u{00AF}\u{005C}\u{005F}\u{0028}\u{30C4}\u{0029}\u{005F}\u{002F}\u{00AF}"
-    @IBOutlet weak var biNuOne: UITextField!
-    @IBOutlet weak var biNuTwo: UITextField!
-    @IBOutlet weak var arifmOutlet: UISegmentedControl!
-    @IBOutlet weak var resultArifOper: UILabel!
-    @IBOutlet weak var goToVC: UILabel!
     func dotta() {
         var i = 0
         for character in (biNuOne.text)! {
@@ -48,6 +44,12 @@ class ViewController3: UIViewController {
         }
     }
 
+    @IBOutlet weak var biNuOne: UITextField!
+    @IBOutlet weak var biNuTwo: UITextField!
+    @IBOutlet weak var arifmOutlet: UISegmentedControl!
+    @IBOutlet weak var arifmOutlet2: UISegmentedControl!
+    @IBOutlet weak var resultArifOper: UILabel!
+    @IBOutlet weak var goToVC: UILabel!
     @IBAction func onlyBin(_ sender: Any) {
         if ((biNuOne.text)!).count > 16 || ((biNuOne.text)!).contains("2") ||
             ((biNuOne.text)!).contains("3") ||
@@ -79,18 +81,38 @@ class ViewController3: UIViewController {
     func selectAction() {
         if arifmOutlet.selectedSegmentIndex == 0 {
             plus()
+            arifmOutlet.setEnabled(false, forSegmentAt: 0)
+            DispatchQueue.main.asyncAfter(deadline: .now() + 0.25) {
+                self.arifmOutlet.setEnabled(true, forSegmentAt: 0)
+            }
         }
         if arifmOutlet.selectedSegmentIndex == 1 {
             minus()
+            arifmOutlet.setEnabled(false, forSegmentAt: 1)
+            DispatchQueue.main.asyncAfter(deadline: .now() + 0.25) {
+                self.arifmOutlet.setEnabled(true, forSegmentAt: 1)
+            }
         }
-        if arifmOutlet.selectedSegmentIndex == 2 {
+        if arifmOutlet2.selectedSegmentIndex == 0 {
             multiply()
+            arifmOutlet2.setEnabled(false, forSegmentAt: 0)
+            DispatchQueue.main.asyncAfter(deadline: .now() + 0.25) {
+                self.arifmOutlet2.setEnabled(true, forSegmentAt: 0)
+            }
         }
-        if arifmOutlet.selectedSegmentIndex == 3 {
+        if arifmOutlet2.selectedSegmentIndex == 1 {
             if ((biNuTwo.text)!).doubleValue != 0 {
-            divide()
+                divide()
+                arifmOutlet2.setEnabled(false, forSegmentAt: 1)
+                DispatchQueue.main.asyncAfter(deadline: .now() + 0.25) {
+                    self.arifmOutlet2.setEnabled(true, forSegmentAt: 1)
+                }
             } else {
                 resultArifOper.text = lol
+                arifmOutlet2.setEnabled(false, forSegmentAt: 1)
+                DispatchQueue.main.asyncAfter(deadline: .now() + 0.25) {
+                    self.arifmOutlet2.setEnabled(true, forSegmentAt: 1)
+                }
             }
         }
     }
@@ -174,6 +196,9 @@ class ViewController3: UIViewController {
         }
     }
     @IBAction func arifmAction(_ sender: Any) {
+        selectAction()
+    }
+    @IBAction func arifmAction2(_ sender: Any) {
         selectAction()
     }
     override func viewDidLoad() {

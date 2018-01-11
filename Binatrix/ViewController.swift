@@ -73,7 +73,7 @@ class ViewController: UIViewController {
      }
     func wrong() {
         image.flash()
-        textF.text = "недопустимое значение"
+        textF.text = "invalid value"
         calculatingDecFunction()
         DispatchQueue.main.asyncAfter(deadline: .now() + 1.2) {
             self.textF.text?.removeAll()
@@ -150,7 +150,7 @@ class ViewController: UIViewController {
         calculatingDec.binaryNumber = ((textF.text)!).doubleValue
         calculatingDec.calculatingDecimal()
         goToVC3.attributedText = NSAttributedString(string: NSLocalizedString("binary numbers calculator", comment: "binary numbers calculator") , attributes: attributes)
-        if (textF.text)! == "недопустимое значение" {
+        if (textF.text)! == "invalid value" {
             button.isEnabled = true
             clearButtonImage.isHidden = true
             copyButtonImage.isHidden = true
