@@ -50,6 +50,7 @@ class ViewController3: UIViewController {
         copyButtonImage.isHidden = true
         view.endEditing(true)
         image.flash()
+        resultArifOper.text = lol
         let font1 = UIFont(name: "Menlo-Bold",size: 20.0)!
         let attributes1 = [NSAttributedStringKey.foregroundColor: UIColor.black, NSAttributedStringKey.font: font1]
         biNuOne.attributedText = NSAttributedString(string: NSLocalizedString("invalid value", comment: "invalid value") , attributes: attributes1)
@@ -62,6 +63,7 @@ class ViewController3: UIViewController {
         copyButtonImage.isHidden = true
         view.endEditing(true)
         image.flash()
+        resultArifOper.text = lol
         let font1 = UIFont(name: "Menlo-Bold",size: 20.0)!
         let attributes1 = [NSAttributedStringKey.foregroundColor: UIColor.black, NSAttributedStringKey.font: font1]
         biNuTwo.attributedText = NSAttributedString(string: NSLocalizedString("invalid value", comment: "invalid value") , attributes: attributes1)
