@@ -2,13 +2,13 @@
 <xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 http://docs.oasis-open.org/xliff/v1.2/os/xliff-core-1.2-strict.xsd">
   <file original="Binatrix/Base.lproj/LaunchScreen.storyboard" source-language="en" datatype="plaintext" target-language="es">
     <header>
-      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="9.0.1" build-num="9A1004"/>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="9.2" build-num="9C40b"/>
     </header>
     <body/>
   </file>
   <file original="Binatrix/Base.lproj/Main.storyboard" source-language="en" datatype="plaintext" target-language="es">
     <header>
-      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="9.0.1" build-num="9A1004"/>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="9.2" build-num="9C40b"/>
     </header>
     <body>
       <trans-unit id="0Lw-wp-H04.text">
@@ -55,7 +55,7 @@
   </file>
   <file original="Binatrix/Info.plist" source-language="en" datatype="plaintext" target-language="es">
     <header>
-      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="9.0.1" build-num="9A1004"/>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="9.2" build-num="9C40b"/>
     </header>
     <body>
       <trans-unit id="CFBundleName">
@@ -65,7 +65,7 @@
   </file>
   <file original="Binatrix/Localizable.strings" source-language="en" datatype="plaintext" target-language="es">
     <header>
-      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="9.0.1" build-num="9A1004"/>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="9.2" build-num="9C40b"/>
     </header>
     <body>
       <trans-unit id="back to convert">
@@ -80,7 +80,7 @@
       </trans-unit>
       <trans-unit id="convert Bin --&gt; Dec">
         <source>convert Bin --&gt; Dec</source>
-      <target>convertir Bin --&gt; Dec</target>
+        <target>convertir Bin --&gt; Dec</target>
         <note>convert Bin --&gt; Dec</note>
       </trans-unit>
       <trans-unit id="convert Dec --&gt; Bin">
@@ -97,6 +97,11 @@
         <source>enter a decimal number</source>
         <target>entrada un número decimal</target>
         <note>enter a decimal number</note>
+      </trans-unit>
+      <trans-unit id="invalid value">
+        <source>invalid value</source>
+        <target>valor no válido</target>
+        <note>invalid value</note>
       </trans-unit>
     </body>
   </file>

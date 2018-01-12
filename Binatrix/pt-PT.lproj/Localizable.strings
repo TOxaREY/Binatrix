@@ -16,3 +16,6 @@
 /* enter a decimal number */
 "enter a decimal number" = "insira um número decimal";
 
+/* invalid value */
+"invalid value" = "valor inválido";
+

@@ -72,9 +72,17 @@ class ViewController: UIViewController {
         }
      }
     func wrong() {
+        button.isEnabled = true
+        clearButtonImage.isHidden = true
+        copyButtonImage.isHidden = true
+        view.endEditing(true)
         image.flash()
-        textF.text = "invalid value"
-        calculatingDecFunction()
+        let font1 = UIFont(name: "Menlo-Bold",size: 20.0)!
+        let attributes1 = [NSAttributedStringKey.foregroundColor: UIColor.black, NSAttributedStringKey.font: font1]
+        let font = UIFont(name: "Menlo", size: 20.0)!
+        let attributes = [NSAttributedStringKey.foregroundColor: UIColor.white, NSAttributedStringKey.font: font]
+        textF.attributedText = NSAttributedString(string: NSLocalizedString("invalid value", comment: "invalid value") , attributes: attributes1)
+        resultDec.attributedText = NSAttributedString(string: NSLocalizedString("convert Dec --> Bin", comment: "convert Dec --> Bin") , attributes: attributes)
         DispatchQueue.main.asyncAfter(deadline: .now() + 1.2) {
             self.textF.text?.removeAll()
         }
@@ -98,7 +106,6 @@ class ViewController: UIViewController {
     }
     @IBAction func pasterButton(_ sender: Any) {
         let pasteBoardString: String? = UIPasteboard.general.string
-//        print(pasteBoardString)
         if pasteBoardString == nil {
             wrong()
         } else {
@@ -150,13 +157,6 @@ class ViewController: UIViewController {
         calculatingDec.binaryNumber = ((textF.text)!).doubleValue
         calculatingDec.calculatingDecimal()
         goToVC3.attributedText = NSAttributedString(string: NSLocalizedString("binary numbers calculator", comment: "binary numbers calculator") , attributes: attributes)
-        if (textF.text)! == "invalid value" {
-            button.isEnabled = true
-            clearButtonImage.isHidden = true
-            copyButtonImage.isHidden = true
-            view.endEditing(true)
-            resultDec.attributedText = NSAttributedString(string: NSLocalizedString("convert Dec --> Bin", comment: "convert Dec --> Bin") , attributes: attributes)
-        } else {
         if ((textF.text)!).count != 0 {
             clearButtonImage.isHidden = false
             button.isEnabled = false
@@ -168,9 +168,8 @@ class ViewController: UIViewController {
             copyButtonImage.isHidden = true
             view.endEditing(true)
             resultDec.attributedText = NSAttributedString(string: NSLocalizedString("convert Dec --> Bin", comment: "convert Dec --> Bin") , attributes: attributes)
+          }
         }
-        }
-    }
     override func viewDidLoad() {
         super.viewDidLoad()
         RateManager.showRatesController()

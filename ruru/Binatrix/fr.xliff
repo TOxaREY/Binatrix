@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 http://docs.oasis-open.org/xliff/v1.2/os/xliff-core-1.2-strict.xsd">
-  <file original="BNCC/Base.lproj/LaunchScreen.storyboard" source-language="en" datatype="plaintext" target-language="ru">
+  <file original="Binatrix/Base.lproj/LaunchScreen.storyboard" source-language="en" datatype="plaintext" target-language="fr">
     <header>
-      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="9.0" build-num="9A235"/>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="9.2" build-num="9C40b"/>
     </header>
     <body/>
   </file>
-  <file original="BNCC/Base.lproj/Main.storyboard" source-language="en" datatype="plaintext" target-language="ru">
+  <file original="Binatrix/Base.lproj/Main.storyboard" source-language="en" datatype="plaintext" target-language="fr">
     <header>
-      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="9.0" build-num="9A235"/>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="9.2" build-num="9C40b"/>
     </header>
     <body>
       <trans-unit id="0Lw-wp-H04.text">
@@ -53,9 +53,9 @@
       </trans-unit>
     </body>
   </file>
-  <file original="BNCC/Info.plist" source-language="en" datatype="plaintext" target-language="ru">
+  <file original="Binatrix/Info.plist" source-language="en" datatype="plaintext" target-language="fr">
     <header>
-      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="9.0" build-num="9A235"/>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="9.2" build-num="9C40b"/>
     </header>
     <body>
       <trans-unit id="CFBundleName">
@@ -63,40 +63,45 @@
       </trans-unit>
     </body>
   </file>
-  <file original="BNCC/Localizable.strings" source-language="en" datatype="plaintext" target-language="ru">
+  <file original="Binatrix/Localizable.strings" source-language="en" datatype="plaintext" target-language="fr">
     <header>
-      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="9.0" build-num="9A235"/>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="9.2" build-num="9C40b"/>
     </header>
     <body>
       <trans-unit id="back to convert">
         <source>back to convert</source>
-        <target>назад в конвертер</target>
+        <target>retour pour convertir</target>
         <note>back to convert</note>
       </trans-unit>
       <trans-unit id="binary numbers calculator">
         <source>binary numbers calculator</source>
-        <target>калькулятор двоичных чисел</target>
+        <target>calculateur de nombres binaires</target>
         <note>binary numbers calculator</note>
       </trans-unit>
       <trans-unit id="convert Bin --&gt; Dec">
         <source>convert Bin --&gt; Dec</source>
-        <target>конверт Двоич --&gt; Десят</target>
+        <target>convertir Bin --&gt; Déc</target>
         <note>convert Bin --&gt; Dec</note>
       </trans-unit>
       <trans-unit id="convert Dec --&gt; Bin">
         <source>convert Dec --&gt; Bin</source>
-        <target>конверт Десят --&gt; Двоич</target>
+        <target>convertir Déc --&gt; Bin</target>
         <note>convert Dec --&gt; Bin</note>
       </trans-unit>
       <trans-unit id="enter a binary number">
         <source>enter a binary number</source>
-        <target>введите двоичное число</target>
+        <target>entrez un nombre binaire</target>
         <note>enter a binary number</note>
       </trans-unit>
       <trans-unit id="enter a decimal number">
         <source>enter a decimal number</source>
-        <target>введите десятичное число</target>
+        <target>entrez un nombre décimal</target>
         <note>enter a decimal number</note>
+      </trans-unit>
+      <trans-unit id="invalid value">
+        <source>invalid value</source>
+        <target>valeur invalide</target>
+        <note>invalid value</note>
       </trans-unit>
     </body>
   </file>

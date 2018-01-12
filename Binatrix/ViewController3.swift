@@ -46,17 +46,25 @@ class ViewController3: UIViewController {
         }
     }
     func wrong() {
+        clearButtonImage.isHidden = true
+        copyButtonImage.isHidden = true
+        view.endEditing(true)
         image.flash()
-        biNuOne.text = "invalid value"
-        arifmOperFunction()
+        let font1 = UIFont(name: "Menlo-Bold",size: 20.0)!
+        let attributes1 = [NSAttributedStringKey.foregroundColor: UIColor.black, NSAttributedStringKey.font: font1]
+        biNuOne.attributedText = NSAttributedString(string: NSLocalizedString("invalid value", comment: "invalid value") , attributes: attributes1)
         DispatchQueue.main.asyncAfter(deadline: .now() + 1.2) {
             self.biNuOne.text?.removeAll()
         }
     }
     func wrong2() {
+        clearButtonImage.isHidden = true
+        copyButtonImage.isHidden = true
+        view.endEditing(true)
         image.flash()
-        biNuTwo.text = "invalid value"
-        arifmOperFunction()
+        let font1 = UIFont(name: "Menlo-Bold",size: 20.0)!
+        let attributes1 = [NSAttributedStringKey.foregroundColor: UIColor.black, NSAttributedStringKey.font: font1]
+        biNuTwo.attributedText = NSAttributedString(string: NSLocalizedString("invalid value", comment: "invalid value") , attributes: attributes1)
         DispatchQueue.main.asyncAfter(deadline: .now() + 1.2) {
             self.biNuTwo.text?.removeAll()
         }
@@ -218,11 +226,6 @@ class ViewController3: UIViewController {
         let font = UIFont(name: "Menlo", size: 20.0)!
         let attributes = [NSAttributedStringKey.foregroundColor: UIColor.white, NSAttributedStringKey.font: font]
         goToVC.attributedText = NSAttributedString(string: NSLocalizedString("back to convert", comment: "back to convert")  , attributes: attributes)
-        if (biNuOne.text)! == "invalid value" || (biNuTwo.text)! == "invalid value" {
-            clearButtonImage.isHidden = true
-            copyButtonImage.isHidden = true
-            view.endEditing(true)
-        } else {
         if ((biNuOne.text)!).count != 0 || ((biNuTwo.text)!).count != 0 {
         calcDecForBinOneTwo.binaryNumber = ((biNuOne.text)!).doubleValue
         calcDecForBinOneTwo.calculatingDecimal()
@@ -243,7 +246,6 @@ class ViewController3: UIViewController {
         }
         selectAction()
      }
-    }
     func calculPrint() {
       converDecToBin.calculatingBinary()
       resultArifOper.text = converDecToBin.binaryNumberString + converDecToBin.binaryNumberResidueString

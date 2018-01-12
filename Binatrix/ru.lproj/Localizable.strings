@@ -16,3 +16,6 @@
 /* enter a decimal number */
 "enter a decimal number" = "введите десятичное число";
 
+/* invalid value */
+"invalid value" = "недопустимое значение";
+
