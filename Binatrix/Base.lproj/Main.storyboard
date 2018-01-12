@@ -539,6 +539,9 @@
                                                     <constraint firstAttribute="width" constant="35" id="dGh-OO-8AN"/>
                                                 </constraints>
                                                 <state key="normal" image="if_edit-paste_118923"/>
+                                                <connections>
+                                                    <action selector="pasterButton:" destination="ED5-GL-Mjh" eventType="touchUpInside" id="G9D-Au-W1a"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="smb-uH-EVw">
                                                 <rect key="frame" x="255" y="82" width="35" height="35"/>
@@ -547,6 +550,9 @@
                                                     <constraint firstAttribute="height" constant="35" id="Z5T-Pl-gzR"/>
                                                 </constraints>
                                                 <state key="normal" image="if_edit-paste_118923"/>
+                                                <connections>
+                                                    <action selector="pasterButton2:" destination="ED5-GL-Mjh" eventType="touchUpInside" id="1TA-bI-wse"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S3z-ZB-CEN">
                                                 <rect key="frame" x="30" y="61.5" width="35" height="35"/>
@@ -555,6 +561,9 @@
                                                     <constraint firstAttribute="height" constant="35" id="o5e-lA-Fj7"/>
                                                 </constraints>
                                                 <state key="normal" image="if_edit-clear_118917"/>
+                                                <connections>
+                                                    <action selector="clearButton:" destination="ED5-GL-Mjh" eventType="touchUpInside" id="KMT-0c-0sT"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <constraints>
@@ -597,6 +606,9 @@
                                                     <constraint firstAttribute="height" constant="35" id="wWi-gQ-EKu"/>
                                                 </constraints>
                                                 <state key="normal" image="if_edit-copy_118918"/>
+                                                <connections>
+                                                    <action selector="copyButton:" destination="ED5-GL-Mjh" eventType="touchUpInside" id="gFU-NO-Xpu"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <constraints>
@@ -670,7 +682,11 @@
                         <outlet property="arifmOutlet2" destination="MTN-FA-aHN" id="Cjd-4q-ffU"/>
                         <outlet property="biNuOne" destination="UVH-7D-5wd" id="dro-lG-mO1"/>
                         <outlet property="biNuTwo" destination="5eh-7g-cEe" id="v7I-Uf-DaZ"/>
+                        <outlet property="clearButtonImage" destination="S3z-ZB-CEN" id="SRM-j3-G14"/>
+                        <outlet property="copyButtonImage" destination="ewp-Oh-xkr" id="SBg-kZ-DlV"/>
                         <outlet property="goToVC" destination="klw-7x-zKY" id="152-bW-uql"/>
+                        <outlet property="image" destination="bkh-6z-RIA" id="5vT-d6-Ouo"/>
+                        <outlet property="image2" destination="K8z-Jr-Sa5" id="uAj-5q-BjE"/>
                         <outlet property="resultArifOper" destination="x75-Qs-99m" id="gCK-RY-bQv"/>
                     </connections>
                 </viewController>
@@ -695,6 +711,6 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="upf-MM-Rdb"/>
-        <segue reference="gTk-Gm-O6W"/>
+        <segue reference="BHi-7O-37t"/>
     </inferredMetricsTieBreakers>
 </document>

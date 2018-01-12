@@ -28,6 +28,7 @@ class ViewController3: UIViewController {
                 i += 1
             }
             if i == 2 {
+                 image.flash()
                 ((biNuOne.text)!).removeLast()
             }
         }
@@ -39,16 +40,110 @@ class ViewController3: UIViewController {
                 i += 1
             }
             if i == 2 {
+                image.flash()
                 ((biNuTwo.text)!).removeLast()
             }
         }
     }
-
+    func wrong() {
+        image.flash()
+        biNuOne.text = "invalid value"
+        arifmOperFunction()
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1.2) {
+            self.biNuOne.text?.removeAll()
+        }
+    }
+    func wrong2() {
+        image.flash()
+        biNuTwo.text = "invalid value"
+        arifmOperFunction()
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1.2) {
+            self.biNuTwo.text?.removeAll()
+        }
+    }
     @IBOutlet weak var biNuOne: UITextField!
     @IBOutlet weak var biNuTwo: UITextField!
+    @IBOutlet weak var image: UIImageView!
+    @IBOutlet weak var image2: UIImageView!
     @IBOutlet weak var arifmOutlet: UISegmentedControl!
     @IBOutlet weak var arifmOutlet2: UISegmentedControl!
     @IBOutlet weak var resultArifOper: UILabel!
+    @IBOutlet weak var clearButtonImage: UIButton!
+    @IBOutlet weak var copyButtonImage: UIButton!
+    @IBAction func clearButton(_ sender: Any) {
+        biNuOne.text?.removeAll()
+        biNuTwo.text?.removeAll()
+        arifmOperFunction()
+        view.endEditing(true)
+    }
+    @IBAction func copyButton(_ sender: Any) {
+        if resultArifOper.text != lol {
+            image2.flash2()
+        UIPasteboard.general.string = resultArifOper.text
+    }
+    }
+    @IBAction func pasterButton(_ sender: Any) {
+        let pasteBoardString: String? = UIPasteboard.general.string
+        if pasteBoardString == nil {
+            wrong()
+        } else {
+            if ((pasteBoardString)!).count <= 16 {
+                for i in pasteBoardString! {
+                    guard i == "0" ||
+                        i == "1" ||
+                        i == "." ||
+                        i == "," else {
+                            wrong()
+                            return
+                    }
+                }
+                biNuOne.text = pasteBoardString
+                var i = 0
+                for character in (pasteBoardString)! {
+                    if character == "." || character == "," {
+                        i += 1
+                    }
+                    if i == 2 {
+                        wrong()
+                    }
+                }
+                arifmOperFunction()
+            } else {
+                wrong()
+            }
+        }
+    }
+    @IBAction func pasterButton2(_ sender: Any) {
+        let pasteBoardString: String? = UIPasteboard.general.string
+        if pasteBoardString == nil {
+            wrong2()
+        } else {
+            if ((pasteBoardString)!).count <= 16 {
+                for i in pasteBoardString! {
+                    guard i == "0" ||
+                        i == "1" ||
+                        i == "." ||
+                        i == "," else {
+                            wrong2()
+                            return
+                    }
+                }
+                biNuTwo.text = pasteBoardString
+                var i = 0
+                for character in (pasteBoardString)! {
+                    if character == "." || character == "," {
+                        i += 1
+                    }
+                    if i == 2 {
+                        wrong2()
+                    }
+                }
+                arifmOperFunction()
+            } else {
+                wrong2()
+            }
+        }
+    }
     @IBOutlet weak var goToVC: UILabel!
     @IBAction func onlyBin(_ sender: Any) {
         if ((biNuOne.text)!).count > 16 || ((biNuOne.text)!).contains("2") ||
@@ -59,6 +154,7 @@ class ViewController3: UIViewController {
             ((biNuOne.text)!).contains("7") ||
             ((biNuOne.text)!).contains("8") ||
             ((biNuOne.text)!).contains("9") {
+            image.flash()
             ((biNuOne.text)!).removeLast()
         }
         dotta()
@@ -73,6 +169,7 @@ class ViewController3: UIViewController {
             ((biNuTwo.text)!).contains("7") ||
             ((biNuTwo.text)!).contains("8") ||
             ((biNuTwo.text)!).contains("9") {
+            image.flash()
             ((biNuTwo.text)!).removeLast()
         }
         dotta2()
@@ -108,6 +205,7 @@ class ViewController3: UIViewController {
                     self.arifmOutlet2.setEnabled(true, forSegmentAt: 1)
                 }
             } else {
+                image.flash()
                 resultArifOper.text = lol
                 arifmOutlet2.setEnabled(false, forSegmentAt: 1)
                 DispatchQueue.main.asyncAfter(deadline: .now() + 0.25) {
@@ -120,6 +218,11 @@ class ViewController3: UIViewController {
         let font = UIFont(name: "Menlo", size: 20.0)!
         let attributes = [NSAttributedStringKey.foregroundColor: UIColor.white, NSAttributedStringKey.font: font]
         goToVC.attributedText = NSAttributedString(string: NSLocalizedString("back to convert", comment: "back to convert")  , attributes: attributes)
+        if (biNuOne.text)! == "invalid value" || (biNuTwo.text)! == "invalid value" {
+            clearButtonImage.isHidden = true
+            copyButtonImage.isHidden = true
+            view.endEditing(true)
+        } else {
         if ((biNuOne.text)!).count != 0 || ((biNuTwo.text)!).count != 0 {
         calcDecForBinOneTwo.binaryNumber = ((biNuOne.text)!).doubleValue
         calcDecForBinOneTwo.calculatingDecimal()
@@ -128,13 +231,18 @@ class ViewController3: UIViewController {
             resultArifOper.text = lol
         }
         if ((biNuOne.text)!).count != 0 || ((biNuTwo.text)!).count != 0 {
+            clearButtonImage.isHidden = false
+            copyButtonImage.isHidden = false
             calcDecForBinOneTwo.binaryNumber = ((biNuTwo.text)!).doubleValue
             calcDecForBinOneTwo.calculatingDecimal()
             biTwoDecTwo = calcDecForBinOneTwo.decimalNumberDouble
         } else {
             resultArifOper.text = lol
+            clearButtonImage.isHidden = true
+            copyButtonImage.isHidden = true
         }
         selectAction()
+     }
     }
     func calculPrint() {
       converDecToBin.calculatingBinary()
@@ -203,6 +311,8 @@ class ViewController3: UIViewController {
     }
     override func viewDidLoad() {
         super.viewDidLoad()
+        clearButtonImage.isHidden = true
+        copyButtonImage.isHidden = true
         let font = UIFont(name: "Menlo", size: 20.0)!
         let attributes = [NSAttributedStringKey.foregroundColor: UIColor.darkGray, NSAttributedStringKey.font: font]
         biNuOne.attributedPlaceholder = NSAttributedString(string: NSLocalizedString("enter a binary number", comment: "enter a binary number"), attributes: attributes)
