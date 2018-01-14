@@ -9,23 +9,37 @@
 import UIKit
 import SpriteKit
 class Effect: SKView {
+    var uno = SKEmitterNode(fileNamed: "uno.sks")
+    var zero = SKEmitterNode(fileNamed: "zero.sks")
     override func didMoveToSuperview() {
         let scene = SKScene(size: self.frame.size)
         scene.backgroundColor = UIColor.clear
         self.presentScene(scene)
         self.allowsTransparency = true
         self.backgroundColor = UIColor.clear
-        if let uno = SKEmitterNode(fileNamed: "uno.sks") {
-            uno.position = CGPoint(x: self.frame.size.width / 2, y: self.frame.size.height)
-            uno.particlePositionRange = CGVector(dx: self.bounds.size.width, dy: 0)
-            scene.addChild(uno)
-        }
-        if let zero = SKEmitterNode(fileNamed: "zero.sks") {
-            zero.position = CGPoint(x: self.frame.size.width / 2, y: self.frame.size.height)
-            zero.particlePositionRange = CGVector(dx: self.bounds.size.width, dy: 0)
-            scene.addChild(zero)
+  
+            uno?.position = CGPoint(x: self.frame.size.width / 2, y: self.frame.size.height)
+            uno?.particlePositionRange = CGVector(dx: self.bounds.size.width, dy: 0)
+            scene.addChild(uno!)
+            zero?.position = CGPoint(x: self.frame.size.width / 2, y: self.frame.size.height)
+            zero?.particlePositionRange = CGVector(dx: self.bounds.size.width, dy: 0)
+            scene.addChild(zero!)
+            NotificationCenter.default.addObserver(self, selector: #selector(reset), name: NSNotification.Name(rawValue: "reset"), object: nil)
+           NotificationCenter.default.addObserver(self, selector: #selector(reset2), name: NSNotification.Name(rawValue: "reset"), object: nil)
+}
+    
+    @objc func reset() {
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.3) {
+            self.uno?.resetSimulation()
+            self.zero?.resetSimulation()
         }
      }
-  }
+@objc func reset2() {
+    DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) {
+        self.uno?.resetSimulation()
+        self.zero?.resetSimulation()
+    }
+}
+}
 
 
