@@ -14,15 +14,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-//        guard let gai = GAI.sharedInstance() else {
-//            assert(false, "Google Analytics not configured correctly")
-//            return true
-//        }
-//        gai.tracker(withTrackingId: "UA-108362966-1")
-//        gai.trackUncaughtExceptions = true
-//        YMMYandexMetrica.activate(withApiKey: "5eb25519-c142-4785-a244-96ec5cbb2f9b")
-//        FirebaseApp.configure()
-//        RateManager.incrementCount()
+        guard let gai = GAI.sharedInstance() else {
+            assert(false, "Google Analytics not configured correctly")
+            return true
+        }
+        gai.tracker(withTrackingId: "UA-108362966-1")
+        gai.trackUncaughtExceptions = true
+        YMMYandexMetrica.activate(withApiKey: "5eb25519-c142-4785-a244-96ec5cbb2f9b")
+        FirebaseApp.configure()
+        RateManager.incrementCount()
         return true
     }
 

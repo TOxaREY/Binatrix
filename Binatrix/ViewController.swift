@@ -172,7 +172,6 @@ class ViewController: UIViewController {
         }
     override func viewDidLoad() {
         super.viewDidLoad()
-        RateManager.showRatesController()
         clearButtonImage.isHidden = true
         copyButtonImage.isHidden = true
         let font = UIFont(name: "Menlo", size: 20.0)!
