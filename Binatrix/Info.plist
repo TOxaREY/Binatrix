@@ -44,5 +44,16 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<key>CFBundleURLTypes</key>
+	<array>
+		<dict>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>binatrixHexastar</string>
+			</array>
+			<key>CFBundleURLName</key>
+			<string>deltaTOxaREY.Hexastar</string>
+		</dict>
+	</array>
 </dict>
 </plist>
