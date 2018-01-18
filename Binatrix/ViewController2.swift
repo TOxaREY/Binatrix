@@ -60,6 +60,7 @@ class ViewController2: UIViewController {
     @IBAction func copyButton(_ sender: Any) {
         image2.flash2()
         UIPasteboard.general.string = resultBi.text
+        view.endEditing(true)
     }
     
     @IBAction func pasterButton2(_ sender: Any) {

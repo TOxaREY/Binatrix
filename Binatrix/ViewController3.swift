@@ -90,6 +90,7 @@ class ViewController3: UIViewController {
         if resultArifOper.text != lol {
             image2.flash2()
         UIPasteboard.general.string = resultArifOper.text
+            view.endEditing(true)
     }
     }
     @IBAction func pasterButton(_ sender: Any) {

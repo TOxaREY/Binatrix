@@ -15,7 +15,18 @@
 	<key>CFBundlePackageType</key>
 	<string>APPL</string>
 	<key>CFBundleShortVersionString</key>
-	<string>2.0</string>
+	<string>2.0.1</string>
+	<key>CFBundleURLTypes</key>
+	<array>
+		<dict>
+			<key>CFBundleURLName</key>
+			<string>deltaTOxaREY.Hexastar</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>binatrixHexastar</string>
+			</array>
+		</dict>
+	</array>
 	<key>CFBundleVersion</key>
 	<string>1</string>
 	<key>GoogleAnalytics</key>
@@ -43,17 +54,6 @@
 		<string>UIInterfaceOrientationPortraitUpsideDown</string>
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
-	</array>
-	<key>CFBundleURLTypes</key>
-	<array>
-		<dict>
-			<key>CFBundleURLSchemes</key>
-			<array>
-				<string>binatrixHexastar</string>
-			</array>
-			<key>CFBundleURLName</key>
-			<string>deltaTOxaREY.Hexastar</string>
-		</dict>
 	</array>
 </dict>
 </plist>
