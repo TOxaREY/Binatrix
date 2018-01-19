@@ -38,7 +38,7 @@
                                         <rect key="frame" x="0.0" y="0.0" width="320" height="64"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Binary number" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LVw-QH-BY2">
-                                                <rect key="frame" x="61" y="26.5" width="198" height="35"/>
+                                                <rect key="frame" x="61.5" y="26.5" width="198" height="35"/>
                                                 <fontDescription key="fontDescription" name="Cochin-Bold" family="Cochin" pointSize="30"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -65,7 +65,7 @@
                                                 <rect key="frame" x="0.0" y="0.0" width="320" height="157.5"/>
                                             </imageView>
                                             <textField opaque="NO" clipsSubviews="YES" alpha="0.80000001192092896" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" adjustsFontSizeToFit="NO" minimumFontSize="30" translatesAutoresizingMaskIntoConstraints="NO" id="B6d-eM-1KD" customClass="NMTextField" customModule="Binatrix" customModuleProvider="target">
-                                                <rect key="frame" x="143" y="63" width="34" height="30"/>
+                                                <rect key="frame" x="143.5" y="63" width="34" height="30"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" name="Menlo-Bold" family="Menlo" pointSize="20"/>
@@ -247,7 +247,7 @@
                                         <rect key="frame" x="0.0" y="0.0" width="320" height="64"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Binary number" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7MH-fT-z4T">
-                                                <rect key="frame" x="61" y="26.5" width="198" height="35"/>
+                                                <rect key="frame" x="61.5" y="26.5" width="198" height="35"/>
                                                 <fontDescription key="fontDescription" name="Cochin-Bold" family="Cochin" pointSize="30"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -325,7 +325,7 @@
                                                 <rect key="frame" x="0.0" y="0.0" width="320" height="157"/>
                                             </imageView>
                                             <textField opaque="NO" clipsSubviews="YES" alpha="0.80000001192092896" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" adjustsFontSizeToFit="NO" minimumFontSize="30" translatesAutoresizingMaskIntoConstraints="NO" id="P4h-Oe-9L5" customClass="NMTextField" customModule="Binatrix" customModuleProvider="target">
-                                                <rect key="frame" x="143" y="64" width="34" height="30"/>
+                                                <rect key="frame" x="143.5" y="64" width="34" height="30"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" name="Menlo-Bold" family="Menlo" pointSize="20"/>
@@ -457,7 +457,7 @@
                                         <rect key="frame" x="0.0" y="0.0" width="320" height="64"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Binary number" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PR3-6g-y8X">
-                                                <rect key="frame" x="61" y="26.5" width="198" height="35"/>
+                                                <rect key="frame" x="61.5" y="26.5" width="198" height="35"/>
                                                 <fontDescription key="fontDescription" name="Cochin-Bold" family="Cochin" pointSize="30"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -484,7 +484,7 @@
                                                 <rect key="frame" x="0.0" y="0.0" width="320" height="157.5"/>
                                             </imageView>
                                             <textField opaque="NO" clipsSubviews="YES" alpha="0.80000001192092896" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" adjustsFontSizeToFit="NO" minimumFontSize="30" translatesAutoresizingMaskIntoConstraints="NO" id="UVH-7D-5wd" customClass="NMTextField" customModule="Binatrix" customModuleProvider="target">
-                                                <rect key="frame" x="143" y="5.5" width="34" height="30"/>
+                                                <rect key="frame" x="143.5" y="5.5" width="34" height="30"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" name="Menlo-Bold" family="Menlo" pointSize="20"/>
@@ -494,7 +494,7 @@
                                                 </connections>
                                             </textField>
                                             <textField opaque="NO" clipsSubviews="YES" alpha="0.80000001192092896" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" adjustsFontSizeToFit="NO" minimumFontSize="30" translatesAutoresizingMaskIntoConstraints="NO" id="5eh-7g-cEe" customClass="NMTextField" customModule="Binatrix" customModuleProvider="target">
-                                                <rect key="frame" x="143" y="121.5" width="34" height="30"/>
+                                                <rect key="frame" x="143.5" y="121.5" width="34" height="30"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" name="Menlo-Bold" family="Menlo" pointSize="20"/>
@@ -504,7 +504,7 @@
                                                 </connections>
                                             </textField>
                                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" segmentControlStyle="plain" translatesAutoresizingMaskIntoConstraints="NO" id="QxP-I5-KCY">
-                                                <rect key="frame" x="85" y="44.5" width="150" height="29"/>
+                                                <rect key="frame" x="85.5" y="44.5" width="150" height="29"/>
                                                 <color key="backgroundColor" red="0.12549019610000001" green="0.76078431369999999" blue="0.054901960780000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="150" id="mvw-7O-q4R"/>
@@ -519,7 +519,7 @@
                                                 </connections>
                                             </segmentedControl>
                                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" segmentControlStyle="plain" translatesAutoresizingMaskIntoConstraints="NO" id="MTN-FA-aHN">
-                                                <rect key="frame" x="85" y="84.5" width="150" height="29"/>
+                                                <rect key="frame" x="85.5" y="84.5" width="150" height="29"/>
                                                 <color key="backgroundColor" red="0.12549019610000001" green="0.76078431369999999" blue="0.054901960780000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="150" id="EqS-8i-1dT"/>
@@ -711,7 +711,7 @@
         <image name="if_edit-paste_118923" width="512" height="512"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="VJg-Qt-1ts"/>
-        <segue reference="BHi-7O-37t"/>
+        <segue reference="upf-MM-Rdb"/>
+        <segue reference="gTk-Gm-O6W"/>
     </inferredMetricsTieBreakers>
 </document>
