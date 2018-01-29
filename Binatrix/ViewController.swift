@@ -110,30 +110,33 @@ class ViewController: UIViewController {
         if pasteBoardString == nil {
             wrong()
         } else {
-        if ((pasteBoardString)!).count <= 16 {
-            for i in pasteBoardString! {
-              guard i == "0" ||
-                    i == "1" ||
-                    i == "." ||
-                    i == "," else {
-                    wrong()
-                    return
-                  }
-                }
-                    textF.text = pasteBoardString
             var i = 0
             for character in (pasteBoardString)! {
                 if character == "." || character == "," {
                     i += 1
                 }
-                if i == 2 {
+            }
+            if i > 1 {
+                wrong()
+            } else {
+                
+                if ((pasteBoardString)!).count <= 16{
+                    for i in pasteBoardString! {
+                        print(i)
+                        guard i == "0" ||
+                            i == "1" ||
+                            i == "." ||
+                            i == "," else {
+                                wrong()
+                                return
+                        }
+                    }
+                    textF.text = pasteBoardString
+                    calculatingDecFunction()
+                } else {
                     wrong()
                 }
             }
-                    calculatingDecFunction()
-        } else {
-            wrong()
-        }
         }
     }
     @IBAction func textFBi(_ sender: Any) {
@@ -158,6 +161,7 @@ class ViewController: UIViewController {
         calculatingDec.binaryNumber = ((textF.text)!).doubleValue
         calculatingDec.calculatingDecimal()
         goToVC3.attributedText = NSAttributedString(string: NSLocalizedString("binary numbers calculator", comment: "binary numbers calculator") , attributes: attributes)
+        print(textF.text)
         if ((textF.text)!).count != 0 {
             clearButtonImage.isHidden = false
             button.isEnabled = false

@@ -68,40 +68,43 @@ class ViewController2: UIViewController {
         if pasteBoardString == nil {
             wrong()
         } else {
-            if ((pasteBoardString)!).count <= 18{
-                for i in pasteBoardString! {
-                    guard i == "0" ||
-                          i == "1" ||
-                          i == "2" ||
-                          i == "3" ||
-                          i == "4" ||
-                          i == "5" ||
-                          i == "6" ||
-                          i == "7" ||
-                          i == "8" ||
-                          i == "9" ||
-                          i == "." ||
-                          i == "," else {
-                        wrong()
-                        return
-                    }
-                  }
-                textF2.text = pasteBoardString
-                var i = 0
-                for character in (pasteBoardString)! {
-                    if character == "." || character == "," {
-                        i += 1
-                    }
-                    if i == 2 {
-                        wrong()
-                    }
+            var i = 0
+            for character in (pasteBoardString)! {
+                if character == "." || character == "," {
+                    i += 1
                 }
-                calculatingBiFunction()
-            } else {
-                wrong()
             }
-         }
+            if i > 1 {
+                wrong()
+            } else {
+                
+                if ((pasteBoardString)!).count <= 18{
+                    for i in pasteBoardString! {
+                        print(i)
+                        guard i == "0" ||
+                            i == "1" ||
+                            i == "2" ||
+                            i == "3" ||
+                            i == "4" ||
+                            i == "5" ||
+                            i == "6" ||
+                            i == "7" ||
+                            i == "8" ||
+                            i == "9" ||
+                            i == "." ||
+                            i == "," else {
+                                wrong()
+                                return
+                        }
+                    }
+                    textF2.text = pasteBoardString
+                    calculatingBiFunction()
+                } else {
+                    wrong()
+                }
+            }
         }
+    }
    
     @IBAction func textF2Dec(_ sender: Any) {
         if ((textF2.text)!).count > 18 {
@@ -118,6 +121,7 @@ class ViewController2: UIViewController {
         calculatingBi.decimalNumber = ((textF2.text)!).doubleValue
         calculatingBi.calculatingBinary()
         goToVC3.attributedText = NSAttributedString(string: NSLocalizedString("binary numbers calculator", comment: "binary numbers calculator") , attributes: attributes)
+        print(textF2.text)
         if ((textF2.text)!).count != 0 {
             clearButtonImage.isHidden = false
             button.isEnabled = false

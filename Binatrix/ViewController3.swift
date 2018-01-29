@@ -98,29 +98,32 @@ class ViewController3: UIViewController {
         if pasteBoardString == nil {
             wrong()
         } else {
-            if ((pasteBoardString)!).count <= 16 {
-                for i in pasteBoardString! {
-                    guard i == "0" ||
-                        i == "1" ||
-                        i == "." ||
-                        i == "," else {
-                            wrong()
-                            return
-                    }
+            var i = 0
+            for character in (pasteBoardString)! {
+                if character == "." || character == "," {
+                    i += 1
                 }
-                biNuOne.text = pasteBoardString
-                var i = 0
-                for character in (pasteBoardString)! {
-                    if character == "." || character == "," {
-                        i += 1
-                    }
-                    if i == 2 {
-                        wrong()
-                    }
-                }
-                arifmOperFunction()
-            } else {
+            }
+            if i > 1 {
                 wrong()
+            } else {
+                
+                if ((pasteBoardString)!).count <= 16{
+                    for i in pasteBoardString! {
+                        print(i)
+                        guard i == "0" ||
+                            i == "1" ||
+                            i == "." ||
+                            i == "," else {
+                                wrong()
+                                return
+                        }
+                    }
+                    biNuOne.text = pasteBoardString
+                    arifmOperFunction()
+                } else {
+                    wrong()
+                }
             }
         }
     }
@@ -129,29 +132,32 @@ class ViewController3: UIViewController {
         if pasteBoardString == nil {
             wrong2()
         } else {
-            if ((pasteBoardString)!).count <= 16 {
-                for i in pasteBoardString! {
-                    guard i == "0" ||
-                        i == "1" ||
-                        i == "." ||
-                        i == "," else {
-                            wrong2()
-                            return
-                    }
+            var i = 0
+            for character in (pasteBoardString)! {
+                if character == "." || character == "," {
+                    i += 1
                 }
-                biNuTwo.text = pasteBoardString
-                var i = 0
-                for character in (pasteBoardString)! {
-                    if character == "." || character == "," {
-                        i += 1
-                    }
-                    if i == 2 {
-                        wrong2()
-                    }
-                }
-                arifmOperFunction()
-            } else {
+            }
+            if i > 1 {
                 wrong2()
+            } else {
+                
+                if ((pasteBoardString)!).count <= 16{
+                    for i in pasteBoardString! {
+                        print(i)
+                        guard i == "0" ||
+                            i == "1" ||
+                            i == "." ||
+                            i == "," else {
+                                wrong2()
+                                return
+                        }
+                    }
+                    biNuTwo.text = pasteBoardString
+                    arifmOperFunction()
+                } else {
+                    wrong2()
+                }
             }
         }
     }
