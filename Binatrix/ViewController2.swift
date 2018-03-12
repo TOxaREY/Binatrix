@@ -7,14 +7,37 @@
 //
 
 import UIKit
-
+public var screenHeight: CGFloat {
+    return UIScreen.main.bounds.height
+}
+extension NSLayoutConstraint {
+    func setMultiplier(multiplier:CGFloat) -> NSLayoutConstraint {
+        NSLayoutConstraint.deactivate([self])
+        
+        let newConstraint = NSLayoutConstraint(
+            item: firstItem!,
+            attribute: firstAttribute,
+            relatedBy: relation,
+            toItem: secondItem,
+            attribute: secondAttribute,
+            multiplier: multiplier,
+            constant: constant)
+        
+        newConstraint.priority = priority
+        newConstraint.shouldBeArchived = self.shouldBeArchived
+        newConstraint.identifier = self.identifier
+        
+        NSLayoutConstraint.activate([newConstraint])
+        return newConstraint
+    }
+}
 class ViewController2: UIViewController {
-    override var supportedInterfaceOrientations: UIInterfaceOrientationMask {
-        return UIInterfaceOrientationMask.portrait
-    }
-    override var shouldAutorotate: Bool {
-        return false
-    }
+//    override var supportedInterfaceOrientations: UIInterfaceOrientationMask {
+//        return UIInterfaceOrientationMask.portrait
+//    }
+//    override var shouldAutorotate: Bool {
+//        return false
+//    }
     func dotta() {
         var i = 0
         for character in (textF2.text)! {
@@ -44,11 +67,23 @@ class ViewController2: UIViewController {
             self.textF2.text?.removeAll()
         }
     }
+    @IBOutlet weak var vc2MultiBottom: NSLayoutConstraint!
+    func resizeMulti() {
+        if screenHeight == 480 {
+            let newMultiplier:CGFloat = 1.6
+            vc2MultiBottom = vc2MultiBottom.setMultiplier(multiplier: newMultiplier)
+        }
+    }
     @IBOutlet weak var button: UIButton!
     @IBOutlet weak var image: UIImageView!
     @IBOutlet weak var image2: UIImageView!
     @IBOutlet weak var textF2: UITextField!
     @IBOutlet weak var resultBi: UILabel!
+    func fontSizeResultBi() {
+        if screenHeight == 480 {
+            resultBi.font = resultBi.font.withSize(26)
+        }
+    }
     @IBOutlet weak var goToVC3: UILabel!
     @IBOutlet weak var clearButtonImage: UIButton!
     @IBOutlet weak var copyButtonImage: UIButton!
@@ -135,6 +170,8 @@ class ViewController2: UIViewController {
     }
     override func viewDidLoad() {
         super.viewDidLoad()
+        resizeMulti()
+        fontSizeResultBi()
 //        RateManager.showRatesController()
         clearButtonImage.isHidden = true
         copyButtonImage.isHidden = true

@@ -9,12 +9,12 @@
 import UIKit
 
 class ViewController3: UIViewController {
-    override var supportedInterfaceOrientations: UIInterfaceOrientationMask {
-        return UIInterfaceOrientationMask.portrait
-    }
-    override var shouldAutorotate: Bool {
-        return false
-    }
+//    override var supportedInterfaceOrientations: UIInterfaceOrientationMask {
+//        return UIInterfaceOrientationMask.portrait
+//    }
+//    override var shouldAutorotate: Bool {
+//        return false
+//    }
     var calcDecForBinOneTwo = CalculatingDecimal()
     var converDecToBin = CalculatingBinary()
     var biOneDecOne:Double = 0.0
@@ -69,6 +69,13 @@ class ViewController3: UIViewController {
         biNuTwo.attributedText = NSAttributedString(string: NSLocalizedString("invalid value", comment: "invalid value") , attributes: attributes1)
         DispatchQueue.main.asyncAfter(deadline: .now() + 1.2) {
             self.biNuTwo.text?.removeAll()
+        }
+    }
+    @IBOutlet weak var vc3MultiBottom: NSLayoutConstraint!
+    func resizeMulti() {
+        if screenHeight == 480 {
+            let newMultiplier:CGFloat = 1.3
+            vc3MultiBottom = vc3MultiBottom.setMultiplier(multiplier: newMultiplier)
         }
     }
     @IBOutlet weak var biNuOne: UITextField!
@@ -192,6 +199,7 @@ class ViewController3: UIViewController {
     }
     func selectAction() {
         if arifmOutlet.selectedSegmentIndex == 0 {
+            view.endEditing(true)
             plus()
             arifmOutlet.setEnabled(false, forSegmentAt: 0)
             DispatchQueue.main.asyncAfter(deadline: .now() + 0.25) {
@@ -199,6 +207,7 @@ class ViewController3: UIViewController {
             }
         }
         if arifmOutlet.selectedSegmentIndex == 1 {
+            view.endEditing(true)
             minus()
             arifmOutlet.setEnabled(false, forSegmentAt: 1)
             DispatchQueue.main.asyncAfter(deadline: .now() + 0.25) {
@@ -206,6 +215,7 @@ class ViewController3: UIViewController {
             }
         }
         if arifmOutlet2.selectedSegmentIndex == 0 {
+            view.endEditing(true)
             multiply()
             arifmOutlet2.setEnabled(false, forSegmentAt: 0)
             DispatchQueue.main.asyncAfter(deadline: .now() + 0.25) {
@@ -214,12 +224,14 @@ class ViewController3: UIViewController {
         }
         if arifmOutlet2.selectedSegmentIndex == 1 {
             if ((biNuTwo.text)!).doubleValue != 0 {
+                view.endEditing(true)
                 divide()
                 arifmOutlet2.setEnabled(false, forSegmentAt: 1)
                 DispatchQueue.main.asyncAfter(deadline: .now() + 0.25) {
                     self.arifmOutlet2.setEnabled(true, forSegmentAt: 1)
                 }
             } else {
+                view.endEditing(true)
                 image.flash()
                 resultArifOper.text = lol
                 arifmOutlet2.setEnabled(false, forSegmentAt: 1)
@@ -320,6 +332,7 @@ class ViewController3: UIViewController {
     }
     override func viewDidLoad() {
         super.viewDidLoad()
+        resizeMulti()
         clearButtonImage.isHidden = true
         copyButtonImage.isHidden = true
         let font = UIFont(name: "Menlo", size: 20.0)!

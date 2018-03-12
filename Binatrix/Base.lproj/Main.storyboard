@@ -223,6 +223,7 @@
                         <outlet property="image2" destination="JBk-XQ-OiI" id="cH8-bT-AOM"/>
                         <outlet property="resultDec" destination="LwB-6y-jLw" id="dGr-aT-NJE"/>
                         <outlet property="textF" destination="B6d-eM-1KD" id="Df7-HU-iTK"/>
+                        <outlet property="vc1MultiBottom" destination="1mI-fL-XkS" id="Gty-8J-qSD"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -433,6 +434,7 @@
                         <outlet property="image2" destination="rM5-nx-2hJ" id="oYk-s4-Siz"/>
                         <outlet property="resultBi" destination="0Lw-wp-H04" id="85y-XB-bbV"/>
                         <outlet property="textF2" destination="P4h-Oe-9L5" id="Bfw-dd-JSf"/>
+                        <outlet property="vc2MultiBottom" destination="gq1-Gy-9Bq" id="nVM-Ht-HZZ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="C67-DH-jh0" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -534,7 +536,7 @@
                                                 </connections>
                                             </segmentedControl>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Vx-bh-h2n">
-                                                <rect key="frame" x="317" y="54" width="38" height="38"/>
+                                                <rect key="frame" x="317" y="53.5" width="38" height="38"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="2Vx-bh-h2n" secondAttribute="height" multiplier="1:1" id="zNk-IC-azE"/>
                                                 </constraints>
@@ -544,7 +546,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="smb-uH-EVw">
-                                                <rect key="frame" x="317" y="98" width="38" height="38"/>
+                                                <rect key="frame" x="317" y="97.5" width="38" height="38"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="smb-uH-EVw" secondAttribute="height" multiplier="1:1" id="1pb-Th-ycc"/>
                                                 </constraints>
@@ -554,7 +556,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S3z-ZB-CEN">
-                                                <rect key="frame" x="20" y="76" width="38" height="38"/>
+                                                <rect key="frame" x="20" y="75.5" width="38" height="38"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="S3z-ZB-CEN" secondAttribute="height" multiplier="1:1" id="CQM-Ws-lEG"/>
                                                 </constraints>
@@ -689,6 +691,7 @@
                         <outlet property="image" destination="bkh-6z-RIA" id="5vT-d6-Ouo"/>
                         <outlet property="image2" destination="K8z-Jr-Sa5" id="uAj-5q-BjE"/>
                         <outlet property="resultArifOper" destination="x75-Qs-99m" id="gCK-RY-bQv"/>
+                        <outlet property="vc3MultiBottom" destination="FC9-e3-Tbz" id="54M-oC-ASx"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OhC-ie-ZNJ" userLabel="First Responder" sceneMemberID="firstResponder"/>

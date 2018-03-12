@@ -53,12 +53,12 @@ class NMTextField: UITextField {
     }
 }
 class ViewController: UIViewController {
-    override var supportedInterfaceOrientations: UIInterfaceOrientationMask {
-        return UIInterfaceOrientationMask.portrait
-    }
-    override var shouldAutorotate: Bool {
-        return false
-    }
+//    override var supportedInterfaceOrientations: UIInterfaceOrientationMask {
+//        return UIInterfaceOrientationMask.portrait
+//    }
+//    override var shouldAutorotate: Bool {
+//        return false
+//    }
     func dotta() {
         var i = 0
         for character in (textF.text)! {
@@ -87,8 +87,14 @@ class ViewController: UIViewController {
             self.textF.text?.removeAll()
         }
     }
+    @IBOutlet weak var vc1MultiBottom: NSLayoutConstraint!
+    func resizeMulti() {
+        if screenHeight == 480 {
+            let newMultiplier:CGFloat = 1.6
+            vc1MultiBottom = vc1MultiBottom.setMultiplier(multiplier: newMultiplier)
+        }
+    }
     @IBOutlet weak var button: UIButton!
-    
     @IBOutlet weak var image: UIImageView!
     @IBOutlet weak var image2: UIImageView!
     @IBOutlet weak var textF: UITextField!
@@ -176,6 +182,7 @@ class ViewController: UIViewController {
         }
     override func viewDidLoad() {
         super.viewDidLoad()
+        resizeMulti()
         clearButtonImage.isHidden = true
         copyButtonImage.isHidden = true
         let font = UIFont(name: "Menlo", size: 20.0)!
