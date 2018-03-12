@@ -16,10 +16,10 @@
 		F215CDD31F7E95F40010E457 /* ViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = F215CDD21F7E95F40010E457 /* ViewController2.swift */; };
 		F215CDD51F7E96040010E457 /* ViewController3.swift in Sources */ = {isa = PBXBuildFile; fileRef = F215CDD41F7E96040010E457 /* ViewController3.swift */; };
 		F21CB0AB1F7EABB600DF84B1 /* Calculating.swift in Sources */ = {isa = PBXBuildFile; fileRef = F21CB0AA1F7EABB600DF84B1 /* Calculating.swift */; };
+		F28024C22055681300D13083 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F28024C12055681200D13083 /* GoogleService-Info.plist */; };
 		F28A50C41F94B54300BF564F /* Effect.swift in Sources */ = {isa = PBXBuildFile; fileRef = F28A50C31F94B54300BF564F /* Effect.swift */; };
 		F28A50C61F94B58700BF564F /* uno.sks in Resources */ = {isa = PBXBuildFile; fileRef = F28A50C51F94B58700BF564F /* uno.sks */; };
 		F28A50C81F94B59800BF564F /* zero.sks in Resources */ = {isa = PBXBuildFile; fileRef = F28A50C71F94B59800BF564F /* zero.sks */; };
-		F2C42AE61F9B70DD006C7684 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F2C42AE51F9B70DD006C7684 /* GoogleService-Info.plist */; };
 		F2D068211F90C3FC00512B09 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F2D068231F90C3FC00512B09 /* InfoPlist.strings */; };
 		F2D068271F90C3FD00512B09 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = F2D068291F90C3FD00512B09 /* Localizable.strings */; };
 		F2E337281F9BA33D00B6CAF5 /* RangeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2E337271F9BA33D00B6CAF5 /* RangeManager.swift */; };
@@ -50,11 +50,11 @@
 		F254D7971F9DF91900550114 /* pt-PT */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-PT"; path = "pt-PT.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
 		F254D7981F9DF91900550114 /* pt-PT */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-PT"; path = "pt-PT.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
 		F27A7FD31FC9AD5200624150 /* Binatrix.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Binatrix.entitlements; sourceTree = "<group>"; };
+		F28024C12055681200D13083 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		F28A50C31F94B54300BF564F /* Effect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Effect.swift; sourceTree = "<group>"; };
 		F28A50C51F94B58700BF564F /* uno.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = uno.sks; sourceTree = "<group>"; };
 		F28A50C71F94B59800BF564F /* zero.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = zero.sks; sourceTree = "<group>"; };
 		F29A99921F9B5DE7009ECDFB /* Binatrix-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Binatrix-Bridging-Header.h"; sourceTree = "<group>"; };
-		F2C42AE51F9B70DD006C7684 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		F2D0681E1F90BD6E00512B09 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Main.strings; sourceTree = "<group>"; };
 		F2D068221F90C3FC00512B09 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		F2D068241F90C3FC00512B09 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
@@ -114,8 +114,8 @@
 		F215CDBF1F7E94E40010E457 /* Binatrix */ = {
 			isa = PBXGroup;
 			children = (
+				F28024C12055681200D13083 /* GoogleService-Info.plist */,
 				F27A7FD31FC9AD5200624150 /* Binatrix.entitlements */,
-				F2C42AE51F9B70DD006C7684 /* GoogleService-Info.plist */,
 				F29A99921F9B5DE7009ECDFB /* Binatrix-Bridging-Header.h */,
 				F2E337271F9BA33D00B6CAF5 /* RangeManager.swift */,
 				F215CDCC1F7E94E40010E457 /* Info.plist */,
@@ -204,10 +204,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				F28A50C61F94B58700BF564F /* uno.sks in Resources */,
+				F28024C22055681300D13083 /* GoogleService-Info.plist in Resources */,
 				F2D068271F90C3FD00512B09 /* Localizable.strings in Resources */,
 				F215CDCB1F7E94E40010E457 /* LaunchScreen.storyboard in Resources */,
 				F2D068211F90C3FC00512B09 /* InfoPlist.strings in Resources */,
-				F2C42AE61F9B70DD006C7684 /* GoogleService-Info.plist in Resources */,
 				F28A50C81F94B59800BF564F /* zero.sks in Resources */,
 				F215CDC81F7E94E40010E457 /* Assets.xcassets in Resources */,
 				F215CDC61F7E94E40010E457 /* Main.storyboard in Resources */,

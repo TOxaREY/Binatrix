@@ -110,7 +110,6 @@ class ViewController3: UIViewController {
                 
                 if ((pasteBoardString)!).count <= 16{
                     for i in pasteBoardString! {
-                        print(i)
                         guard i == "0" ||
                             i == "1" ||
                             i == "." ||
@@ -144,7 +143,6 @@ class ViewController3: UIViewController {
                 
                 if ((pasteBoardString)!).count <= 16{
                     for i in pasteBoardString! {
-                        print(i)
                         guard i == "0" ||
                             i == "1" ||
                             i == "." ||

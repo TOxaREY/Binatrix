@@ -88,6 +88,7 @@ class ViewController: UIViewController {
         }
     }
     @IBOutlet weak var button: UIButton!
+    
     @IBOutlet weak var image: UIImageView!
     @IBOutlet weak var image2: UIImageView!
     @IBOutlet weak var textF: UITextField!
@@ -122,7 +123,6 @@ class ViewController: UIViewController {
                 
                 if ((pasteBoardString)!).count <= 16{
                     for i in pasteBoardString! {
-                        print(i)
                         guard i == "0" ||
                             i == "1" ||
                             i == "." ||
@@ -161,7 +161,6 @@ class ViewController: UIViewController {
         calculatingDec.binaryNumber = ((textF.text)!).doubleValue
         calculatingDec.calculatingDecimal()
         goToVC3.attributedText = NSAttributedString(string: NSLocalizedString("binary numbers calculator", comment: "binary numbers calculator") , attributes: attributes)
-        print(textF.text)
         if ((textF.text)!).count != 0 {
             clearButtonImage.isHidden = false
             button.isEnabled = false

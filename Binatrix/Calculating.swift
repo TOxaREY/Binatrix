@@ -89,7 +89,7 @@ class CalculatingDecimal {
     private var _decimalNumberResidueString:String = ""
     private var _decimalNumberDouble:Double = 0.0
     var binaryNumber:Double {
-        get {
+        get { 
             return _binaryNumber
         } set {
             _binaryNumber = newValue

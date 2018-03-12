@@ -80,7 +80,6 @@ class ViewController2: UIViewController {
                 
                 if ((pasteBoardString)!).count <= 18{
                     for i in pasteBoardString! {
-                        print(i)
                         guard i == "0" ||
                             i == "1" ||
                             i == "2" ||
@@ -121,7 +120,6 @@ class ViewController2: UIViewController {
         calculatingBi.decimalNumber = ((textF2.text)!).doubleValue
         calculatingBi.calculatingBinary()
         goToVC3.attributedText = NSAttributedString(string: NSLocalizedString("binary numbers calculator", comment: "binary numbers calculator") , attributes: attributes)
-        print(textF2.text)
         if ((textF2.text)!).count != 0 {
             clearButtonImage.isHidden = false
             button.isEnabled = false
@@ -137,7 +135,7 @@ class ViewController2: UIViewController {
     }
     override func viewDidLoad() {
         super.viewDidLoad()
-        RateManager.showRatesController()
+//        RateManager.showRatesController()
         clearButtonImage.isHidden = true
         copyButtonImage.isHidden = true
         let font = UIFont(name: "Menlo", size: 20.0)!
