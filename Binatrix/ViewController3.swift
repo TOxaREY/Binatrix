@@ -9,12 +9,6 @@
 import UIKit
 
 class ViewController3: UIViewController {
-//    override var supportedInterfaceOrientations: UIInterfaceOrientationMask {
-//        return UIInterfaceOrientationMask.portrait
-//    }
-//    override var shouldAutorotate: Bool {
-//        return false
-//    }
     var calcDecForBinOneTwo = CalculatingDecimal()
     var converDecToBin = CalculatingBinary()
     var biOneDecOne:Double = 0.0

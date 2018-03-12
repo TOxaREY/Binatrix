@@ -53,12 +53,6 @@ class NMTextField: UITextField {
     }
 }
 class ViewController: UIViewController {
-//    override var supportedInterfaceOrientations: UIInterfaceOrientationMask {
-//        return UIInterfaceOrientationMask.portrait
-//    }
-//    override var shouldAutorotate: Bool {
-//        return false
-//    }
     func dotta() {
         var i = 0
         for character in (textF.text)! {

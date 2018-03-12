@@ -32,12 +32,6 @@ extension NSLayoutConstraint {
     }
 }
 class ViewController2: UIViewController {
-//    override var supportedInterfaceOrientations: UIInterfaceOrientationMask {
-//        return UIInterfaceOrientationMask.portrait
-//    }
-//    override var shouldAutorotate: Bool {
-//        return false
-//    }
     func dotta() {
         var i = 0
         for character in (textF2.text)! {
