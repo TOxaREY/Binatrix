@@ -10,6 +10,9 @@
 /* convert Dec --> Bin */
 "convert Dec --> Bin" = "конверт Десят --> Двоич";
 
+/* converter DEC<->HEX<->OCT   Characters<->Unicode */
+"converter DEC<->HEX<->OCT   Characters<->Unicode   " = "конвертер 10-ное<->16-ное<->8-ное   Символы<->Unicode   ";
+
 /* enter a binary number */
 "enter a binary number" = "введите двоичное число";
 

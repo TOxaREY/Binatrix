@@ -72,6 +72,7 @@ class ViewController3: UIViewController {
             vc3MultiBottom = vc3MultiBottom.setMultiplier(multiplier: newMultiplier)
         }
     }
+    @IBOutlet weak var labelHex: UILabel!
     @IBOutlet weak var biNuOne: UITextField!
     @IBOutlet weak var biNuTwo: UITextField!
     @IBOutlet weak var image: UIImageView!
@@ -334,7 +335,54 @@ class ViewController3: UIViewController {
         biNuOne.attributedPlaceholder = NSAttributedString(string: NSLocalizedString("enter a binary number", comment: "enter a binary number"), attributes: attributes)
         biNuTwo.attributedPlaceholder = NSAttributedString(string: NSLocalizedString("enter a binary number", comment: "enter a binary number"), attributes: attributes)
         arifmOperFunction()
+        runString(string: NSLocalizedString("converter DEC<->HEX<->OCT   Characters<->Unicode   ", comment: "converter DEC<->HEX<->OCT   Characters<->Unicode   "))
     }
+//// Кнопка перехода в другую программу
+    @IBAction func buttonBinatrix(_ sender: Any) {
+        let appURL = NSURL(string: "hexastarBinatrix://")!
+        let webURL = NSURL(string: "https://itunes.apple.com/ru/app/hexastar/id1327719099")!
+        let application = UIApplication.shared
+        
+        if application.canOpenURL(appURL as URL) {
+            application.open(appURL as URL)
+        } else {
+            application.open(webURL as URL)
+        }
+    }
+////
+//// Бегущая строка
+    func runStringArray(string:String) -> ([String]) {
+        let myString = string
+        var myStringAdd = myString
+        var newString:String
+        var substring:Substring
+        var arrayRunString = [String]()
+        myStringAdd.append(String(myString[myString.index(myString.startIndex, offsetBy: 0)..<myString.index(myString.startIndex, offsetBy: 15)]))
+        var countString = 0
+        for _ in myString {
+            countString += 1
+        }
+        for i in 0...countString - 1 {
+            substring = myStringAdd[myStringAdd.index(myStringAdd.startIndex, offsetBy: i)..<myStringAdd.index(myStringAdd.startIndex, offsetBy: i + 15)]
+            newString = String(substring)
+            arrayRunString.append(newString)
+        }
+        return arrayRunString
+    }
+    func runString(string:String) {
+        let font = UIFont(name: "Menlo", size: 13.0)!
+        let attributes = [NSAttributedStringKey.foregroundColor: UIColor(red:1.00, green:0.91, blue:0.12, alpha:1.0), NSAttributedStringKey.font: font]
+        let count = runStringArray(string: string).count
+        var q = 0
+        _ = Timer.scheduledTimer(withTimeInterval: 0.3, repeats: true) { (timer) in
+            self.labelHex.attributedText = NSAttributedString(string: self.runStringArray(string: string)[q], attributes: attributes)
+            q += 1
+            if q >= count {
+                q = 0
+            }
+        }
+    }
+////
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         if (touches.first) != nil {
             view.endEditing(true)

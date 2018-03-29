@@ -46,10 +46,22 @@
         <target>Label</target>
         <note>Class = "UILabel"; text = "Label"; ObjectID = "X9P-np-qEK";</note>
       </trans-unit>
+      <trans-unit id="by6-L8-LL7.text">
+        <source>Label</source>
+        <note>Class = "UILabel"; text = "Label"; ObjectID = "by6-L8-LL7";</note>
+      </trans-unit>
       <trans-unit id="klw-7x-zKY.text">
         <source>Label</source>
         <target>Label</target>
         <note>Class = "UILabel"; text = "Label"; ObjectID = "klw-7x-zKY";</note>
+      </trans-unit>
+      <trans-unit id="nJf-b7-Dpy.text">
+        <source>Label</source>
+        <note>Class = "UILabel"; text = "Label"; ObjectID = "nJf-b7-Dpy";</note>
+      </trans-unit>
+      <trans-unit id="syp-1N-Gwx.text">
+        <source>Label</source>
+        <note>Class = "UILabel"; text = "Label"; ObjectID = "syp-1N-Gwx";</note>
       </trans-unit>
     </body>
   </file>
@@ -87,6 +99,11 @@
         <source>convert Dec --&gt; Bin</source>
         <target>convertir Dec --&gt; Bin</target>
         <note>convert Dec --&gt; Bin</note>
+      </trans-unit>
+      <trans-unit id="converter DEC&lt;-&gt;HEX&lt;-&gt;OCT   Characters&lt;-&gt;Unicode   ">
+        <source>converter DEC&lt;-&gt;HEX&lt;-&gt;OCT   Characters&lt;-&gt;Unicode   </source>
+        <target>convertir DEC&lt;-&gt;HEX&lt;-&gt;OCT   Caracteres&lt;-&gt;Unicode   </target>
+        <note>converter DEC&lt;-&gt;HEX&lt;-&gt;OCT   Characters&lt;-&gt;Unicode</note>
       </trans-unit>
       <trans-unit id="enter a binary number">
         <source>enter a binary number</source>

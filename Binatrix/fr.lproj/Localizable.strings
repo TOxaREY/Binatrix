@@ -10,6 +10,9 @@
 /* convert Dec --> Bin */
 "convert Dec --> Bin" = "convertir Déc --> Bin";
 
+/* converter DEC<->HEX<->OCT   Characters<->Unicode */
+"converter DEC<->HEX<->OCT   Characters<->Unicode   " = "convertir DÉC<->HEX<->OCT   Caractères<->Unicode   ";
+
 /* enter a binary number */
 "enter a binary number" = "entrez un nombre binaire";
 
