@@ -16,6 +16,7 @@
 		F215CDD31F7E95F40010E457 /* ViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = F215CDD21F7E95F40010E457 /* ViewController2.swift */; };
 		F215CDD51F7E96040010E457 /* ViewController3.swift in Sources */ = {isa = PBXBuildFile; fileRef = F215CDD41F7E96040010E457 /* ViewController3.swift */; };
 		F21CB0AB1F7EABB600DF84B1 /* Calculating.swift in Sources */ = {isa = PBXBuildFile; fileRef = F21CB0AA1F7EABB600DF84B1 /* Calculating.swift */; };
+		F264DFDF2074C88F00993184 /* iAd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F264DFDE2074C88F00993184 /* iAd.framework */; };
 		F28024C22055681300D13083 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F28024C12055681200D13083 /* GoogleService-Info.plist */; };
 		F28A50C41F94B54300BF564F /* Effect.swift in Sources */ = {isa = PBXBuildFile; fileRef = F28A50C31F94B54300BF564F /* Effect.swift */; };
 		F28A50C61F94B58700BF564F /* uno.sks in Resources */ = {isa = PBXBuildFile; fileRef = F28A50C51F94B58700BF564F /* uno.sks */; };
@@ -49,6 +50,7 @@
 		F254D7961F9DF91900550114 /* pt-PT */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-PT"; path = "pt-PT.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		F254D7971F9DF91900550114 /* pt-PT */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-PT"; path = "pt-PT.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
 		F254D7981F9DF91900550114 /* pt-PT */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-PT"; path = "pt-PT.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
+		F264DFDE2074C88F00993184 /* iAd.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = iAd.framework; path = System/Library/Frameworks/iAd.framework; sourceTree = SDKROOT; };
 		F27A7FD31FC9AD5200624150 /* Binatrix.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Binatrix.entitlements; sourceTree = "<group>"; };
 		F28024C12055681200D13083 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		F28A50C31F94B54300BF564F /* Effect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Effect.swift; sourceTree = "<group>"; };
@@ -69,6 +71,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F264DFDF2074C88F00993184 /* iAd.framework in Frameworks */,
 				E34F049891CB6E8D80DC073C /* Pods_Binatrix.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -79,6 +82,7 @@
 		844D4D6E24C906813987644C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				F264DFDE2074C88F00993184 /* iAd.framework */,
 				E3E933E4E3B91EDE5EB785B2 /* Pods_Binatrix.framework */,
 			);
 			name = Frameworks;
@@ -166,7 +170,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0900;
-				LastUpgradeCheck = 0900;
+				LastUpgradeCheck = 0930;
 				ORGANIZATIONNAME = "REYNIKOV ANTON";
 				TargetAttributes = {
 					F215CDBC1F7E94E40010E457 = {
@@ -242,14 +246,12 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Binatrix/Pods-Binatrix-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/Flurry-iOS-SDK/Flurry_iOS_SDK.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
 				"${PODS_ROOT}/YandexMobileMetrica/dynamic/YandexMobileMetrica.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Flurry_iOS_SDK.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YandexMobileMetrica.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
@@ -358,6 +360,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -365,6 +368,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -417,6 +421,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -424,6 +429,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;

@@ -7,9 +7,12 @@
 //
 
 import UIKit
+//// Determination of height device
 public var screenHeight: CGFloat {
     return UIScreen.main.bounds.height
 }
+////
+//// Change data for iPad
 extension NSLayoutConstraint {
     func setMultiplier(multiplier:CGFloat) -> NSLayoutConstraint {
         NSLayoutConstraint.deactivate([self])
@@ -31,7 +34,9 @@ extension NSLayoutConstraint {
         return newConstraint
     }
 }
+////
 class ViewController2: UIViewController {
+//// Check dot and comma
     func dotta() {
         var i = 0
         for character in (textF2.text)! {
@@ -44,7 +49,8 @@ class ViewController2: UIViewController {
             }
         }
     }
-    
+////
+//// Error
     func wrong() {
         button.isEnabled = true
         clearButtonImage.isHidden = true
@@ -61,6 +67,7 @@ class ViewController2: UIViewController {
             self.textF2.text?.removeAll()
         }
     }
+////
     @IBOutlet weak var vc2MultiBottom: NSLayoutConstraint!
     func resizeMulti() {
         if screenHeight == 480 {
@@ -176,7 +183,7 @@ class ViewController2: UIViewController {
         calculatingBiFunction()
         runString(string: NSLocalizedString("converter DEC<->HEX<->OCT   Characters<->Unicode   ", comment: "converter DEC<->HEX<->OCT   Characters<->Unicode   "))
     }
-//// Кнопка перехода в другую программу
+//// Button to go to another program
     @IBAction func buttonHexastar(_ sender: Any) {
         let appURL = NSURL(string: "hexastarBinatrix://")!
         let webURL = NSURL(string: "https://itunes.apple.com/ru/app/hexastar/id1327719099")!
@@ -189,7 +196,7 @@ class ViewController2: UIViewController {
         }
     }
 ////
-//// Бегущая строка
+//// Running string
     func runStringArray(string:String) -> ([String]) {
         let myString = string
         var myStringAdd = myString

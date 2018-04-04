@@ -337,7 +337,7 @@ class ViewController3: UIViewController {
         arifmOperFunction()
         runString(string: NSLocalizedString("converter DEC<->HEX<->OCT   Characters<->Unicode   ", comment: "converter DEC<->HEX<->OCT   Characters<->Unicode   "))
     }
-//// Кнопка перехода в другую программу
+//// Button to go to another program
     @IBAction func buttonBinatrix(_ sender: Any) {
         let appURL = NSURL(string: "hexastarBinatrix://")!
         let webURL = NSURL(string: "https://itunes.apple.com/ru/app/hexastar/id1327719099")!
@@ -350,7 +350,7 @@ class ViewController3: UIViewController {
         }
     }
 ////
-//// Бегущая строка
+//// Running string
     func runStringArray(string:String) -> ([String]) {
         let myString = string
         var myStringAdd = myString

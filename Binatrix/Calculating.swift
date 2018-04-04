@@ -59,9 +59,9 @@ class CalculatingBinary {
             decimalNumber = resultDivisionByTwo
         }
         binaryNumber = binaryNumberArray.reversed()
-        binaryNumberString = binaryNumber.flatMap{String($0)}.joined()
+        binaryNumberString = binaryNumber.compactMap{String($0)}.joined()
         binaryNumberArray.removeAll()
-        //residue
+//residue
         countResidue = 50 - binaryNumberString.count
         decNumbRes = decNumb - Double(Int64(decNumb))
         decNumbRes2 = decNumbRes
@@ -79,7 +79,7 @@ class CalculatingBinary {
         if decNumbRes2 == 0 {
             binaryNumberResidueString = ""
         } else {
-            binaryNumberResidueString = ".\(binaryNumberArrayResidue.flatMap{String($0)}.joined())"
+            binaryNumberResidueString = ".\(binaryNumberArrayResidue.compactMap{String($0)}.joined())"
         }
     }
 }
@@ -124,9 +124,9 @@ class CalculatingDecimal {
         var biNumbRes:Double = 0.0
         var biNumb:Double = 0.0
         biNumb = binaryNumber
-        let binaryNumberFull = String(binaryNumber).flatMap{Int64(String($0))}
+        let binaryNumberFull = String(binaryNumber).compactMap{Int64(String($0))}
         if Int64(binaryNumber) != 0 {
-            decimalNumberArray = decimalNumberStringTransform.flatMap{Int64(String($0))}
+            decimalNumberArray = decimalNumberStringTransform.compactMap{Int64(String($0))}
             for i in 0...decimalNumberArray.count - 1 {
                 decimalNumber += decimalNumberArray[i] * Int64(pow(2.0, Double(decimalNumberArray.count - 1 - i)))
             }
@@ -138,7 +138,7 @@ class CalculatingDecimal {
         } else {
             decimalNumberString = String(decimalNumber)
         }
-        //residue
+//residue
         biNumbRes = biNumb - Double(Int64(biNumb))
         if biNumbRes != 0 {
             var decimalNumberArrayResidue = binaryNumberFull.dropFirst(decimalNumberStringTransform.count)

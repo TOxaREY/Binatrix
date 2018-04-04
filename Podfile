@@ -9,6 +9,4 @@ target 'Binatrix' do
 pod 'GoogleAnalytics'
 pod 'YandexMobileMetrica/Dynamic', '2.9.4'
 pod 'Firebase/Core'
-pod 'Flurry-iOS-SDK/FlurrySDK'
-pod 'Flurry-iOS-SDK/FlurryAds'
 end
