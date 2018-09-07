@@ -152,7 +152,6 @@
 				F215CDBA1F7E94E40010E457 /* Frameworks */,
 				F215CDBB1F7E94E40010E457 /* Resources */,
 				2E95C1626043F14AA3F3CE9E /* [CP] Embed Pods Frameworks */,
-				43F415DAE3AB05D8312AF9E3 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -259,21 +258,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Binatrix/Pods-Binatrix-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		43F415DAE3AB05D8312AF9E3 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Binatrix/Pods-Binatrix-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
