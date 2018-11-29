@@ -13,7 +13,7 @@ extension UIImageView {
         flash.duration = 0.3
         flash.fromValue = 1
         flash.toValue = 0
-        flash.timingFunction = CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseInEaseOut)
+        flash.timingFunction = CAMediaTimingFunction(name: CAMediaTimingFunctionName.easeInEaseOut)
         flash.autoreverses = true
         flash.repeatCount = 2
         layer.add(flash, forKey: nil)
@@ -23,7 +23,7 @@ extension UIImageView {
         flash.duration = 0.5
         flash.fromValue = 2
         flash.toValue = 0
-        flash.timingFunction = CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseInEaseOut)
+        flash.timingFunction = CAMediaTimingFunction(name: CAMediaTimingFunctionName.easeInEaseOut)
         flash.autoreverses = true
         flash.repeatCount = 0
         layer.add(flash, forKey: nil)
@@ -72,9 +72,9 @@ class ViewController: UIViewController {
         view.endEditing(true)
         image.flash()
         let font1 = UIFont(name: "Menlo-Bold",size: 20.0)!
-        let attributes1 = [NSAttributedStringKey.foregroundColor: UIColor.black, NSAttributedStringKey.font: font1]
+        let attributes1 = [NSAttributedString.Key.foregroundColor: UIColor.black, NSAttributedString.Key.font: font1]
         let font = UIFont(name: "Menlo", size: 20.0)!
-        let attributes = [NSAttributedStringKey.foregroundColor: UIColor.white, NSAttributedStringKey.font: font]
+        let attributes = [NSAttributedString.Key.foregroundColor: UIColor.white, NSAttributedString.Key.font: font]
         textF.attributedText = NSAttributedString(string: NSLocalizedString("invalid value", comment: "invalid value") , attributes: attributes1)
         resultDec.attributedText = NSAttributedString(string: NSLocalizedString("convert Dec --> Bin", comment: "convert Dec --> Bin") , attributes: attributes)
         DispatchQueue.main.asyncAfter(deadline: .now() + 1.2) {
@@ -158,7 +158,7 @@ class ViewController: UIViewController {
     var calculatingDec = CalculatingDecimal()
     func calculatingDecFunction() {
         let font = UIFont(name: "Menlo", size: 20.0)!
-        let attributes = [NSAttributedStringKey.foregroundColor: UIColor.white, NSAttributedStringKey.font: font]
+        let attributes = [NSAttributedString.Key.foregroundColor: UIColor.white, NSAttributedString.Key.font: font]
         calculatingDec.binaryNumber = ((textF.text)!).doubleValue
         calculatingDec.calculatingDecimal()
         goToVC3.attributedText = NSAttributedString(string: NSLocalizedString("binary numbers calculator", comment: "binary numbers calculator") , attributes: attributes)
@@ -181,7 +181,7 @@ class ViewController: UIViewController {
         clearButtonImage.isHidden = true
         copyButtonImage.isHidden = true
         let font = UIFont(name: "Menlo", size: 20.0)!
-        let attributes = [NSAttributedStringKey.foregroundColor: UIColor.darkGray, NSAttributedStringKey.font: font]
+        let attributes = [NSAttributedString.Key.foregroundColor: UIColor.darkGray, NSAttributedString.Key.font: font]
         textF.attributedPlaceholder = NSAttributedString(string: NSLocalizedString("enter a binary number", comment: "enter a binary number"), attributes: attributes)
         calculatingDecFunction()
         runString(string: NSLocalizedString("converter DEC<->HEX<->OCT   Characters<->Unicode   ", comment: "converter DEC<->HEX<->OCT   Characters<->Unicode   "))
@@ -220,7 +220,7 @@ class ViewController: UIViewController {
     }
     func runString(string:String) {
         let font = UIFont(name: "Menlo", size: 13.0)!
-        let attributes = [NSAttributedStringKey.foregroundColor: UIColor(red:1.00, green:0.91, blue:0.12, alpha:1.0), NSAttributedStringKey.font: font]
+        let attributes = [NSAttributedString.Key.foregroundColor: UIColor(red:1.00, green:0.91, blue:0.12, alpha:1.0), NSAttributedString.Key.font: font]
         let count = runStringArray(string: string).count
         var q = 0
         _ = Timer.scheduledTimer(withTimeInterval: 0.3, repeats: true) { (timer) in

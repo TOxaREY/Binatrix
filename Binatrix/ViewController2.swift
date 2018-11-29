@@ -58,9 +58,9 @@ class ViewController2: UIViewController {
         view.endEditing(true)
         image.flash()
         let font1 = UIFont(name: "Menlo-Bold",size: 20.0)!
-        let attributes1 = [NSAttributedStringKey.foregroundColor: UIColor.black, NSAttributedStringKey.font: font1]
+        let attributes1 = [NSAttributedString.Key.foregroundColor: UIColor.black, NSAttributedString.Key.font: font1]
         let font = UIFont(name: "Menlo", size: 20.0)!
-        let attributes = [NSAttributedStringKey.foregroundColor: UIColor.white, NSAttributedStringKey.font: font]
+        let attributes = [NSAttributedString.Key.foregroundColor: UIColor.white, NSAttributedString.Key.font: font]
         textF2.attributedText = NSAttributedString(string: NSLocalizedString("invalid value", comment: "invalid value") , attributes: attributes1)
         resultBi.attributedText = NSAttributedString(string: NSLocalizedString("convert Bin --> Dec", comment: "convert Bin --> Dec") , attributes: attributes)
         DispatchQueue.main.asyncAfter(deadline: .now() + 1.3) {
@@ -153,7 +153,7 @@ class ViewController2: UIViewController {
     var calculatingBi = CalculatingBinary()
     func calculatingBiFunction() {
         let font = UIFont(name: "Menlo", size: 20.0)!
-        let attributes = [NSAttributedStringKey.foregroundColor: UIColor.white, NSAttributedStringKey.font: font]
+        let attributes = [NSAttributedString.Key.foregroundColor: UIColor.white, NSAttributedString.Key.font: font]
         calculatingBi.decimalNumber = ((textF2.text)!).doubleValue
         calculatingBi.calculatingBinary()
         goToVC3.attributedText = NSAttributedString(string: NSLocalizedString("binary numbers calculator", comment: "binary numbers calculator") , attributes: attributes)
@@ -178,7 +178,7 @@ class ViewController2: UIViewController {
         clearButtonImage.isHidden = true
         copyButtonImage.isHidden = true
         let font = UIFont(name: "Menlo", size: 20.0)!
-        let attributes = [NSAttributedStringKey.foregroundColor: UIColor.darkGray, NSAttributedStringKey.font: font]
+        let attributes = [NSAttributedString.Key.foregroundColor: UIColor.darkGray, NSAttributedString.Key.font: font]
         textF2.attributedPlaceholder = NSAttributedString(string: NSLocalizedString("enter a decimal number", comment: "enter a decimal number") , attributes: attributes)
         calculatingBiFunction()
         runString(string: NSLocalizedString("converter DEC<->HEX<->OCT   Characters<->Unicode   ", comment: "converter DEC<->HEX<->OCT   Characters<->Unicode   "))
@@ -217,7 +217,7 @@ class ViewController2: UIViewController {
     }
     func runString(string:String) {
         let font = UIFont(name: "Menlo", size: 13.0)!
-        let attributes = [NSAttributedStringKey.foregroundColor: UIColor(red:1.00, green:0.91, blue:0.12, alpha:1.0), NSAttributedStringKey.font: font]
+        let attributes = [NSAttributedString.Key.foregroundColor: UIColor(red:1.00, green:0.91, blue:0.12, alpha:1.0), NSAttributedString.Key.font: font]
         let count = runStringArray(string: string).count
         var q = 0
         _ = Timer.scheduledTimer(withTimeInterval: 0.3, repeats: true) { (timer) in

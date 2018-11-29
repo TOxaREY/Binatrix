@@ -46,7 +46,7 @@ class ViewController3: UIViewController {
         image.flash()
         resultArifOper.text = lol
         let font1 = UIFont(name: "Menlo-Bold",size: 20.0)!
-        let attributes1 = [NSAttributedStringKey.foregroundColor: UIColor.black, NSAttributedStringKey.font: font1]
+        let attributes1 = [NSAttributedString.Key.foregroundColor: UIColor.black, NSAttributedString.Key.font: font1]
         biNuOne.attributedText = NSAttributedString(string: NSLocalizedString("invalid value", comment: "invalid value") , attributes: attributes1)
         DispatchQueue.main.asyncAfter(deadline: .now() + 1.2) {
             self.biNuOne.text?.removeAll()
@@ -59,7 +59,7 @@ class ViewController3: UIViewController {
         image.flash()
         resultArifOper.text = lol
         let font1 = UIFont(name: "Menlo-Bold",size: 20.0)!
-        let attributes1 = [NSAttributedStringKey.foregroundColor: UIColor.black, NSAttributedStringKey.font: font1]
+        let attributes1 = [NSAttributedString.Key.foregroundColor: UIColor.black, NSAttributedString.Key.font: font1]
         biNuTwo.attributedText = NSAttributedString(string: NSLocalizedString("invalid value", comment: "invalid value") , attributes: attributes1)
         DispatchQueue.main.asyncAfter(deadline: .now() + 1.2) {
             self.biNuTwo.text?.removeAll()
@@ -238,7 +238,7 @@ class ViewController3: UIViewController {
     }
     func arifmOperFunction() {
         let font = UIFont(name: "Menlo", size: 20.0)!
-        let attributes = [NSAttributedStringKey.foregroundColor: UIColor.white, NSAttributedStringKey.font: font]
+        let attributes = [NSAttributedString.Key.foregroundColor: UIColor.white, NSAttributedString.Key.font: font]
         goToVC.attributedText = NSAttributedString(string: NSLocalizedString("back to convert", comment: "back to convert")  , attributes: attributes)
         if ((biNuOne.text)!).count != 0 || ((biNuTwo.text)!).count != 0 {
         calcDecForBinOneTwo.binaryNumber = ((biNuOne.text)!).doubleValue
@@ -331,7 +331,7 @@ class ViewController3: UIViewController {
         clearButtonImage.isHidden = true
         copyButtonImage.isHidden = true
         let font = UIFont(name: "Menlo", size: 20.0)!
-        let attributes = [NSAttributedStringKey.foregroundColor: UIColor.darkGray, NSAttributedStringKey.font: font]
+        let attributes = [NSAttributedString.Key.foregroundColor: UIColor.darkGray, NSAttributedString.Key.font: font]
         biNuOne.attributedPlaceholder = NSAttributedString(string: NSLocalizedString("enter a binary number", comment: "enter a binary number"), attributes: attributes)
         biNuTwo.attributedPlaceholder = NSAttributedString(string: NSLocalizedString("enter a binary number", comment: "enter a binary number"), attributes: attributes)
         arifmOperFunction()
@@ -371,7 +371,7 @@ class ViewController3: UIViewController {
     }
     func runString(string:String) {
         let font = UIFont(name: "Menlo", size: 13.0)!
-        let attributes = [NSAttributedStringKey.foregroundColor: UIColor(red:1.00, green:0.91, blue:0.12, alpha:1.0), NSAttributedStringKey.font: font]
+        let attributes = [NSAttributedString.Key.foregroundColor: UIColor(red:1.00, green:0.91, blue:0.12, alpha:1.0), NSAttributedString.Key.font: font]
         let count = runStringArray(string: string).count
         var q = 0
         _ = Timer.scheduledTimer(withTimeInterval: 0.3, repeats: true) { (timer) in
