@@ -245,7 +245,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-Binatrix/Pods-Binatrix-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-Binatrix/Pods-Binatrix-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
 				"${PODS_ROOT}/YandexMobileMetrica/dynamic/YandexMobileMetrica.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
@@ -258,7 +258,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Binatrix/Pods-Binatrix-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Binatrix/Pods-Binatrix-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -457,7 +457,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = deltaTOxaREY.Binatrix;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "/Users/reynikovanton/Desktop/APP/app store/Binatrix/Binatrix/Binatrix-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/reynikovanton/Desktop/APP/app store/current/Binatrix 2.0/Binatrix/Binatrix-Bridging-Header.h";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -475,7 +475,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = deltaTOxaREY.Binatrix;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "/Users/reynikovanton/Desktop/APP/app store/Binatrix/Binatrix/Binatrix-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/reynikovanton/Desktop/APP/app store/current/Binatrix 2.0/Binatrix/Binatrix-Bridging-Header.h";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = 1;
 			};

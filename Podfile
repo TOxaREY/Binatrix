@@ -7,6 +7,6 @@ target 'Binatrix' do
 
   # Pods for Binatrix
 pod 'GoogleAnalytics'
-pod 'YandexMobileMetrica/Dynamic', '2.9.4'
+pod 'YandexMobileMetrica/Dynamic', '3.3.0'
 pod 'Firebase/Core'
 end

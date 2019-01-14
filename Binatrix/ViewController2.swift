@@ -174,7 +174,7 @@ class ViewController2: UIViewController {
         super.viewDidLoad()
         resizeMulti()
         fontSizeResultBi()
-//        RateManager.showRatesController()
+        RateManager.showRatesController()
         clearButtonImage.isHidden = true
         copyButtonImage.isHidden = true
         let font = UIFont(name: "Menlo", size: 20.0)!
