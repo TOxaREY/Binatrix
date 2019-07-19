@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="k9v-Ky-D3i">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="k9v-Ky-D3i">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -13,7 +13,7 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Binatrix" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="VC1" id="BYZ-38-t0r" customClass="ViewController" customModule="Binatrix" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -112,7 +112,7 @@
                                                     <constraint firstAttribute="height" constant="99" id="U1E-P4-ajR"/>
                                                 </constraints>
                                                 <connections>
-                                                    <segue destination="k9v-Ky-D3i" kind="show" animates="NO" id="NFv-gB-tWx"/>
+                                                    <action selector="buttonToVC2:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kU8-1L-blm"/>
                                                 </connections>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LwB-6y-jLw">
@@ -161,7 +161,7 @@
                                             <constraint firstAttribute="height" constant="100" id="gQv-iz-R3T"/>
                                         </constraints>
                                         <connections>
-                                            <segue destination="ED5-GL-Mjh" kind="show" animates="NO" id="upf-MM-Rdb"/>
+                                            <action selector="buttonToVC3:" destination="BYZ-38-t0r" eventType="touchUpInside" id="JA9-Lk-mgf"/>
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X9P-np-qEK">
@@ -265,7 +265,7 @@
         <!--View Controller2-->
         <scene sceneID="MHt-b2-tHI">
             <objects>
-                <viewController id="k9v-Ky-D3i" customClass="ViewController2" customModule="Binatrix" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="VC2" id="k9v-Ky-D3i" customClass="ViewController2" customModule="Binatrix" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="le4-WQ-klp">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -313,7 +313,7 @@
                                                 </constraints>
                                                 <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="17"/>
                                                 <connections>
-                                                    <segue destination="BYZ-38-t0r" kind="show" animates="NO" id="BHi-7O-37t"/>
+                                                    <action selector="buttonToVC1:" destination="k9v-Ky-D3i" eventType="touchUpInside" id="3LT-hZ-gLY"/>
                                                 </connections>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Lw-wp-H04">
@@ -415,7 +415,7 @@
                                             <constraint firstAttribute="height" constant="100" id="osV-nB-Iq6"/>
                                         </constraints>
                                         <connections>
-                                            <segue destination="ED5-GL-Mjh" kind="show" animates="NO" id="VJg-Qt-1ts"/>
+                                            <action selector="buttonToVC3:" destination="k9v-Ky-D3i" eventType="touchUpInside" id="Z5I-UX-eoR"/>
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rsm-KG-gwb">
@@ -518,7 +518,7 @@
         <!--View Controller3-->
         <scene sceneID="2D3-7n-n3a">
             <objects>
-                <viewController id="ED5-GL-Mjh" customClass="ViewController3" customModule="Binatrix" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="VC3" id="ED5-GL-Mjh" customClass="ViewController3" customModule="Binatrix" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="12V-Lt-8nC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -712,7 +712,7 @@
                                             <constraint firstAttribute="height" constant="100" id="412-A1-CXn"/>
                                         </constraints>
                                         <connections>
-                                            <segue destination="BYZ-38-t0r" kind="show" animates="NO" id="gTk-Gm-O6W"/>
+                                            <action selector="buttonToVC2:" destination="ED5-GL-Mjh" eventType="touchUpInside" id="fpf-eV-Hgv"/>
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="klw-7x-zKY">
@@ -830,8 +830,4 @@
         <image name="if_edit-copy_118918" width="512" height="512"/>
         <image name="if_edit-paste_118923" width="512" height="512"/>
     </resources>
-    <inferredMetricsTieBreakers>
-        <segue reference="VJg-Qt-1ts"/>
-        <segue reference="BHi-7O-37t"/>
-    </inferredMetricsTieBreakers>
 </document>

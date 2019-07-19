@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		E34F049891CB6E8D80DC073C /* Pods_Binatrix.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E3E933E4E3B91EDE5EB785B2 /* Pods_Binatrix.framework */; };
-		F215CDC11F7E94E40010E457 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F215CDC01F7E94E40010E457 /* AppDelegate.swift */; };
 		F215CDC31F7E94E40010E457 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F215CDC21F7E94E40010E457 /* ViewController.swift */; };
 		F215CDC61F7E94E40010E457 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F215CDC41F7E94E40010E457 /* Main.storyboard */; };
 		F215CDC81F7E94E40010E457 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F215CDC71F7E94E40010E457 /* Assets.xcassets */; };
@@ -17,6 +16,7 @@
 		F215CDD51F7E96040010E457 /* ViewController3.swift in Sources */ = {isa = PBXBuildFile; fileRef = F215CDD41F7E96040010E457 /* ViewController3.swift */; };
 		F21CB0AB1F7EABB600DF84B1 /* Calculating.swift in Sources */ = {isa = PBXBuildFile; fileRef = F21CB0AA1F7EABB600DF84B1 /* Calculating.swift */; };
 		F264DFDF2074C88F00993184 /* iAd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F264DFDE2074C88F00993184 /* iAd.framework */; };
+		F269BB7522E0E27200FE6D8A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F215CDC01F7E94E40010E457 /* AppDelegate.swift */; };
 		F28024C22055681300D13083 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F28024C12055681200D13083 /* GoogleService-Info.plist */; };
 		F28A50C41F94B54300BF564F /* Effect.swift in Sources */ = {isa = PBXBuildFile; fileRef = F28A50C31F94B54300BF564F /* Effect.swift */; };
 		F28A50C61F94B58700BF564F /* uno.sks in Resources */ = {isa = PBXBuildFile; fileRef = F28A50C51F94B58700BF564F /* uno.sks */; };
@@ -56,7 +56,6 @@
 		F28A50C31F94B54300BF564F /* Effect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Effect.swift; sourceTree = "<group>"; };
 		F28A50C51F94B58700BF564F /* uno.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = uno.sks; sourceTree = "<group>"; };
 		F28A50C71F94B59800BF564F /* zero.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = zero.sks; sourceTree = "<group>"; };
-		F29A99921F9B5DE7009ECDFB /* Binatrix-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Binatrix-Bridging-Header.h"; sourceTree = "<group>"; };
 		F2D0681E1F90BD6E00512B09 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Main.strings; sourceTree = "<group>"; };
 		F2D068221F90C3FC00512B09 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		F2D068241F90C3FC00512B09 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
@@ -120,7 +119,6 @@
 			children = (
 				F28024C12055681200D13083 /* GoogleService-Info.plist */,
 				F27A7FD31FC9AD5200624150 /* Binatrix.entitlements */,
-				F29A99921F9B5DE7009ECDFB /* Binatrix-Bridging-Header.h */,
 				F2E337271F9BA33D00B6CAF5 /* RangeManager.swift */,
 				F215CDCC1F7E94E40010E457 /* Info.plist */,
 				F2D068291F90C3FD00512B09 /* Localizable.strings */,
@@ -174,7 +172,7 @@
 				TargetAttributes = {
 					F215CDBC1F7E94E40010E457 = {
 						CreatedOnToolsVersion = 9.0;
-						LastSwiftMigration = 1000;
+						LastSwiftMigration = 1020;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.SafariKeychain = {
@@ -191,6 +189,10 @@
 			knownRegions = (
 				en,
 				Base,
+				ru,
+				es,
+				fr,
+				"pt-PT",
 			);
 			mainGroup = F215CDB41F7E94E40010E457;
 			productRefGroup = F215CDBE1F7E94E40010E457 /* Products */;
@@ -248,12 +250,14 @@
 				"${PODS_ROOT}/Target Support Files/Pods-Binatrix/Pods-Binatrix-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
 				"${PODS_ROOT}/YandexMobileMetrica/dynamic/YandexMobileMetrica.framework",
+				"${PODS_ROOT}/YandexMobileMetrica/dynamic/YandexMobileMetricaCrashes.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YandexMobileMetrica.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YandexMobileMetricaCrashes.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -270,9 +274,9 @@
 			files = (
 				F28A50C41F94B54300BF564F /* Effect.swift in Sources */,
 				F215CDC31F7E94E40010E457 /* ViewController.swift in Sources */,
-				F215CDC11F7E94E40010E457 /* AppDelegate.swift in Sources */,
 				F215CDD51F7E96040010E457 /* ViewController3.swift in Sources */,
 				F2E337281F9BA33D00B6CAF5 /* RangeManager.swift in Sources */,
+				F269BB7522E0E27200FE6D8A /* AppDelegate.swift in Sources */,
 				F215CDD31F7E95F40010E457 /* ViewController2.swift in Sources */,
 				F21CB0AB1F7EABB600DF84B1 /* Calculating.swift in Sources */,
 			);
@@ -457,9 +461,10 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = deltaTOxaREY.Binatrix;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "/Users/reynikovanton/Desktop/APP/app store/current/Binatrix 2.0/Binatrix/Binatrix-Bridging-Header.h";
-				SWIFT_VERSION = 4.2;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
+				VALID_ARCHS = "arm64 arm64e armv7 armv7s x86_64";
 			};
 			name = Debug;
 		};
@@ -475,9 +480,10 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = deltaTOxaREY.Binatrix;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "/Users/reynikovanton/Desktop/APP/app store/current/Binatrix 2.0/Binatrix/Binatrix-Bridging-Header.h";
-				SWIFT_VERSION = 4.2;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
+				VALID_ARCHS = "arm64 arm64e armv7 armv7s x86_64";
 			};
 			name = Release;
 		};

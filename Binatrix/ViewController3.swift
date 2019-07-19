@@ -9,6 +9,7 @@
 import UIKit
 
 class ViewController3: UIViewController {
+    var timer: Timer!
     var calcDecForBinOneTwo = CalculatingDecimal()
     var converDecToBin = CalculatingBinary()
     var biOneDecOne:Double = 0.0
@@ -71,6 +72,14 @@ class ViewController3: UIViewController {
             let newMultiplier:CGFloat = 1.3
             vc3MultiBottom = vc3MultiBottom.setMultiplier(multiplier: newMultiplier)
         }
+    }
+    @IBAction func buttonToVC2(_ sender: Any) {
+        timer.invalidate()
+        let appDel = UIApplication.shared.delegate as! AppDelegate
+        let sB: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        let newVC = sB.instantiateViewController(withIdentifier: "VC2")
+        appDel.window?.rootViewController = newVC
+        appDel.window?.makeKeyAndVisible()
     }
     @IBOutlet weak var labelHex: UILabel!
     @IBOutlet weak var biNuOne: UITextField!
@@ -325,6 +334,10 @@ class ViewController3: UIViewController {
     @IBAction func arifmAction2(_ sender: Any) {
         selectAction()
     }
+    
+    deinit {
+        print("deinitVC3")
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         resizeMulti()
@@ -374,7 +387,7 @@ class ViewController3: UIViewController {
         let attributes = [NSAttributedString.Key.foregroundColor: UIColor(red:1.00, green:0.91, blue:0.12, alpha:1.0), NSAttributedString.Key.font: font]
         let count = runStringArray(string: string).count
         var q = 0
-        _ = Timer.scheduledTimer(withTimeInterval: 0.3, repeats: true) { (timer) in
+        timer = Timer.scheduledTimer(withTimeInterval: 0.3, repeats: true) { (timer) in
             self.labelHex.attributedText = NSAttributedString(string: self.runStringArray(string: string)[q], attributes: attributes)
             q += 1
             if q >= count {
@@ -388,12 +401,6 @@ class ViewController3: UIViewController {
             view.endEditing(true)
         }
         super.touchesBegan(touches, with: event)
-    }
-    override func viewWillAppear(_ animated: Bool) {
-        guard let tracker = GAI.sharedInstance().defaultTracker else { return }
-        tracker.set(kGAIScreenName, value: "VC3")
-        guard let builder = GAIDictionaryBuilder.createScreenView() else { return }
-        tracker.send(builder.build() as [NSObject : AnyObject])
     }
 }
 

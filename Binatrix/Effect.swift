@@ -9,6 +9,9 @@
 import UIKit
 import SpriteKit
 class Effect: SKView {
+    deinit {
+        print("deinitEff")
+    }
     let uno = SKEmitterNode(fileNamed: "uno.sks")
     let zero = SKEmitterNode(fileNamed: "zero.sks")
     override func didMoveToSuperview() {
@@ -25,6 +28,7 @@ class Effect: SKView {
             zero?.particlePositionRange = CGVector(dx: self.bounds.size.width, dy: 0)
             scene.addChild(zero!)
             NotificationCenter.default.addObserver(self, selector: #selector(reset), name: NSNotification.Name(rawValue: "reset"), object: nil)
+//        NotificationCenter.default.addObserver(self, selector: #selector(remove), name: NSNotification.Name(rawValue: "remove"), object: nil)
 }
     
     @objc func reset() {
@@ -32,6 +36,11 @@ class Effect: SKView {
             self.uno?.resetSimulation()
             self.zero?.resetSimulation()
         }
-     }
+    }
+//    @objc func remove() {
+//        print("e1")
+//           scene!.removeAllChildren()
+//        NotificationCenter.default.removeObserver(self, name: NSNotification.Name(rawValue: "remove"), object: nil)
+//        }
 }
 

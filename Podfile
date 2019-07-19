@@ -6,7 +6,6 @@ target 'Binatrix' do
   use_frameworks!
 
   # Pods for Binatrix
-pod 'GoogleAnalytics'
-pod 'YandexMobileMetrica/Dynamic', '3.3.0'
+pod 'YandexMobileMetrica/Dynamic', '3.6.0'
 pod 'Firebase/Core'
 end

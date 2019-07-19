@@ -53,6 +53,7 @@ class NMTextField: UITextField {
     }
 }
 class ViewController: UIViewController {
+    var timer: Timer!
     func dotta() {
         var i = 0
         for character in (textF.text)! {
@@ -87,6 +88,22 @@ class ViewController: UIViewController {
             let newMultiplier:CGFloat = 1.6
             vc1MultiBottom = vc1MultiBottom.setMultiplier(multiplier: newMultiplier)
         }
+    }
+    @IBAction func buttonToVC3(_ sender: Any) {
+        timer.invalidate()
+        let appDel = UIApplication.shared.delegate as! AppDelegate
+        let sB: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        let newVC = sB.instantiateViewController(withIdentifier: "VC3")
+        appDel.window?.rootViewController = newVC
+        appDel.window?.makeKeyAndVisible()
+    }
+    @IBAction func buttonToVC2(_ sender: Any) {
+        timer.invalidate()
+        let appDel = UIApplication.shared.delegate as! AppDelegate
+        let sB: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        let newVC = sB.instantiateViewController(withIdentifier: "VC2")
+        appDel.window?.rootViewController = newVC
+        appDel.window?.makeKeyAndVisible()
     }
     @IBOutlet weak var labelHex: UILabel!
     @IBOutlet weak var button: UIButton!
@@ -175,6 +192,11 @@ class ViewController: UIViewController {
             resultDec.attributedText = NSAttributedString(string: NSLocalizedString("convert Dec --> Bin", comment: "convert Dec --> Bin") , attributes: attributes)
           }
         }
+    
+    deinit {
+        print("deinitVC")
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         resizeMulti()
@@ -223,7 +245,7 @@ class ViewController: UIViewController {
         let attributes = [NSAttributedString.Key.foregroundColor: UIColor(red:1.00, green:0.91, blue:0.12, alpha:1.0), NSAttributedString.Key.font: font]
         let count = runStringArray(string: string).count
         var q = 0
-        _ = Timer.scheduledTimer(withTimeInterval: 0.3, repeats: true) { (timer) in
+        timer = Timer.scheduledTimer(withTimeInterval: 0.3, repeats: true) { (timer) in
             self.labelHex.attributedText = NSAttributedString(string: self.runStringArray(string: string)[q], attributes: attributes)
             q += 1
             if q >= count {
@@ -237,11 +259,5 @@ class ViewController: UIViewController {
             view.endEditing(true)
         }
         super.touchesBegan(touches, with: event)
-    }
-    override func viewWillAppear(_ animated: Bool) {
-        guard let tracker = GAI.sharedInstance().defaultTracker else { return }
-        tracker.set(kGAIScreenName, value: "VC")
-        guard let builder = GAIDictionaryBuilder.createScreenView() else { return }
-        tracker.send(builder.build() as [NSObject : AnyObject])
     }
 }
