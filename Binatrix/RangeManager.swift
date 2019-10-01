@@ -23,7 +23,7 @@ class RateManager {
         if count == 7 {
             DispatchQueue.main.asyncAfter(deadline: .now() + 5, execute: {
                 SKStoreReviewController.requestReview()
-                })
+            })
         }
     }
 }

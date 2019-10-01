@@ -61,7 +61,7 @@ class CalculatingBinary {
         binaryNumber = binaryNumberArray.reversed()
         binaryNumberString = binaryNumber.compactMap{String($0)}.joined()
         binaryNumberArray.removeAll()
-//residue
+        //residue
         countResidue = 50 - binaryNumberString.count
         decNumbRes = decNumb - Double(Int64(decNumb))
         decNumbRes2 = decNumbRes
@@ -138,7 +138,7 @@ class CalculatingDecimal {
         } else {
             decimalNumberString = String(decimalNumber)
         }
-//residue
+        //residue
         biNumbRes = biNumb - Double(Int64(biNumb))
         if biNumbRes != 0 {
             var decimalNumberArrayResidue = binaryNumberFull.dropFirst(decimalNumberStringTransform.count)

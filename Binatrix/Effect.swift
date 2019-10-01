@@ -20,16 +20,15 @@ class Effect: SKView {
         self.presentScene(scene)
         self.allowsTransparency = true
         self.backgroundColor = UIColor.clear
-  
-            uno?.position = CGPoint(x: self.frame.size.width / 2, y: self.frame.size.height)
-            uno?.particlePositionRange = CGVector(dx: self.bounds.size.width, dy: 0)
-            scene.addChild(uno!)
-            zero?.position = CGPoint(x: self.frame.size.width / 2, y: self.frame.size.height)
-            zero?.particlePositionRange = CGVector(dx: self.bounds.size.width, dy: 0)
-            scene.addChild(zero!)
-            NotificationCenter.default.addObserver(self, selector: #selector(reset), name: NSNotification.Name(rawValue: "reset"), object: nil)
-//        NotificationCenter.default.addObserver(self, selector: #selector(remove), name: NSNotification.Name(rawValue: "remove"), object: nil)
-}
+        
+        uno?.position = CGPoint(x: self.frame.size.width / 2, y: self.frame.size.height)
+        uno?.particlePositionRange = CGVector(dx: self.bounds.size.width, dy: 0)
+        scene.addChild(uno!)
+        zero?.position = CGPoint(x: self.frame.size.width / 2, y: self.frame.size.height)
+        zero?.particlePositionRange = CGVector(dx: self.bounds.size.width, dy: 0)
+        scene.addChild(zero!)
+        NotificationCenter.default.addObserver(self, selector: #selector(reset), name: NSNotification.Name(rawValue: "reset"), object: nil)
+    }
     
     @objc func reset() {
         DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) {
@@ -37,10 +36,5 @@ class Effect: SKView {
             self.zero?.resetSimulation()
         }
     }
-//    @objc func remove() {
-//        print("e1")
-//           scene!.removeAllChildren()
-//        NotificationCenter.default.removeObserver(self, name: NSNotification.Name(rawValue: "remove"), object: nil)
-//        }
 }
 

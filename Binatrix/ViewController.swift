@@ -43,7 +43,7 @@ extension String {
         }
         return 0
     }
-  }
+}
 class NMTextField: UITextField {
     override func canPerformAction(_ action: Selector, withSender sender: Any?) -> Bool {
         if action == #selector(UIResponderStandardEditActions.paste(_:)) {
@@ -65,7 +65,7 @@ class ViewController: UIViewController {
                 ((textF.text)!).removeLast()
             }
         }
-     }
+    }
     func wrong() {
         button.isEnabled = true
         clearButtonImage.isHidden = true
@@ -166,9 +166,9 @@ class ViewController: UIViewController {
             ((textF.text)!).contains("7") ||
             ((textF.text)!).contains("8") ||
             ((textF.text)!).contains("9") {
-             image.flash()
+            image.flash()
             ((textF.text)!).removeLast()
-          }
+        }
         dotta()
         calculatingDecFunction()
     }
@@ -190,8 +190,8 @@ class ViewController: UIViewController {
             copyButtonImage.isHidden = true
             view.endEditing(true)
             resultDec.attributedText = NSAttributedString(string: NSLocalizedString("convert Dec --> Bin", comment: "convert Dec --> Bin") , attributes: attributes)
-          }
         }
+    }
     
     deinit {
         print("deinitVC")
@@ -208,7 +208,7 @@ class ViewController: UIViewController {
         calculatingDecFunction()
         runString(string: NSLocalizedString("converter DEC<->HEX<->OCT   Characters<->Unicode   ", comment: "converter DEC<->HEX<->OCT   Characters<->Unicode   "))
     }
-//// Button to go to another programу
+    // Button to go to another programу
     @IBAction func buttonBinatrix(_ sender: Any) {
         let appURL = NSURL(string: "hexastarBinatrix://")!
         let webURL = NSURL(string: "https://itunes.apple.com/ru/app/hexastar/id1327719099")!
@@ -220,8 +220,8 @@ class ViewController: UIViewController {
             application.open(webURL as URL)
         }
     }
-////
-//// Running string
+    
+    // Running string
     func runStringArray(string:String) -> ([String]) {
         let myString = string
         var myStringAdd = myString
@@ -253,7 +253,7 @@ class ViewController: UIViewController {
             }
         }
     }
-////
+    
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         if (touches.first) != nil {
             view.endEditing(true)

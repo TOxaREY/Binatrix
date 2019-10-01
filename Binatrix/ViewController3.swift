@@ -23,7 +23,7 @@ class ViewController3: UIViewController {
                 i += 1
             }
             if i == 2 {
-                 image.flash()
+                image.flash()
                 ((biNuOne.text)!).removeLast()
             }
         }
@@ -100,9 +100,9 @@ class ViewController3: UIViewController {
     @IBAction func copyButton(_ sender: Any) {
         if resultArifOper.text != lol {
             image2.flash2()
-        UIPasteboard.general.string = resultArifOper.text
+            UIPasteboard.general.string = resultArifOper.text
             view.endEditing(true)
-    }
+        }
     }
     @IBAction func pasterButton(_ sender: Any) {
         let pasteBoardString: String? = UIPasteboard.general.string
@@ -250,9 +250,9 @@ class ViewController3: UIViewController {
         let attributes = [NSAttributedString.Key.foregroundColor: UIColor.white, NSAttributedString.Key.font: font]
         goToVC.attributedText = NSAttributedString(string: NSLocalizedString("back to convert", comment: "back to convert")  , attributes: attributes)
         if ((biNuOne.text)!).count != 0 || ((biNuTwo.text)!).count != 0 {
-        calcDecForBinOneTwo.binaryNumber = ((biNuOne.text)!).doubleValue
-        calcDecForBinOneTwo.calculatingDecimal()
-        biOneDecOne = calcDecForBinOneTwo.decimalNumberDouble
+            calcDecForBinOneTwo.binaryNumber = ((biNuOne.text)!).doubleValue
+            calcDecForBinOneTwo.calculatingDecimal()
+            biOneDecOne = calcDecForBinOneTwo.decimalNumberDouble
         } else {
             resultArifOper.text = lol
         }
@@ -268,38 +268,38 @@ class ViewController3: UIViewController {
             copyButtonImage.isHidden = true
         }
         selectAction()
-     }
+    }
     func calculPrint() {
-      converDecToBin.calculatingBinary()
-      resultArifOper.text = converDecToBin.binaryNumberString + converDecToBin.binaryNumberResidueString
+        converDecToBin.calculatingBinary()
+        resultArifOper.text = converDecToBin.binaryNumberString + converDecToBin.binaryNumberResidueString
     }
     func plus() {
-       if ((biNuOne.text)!).count != 0 && ((biNuTwo.text)!).count != 0 {
-        if ((biNuOne.text)!).doubleValue == 0 && ((biNuTwo.text)!).doubleValue == 0 {
-            resultArifOper.text = "0"
+        if ((biNuOne.text)!).count != 0 && ((biNuTwo.text)!).count != 0 {
+            if ((biNuOne.text)!).doubleValue == 0 && ((biNuTwo.text)!).doubleValue == 0 {
+                resultArifOper.text = "0"
+            } else {
+                converDecToBin.decimalNumber = biOneDecOne + biTwoDecTwo
+                calculPrint()
+            }
         } else {
-            converDecToBin.decimalNumber = biOneDecOne + biTwoDecTwo
-            calculPrint()
-          }
-       } else {
-        resultArifOper.text = lol
+            resultArifOper.text = lol
         }
     }
     func minus() {
         if ((biNuOne.text)!).count != 0 && ((biNuTwo.text)!).count != 0 {
-        if biTwoDecTwo < biOneDecOne {
-            converDecToBin.decimalNumber = biOneDecOne - biTwoDecTwo
-            stringMinus = ""
-        } else {
-            if biOneDecOne == biTwoDecTwo {
-                stringMinus = "0"
+            if biTwoDecTwo < biOneDecOne {
+                converDecToBin.decimalNumber = biOneDecOne - biTwoDecTwo
+                stringMinus = ""
             } else {
-                converDecToBin.decimalNumber = biTwoDecTwo - biOneDecOne
-                stringMinus = "-"
+                if biOneDecOne == biTwoDecTwo {
+                    stringMinus = "0"
+                } else {
+                    converDecToBin.decimalNumber = biTwoDecTwo - biOneDecOne
+                    stringMinus = "-"
+                }
             }
-        }
-        converDecToBin.calculatingBinary()
-        resultArifOper.text = stringMinus + converDecToBin.binaryNumberString + converDecToBin.binaryNumberResidueString
+            converDecToBin.calculatingBinary()
+            resultArifOper.text = stringMinus + converDecToBin.binaryNumberString + converDecToBin.binaryNumberResidueString
         } else {
             resultArifOper.text = lol
         }
@@ -309,9 +309,9 @@ class ViewController3: UIViewController {
             if ((biNuOne.text)!).doubleValue == 0 || ((biNuTwo.text)!).doubleValue == 0 {
                 resultArifOper.text = "0"
             } else {
-        converDecToBin.decimalNumber = biOneDecOne * biTwoDecTwo
-        calculPrint()
-        }
+                converDecToBin.decimalNumber = biOneDecOne * biTwoDecTwo
+                calculPrint()
+            }
         } else {
             resultArifOper.text = lol
         }
@@ -321,8 +321,8 @@ class ViewController3: UIViewController {
             if ((biNuOne.text)!).doubleValue == 0 {
                 resultArifOper.text = "0"
             } else {
-        converDecToBin.decimalNumber = biOneDecOne / biTwoDecTwo
-        calculPrint()
+                converDecToBin.decimalNumber = biOneDecOne / biTwoDecTwo
+                calculPrint()
             }
         } else {
             resultArifOper.text = lol
@@ -350,7 +350,7 @@ class ViewController3: UIViewController {
         arifmOperFunction()
         runString(string: NSLocalizedString("converter DEC<->HEX<->OCT   Characters<->Unicode   ", comment: "converter DEC<->HEX<->OCT   Characters<->Unicode   "))
     }
-//// Button to go to another program
+    // Button to go to another program
     @IBAction func buttonBinatrix(_ sender: Any) {
         let appURL = NSURL(string: "hexastarBinatrix://")!
         let webURL = NSURL(string: "https://itunes.apple.com/ru/app/hexastar/id1327719099")!
@@ -362,8 +362,8 @@ class ViewController3: UIViewController {
             application.open(webURL as URL)
         }
     }
-////
-//// Running string
+    
+    // Running string
     func runStringArray(string:String) -> ([String]) {
         let myString = string
         var myStringAdd = myString
@@ -395,7 +395,7 @@ class ViewController3: UIViewController {
             }
         }
     }
-////
+    
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         if (touches.first) != nil {
             view.endEditing(true)
