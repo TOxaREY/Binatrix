@@ -340,6 +340,14 @@ class ViewController3: UIViewController {
     }
     override func viewDidLoad() {
         super.viewDidLoad()
+        if #available(iOS 13.0, *) {
+            arifmOutlet.selectedSegmentTintColor = .clear
+            arifmOutlet.layer.borderWidth = 1.0
+            arifmOutlet2.selectedSegmentTintColor = .clear
+            arifmOutlet2.layer.borderWidth = 1.0
+        } else {
+            // Fallback on earlier versions
+        }
         resizeMulti()
         clearButtonImage.isHidden = true
         copyButtonImage.isHidden = true

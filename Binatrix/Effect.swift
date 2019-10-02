@@ -27,14 +27,14 @@ class Effect: SKView {
         zero?.position = CGPoint(x: self.frame.size.width / 2, y: self.frame.size.height)
         zero?.particlePositionRange = CGVector(dx: self.bounds.size.width, dy: 0)
         scene.addChild(zero!)
-        NotificationCenter.default.addObserver(self, selector: #selector(reset), name: NSNotification.Name(rawValue: "reset"), object: nil)
+//        NotificationCenter.default.addObserver(self, selector: #selector(reset), name: NSNotification.Name(rawValue: "reset"), object: nil)
     }
-    
-    @objc func reset() {
-        DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) {
-            self.uno?.resetSimulation()
-            self.zero?.resetSimulation()
-        }
-    }
+// Починили sprite kit на паузе больше не собираются в кучу
+//    @objc func reset() {
+//        DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) {
+//            self.uno?.resetSimulation()
+//            self.zero?.resetSimulation()
+//        }
+//    }
 }
 

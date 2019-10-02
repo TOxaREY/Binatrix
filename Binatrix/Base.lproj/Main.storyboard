@@ -220,7 +220,7 @@
                                 </constraints>
                             </view>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="SyF-rU-0wR" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="05R-rZ-lTn"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="hXd-D9-eSu" secondAttribute="bottom" multiplier="1.5" id="1mI-fL-XkS"/>
@@ -473,7 +473,7 @@
                                 </constraints>
                             </view>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="QPR-nP-IvY" firstAttribute="top" secondItem="848-a8-bP6" secondAttribute="bottom" id="0lp-Bc-mjS"/>
                             <constraint firstItem="MNh-xu-nzF" firstAttribute="trailing" secondItem="ga8-B3-Tus" secondAttribute="trailing" id="1v7-bK-H5v"/>
@@ -768,7 +768,7 @@
                                 </constraints>
                             </view>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="M7j-km-5Bn" secondAttribute="trailing" id="216-ZJ-exr"/>
                             <constraint firstItem="BTC-A0-2qp" firstAttribute="trailing" secondItem="f95-SY-T1x" secondAttribute="trailing" id="3A5-fu-nWg"/>
