@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 52;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -128,14 +128,22 @@
 				F215CDD21F7E95F40010E457 /* ViewController2.swift */,
 				F215CDD41F7E96040010E457 /* ViewController3.swift */,
 				F215CDC21F7E94E40010E457 /* ViewController.swift */,
-				F28A50C31F94B54300BF564F /* Effect.swift */,
-				F28A50C51F94B58700BF564F /* uno.sks */,
-				F28A50C71F94B59800BF564F /* zero.sks */,
+				F224ECA42361A5830055B35F /* Effect */,
 				F215CDC41F7E94E40010E457 /* Main.storyboard */,
 				F215CDC71F7E94E40010E457 /* Assets.xcassets */,
 				F215CDC91F7E94E40010E457 /* LaunchScreen.storyboard */,
 			);
 			path = Binatrix;
+			sourceTree = "<group>";
+		};
+		F224ECA42361A5830055B35F /* Effect */ = {
+			isa = PBXGroup;
+			children = (
+				F28A50C31F94B54300BF564F /* Effect.swift */,
+				F28A50C51F94B58700BF564F /* uno.sks */,
+				F28A50C71F94B59800BF564F /* zero.sks */,
+			);
+			path = Effect;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -183,7 +191,7 @@
 				};
 			};
 			buildConfigurationList = F215CDB81F7E94E40010E457 /* Build configuration list for PBXProject "Binatrix" */;
-			compatibilityVersion = "Xcode 11.0";
+			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -453,7 +461,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = EB6R5QS764;
 				INFOPLIST_FILE = "$(SRCROOT)/Binatrix/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -464,7 +472,7 @@
 				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
-				VALID_ARCHS = "x86_64 armv7s armv7 arm64e arm64";
+				VALID_ARCHS = "arm64 arm64e armv7 armv7s";
 			};
 			name = Debug;
 		};
@@ -477,7 +485,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = EB6R5QS764;
 				INFOPLIST_FILE = "$(SRCROOT)/Binatrix/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -488,7 +496,7 @@
 				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
-				VALID_ARCHS = "arm64e arm64 x86_64 armv7s armv7";
+				VALID_ARCHS = "arm64 arm64e armv7 armv7s";
 			};
 			name = Release;
 		};
