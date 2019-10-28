@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		E34F049891CB6E8D80DC073C /* Pods_Binatrix.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E3E933E4E3B91EDE5EB785B2 /* Pods_Binatrix.framework */; };
+		AAA15263A028EB5EE293F828 /* Pods_Binatrix.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 172E57E92666601038B963CE /* Pods_Binatrix.framework */; };
 		F215CDC31F7E94E40010E457 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F215CDC21F7E94E40010E457 /* ViewController.swift */; };
 		F215CDC61F7E94E40010E457 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F215CDC41F7E94E40010E457 /* Main.storyboard */; };
 		F215CDC81F7E94E40010E457 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F215CDC71F7E94E40010E457 /* Assets.xcassets */; };
@@ -27,9 +27,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		4B1D8C0B68583C7C422F6644 /* Pods-Binatrix.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Binatrix.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Binatrix/Pods-Binatrix.debug.xcconfig"; sourceTree = "<group>"; };
-		DE8F591B4B68B42EA64BF73C /* Pods-Binatrix.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Binatrix.release.xcconfig"; path = "Pods/Target Support Files/Pods-Binatrix/Pods-Binatrix.release.xcconfig"; sourceTree = "<group>"; };
-		E3E933E4E3B91EDE5EB785B2 /* Pods_Binatrix.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Binatrix.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		172E57E92666601038B963CE /* Pods_Binatrix.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Binatrix.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		23BB3A271D0698046BC65923 /* Pods-Binatrix.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Binatrix.release.xcconfig"; path = "Target Support Files/Pods-Binatrix/Pods-Binatrix.release.xcconfig"; sourceTree = "<group>"; };
+		34C87C8333C1EFBDBE4DC7B9 /* Pods-Binatrix.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Binatrix.debug.xcconfig"; path = "Target Support Files/Pods-Binatrix/Pods-Binatrix.debug.xcconfig"; sourceTree = "<group>"; };
 		F203459F1F9DEA3000560BE4 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Main.strings; sourceTree = "<group>"; };
 		F215CDBD1F7E94E40010E457 /* Binatrix.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Binatrix.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F215CDC01F7E94E40010E457 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -71,7 +71,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F264DFDF2074C88F00993184 /* iAd.framework in Frameworks */,
-				E34F049891CB6E8D80DC073C /* Pods_Binatrix.framework in Frameworks */,
+				AAA15263A028EB5EE293F828 /* Pods_Binatrix.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -82,18 +82,18 @@
 			isa = PBXGroup;
 			children = (
 				F264DFDE2074C88F00993184 /* iAd.framework */,
-				E3E933E4E3B91EDE5EB785B2 /* Pods_Binatrix.framework */,
+				172E57E92666601038B963CE /* Pods_Binatrix.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		A0E07731771D1D21E2ADC2C9 /* Pods */ = {
+		E234FB22A0FEFB9EA61E5B86 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				4B1D8C0B68583C7C422F6644 /* Pods-Binatrix.debug.xcconfig */,
-				DE8F591B4B68B42EA64BF73C /* Pods-Binatrix.release.xcconfig */,
+				34C87C8333C1EFBDBE4DC7B9 /* Pods-Binatrix.debug.xcconfig */,
+				23BB3A271D0698046BC65923 /* Pods-Binatrix.release.xcconfig */,
 			);
-			name = Pods;
+			path = Pods;
 			sourceTree = "<group>";
 		};
 		F215CDB41F7E94E40010E457 = {
@@ -101,8 +101,8 @@
 			children = (
 				F215CDBF1F7E94E40010E457 /* Binatrix */,
 				F215CDBE1F7E94E40010E457 /* Products */,
-				A0E07731771D1D21E2ADC2C9 /* Pods */,
 				844D4D6E24C906813987644C /* Frameworks */,
+				E234FB22A0FEFB9EA61E5B86 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -153,11 +153,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F215CDCF1F7E94E40010E457 /* Build configuration list for PBXNativeTarget "Binatrix" */;
 			buildPhases = (
-				05E32BD80C62977A5F66A042 /* [CP] Check Pods Manifest.lock */,
+				68ED4F723227E12155B56132 /* [CP] Check Pods Manifest.lock */,
 				F215CDB91F7E94E40010E457 /* Sources */,
 				F215CDBA1F7E94E40010E457 /* Frameworks */,
 				F215CDBB1F7E94E40010E457 /* Resources */,
-				2E95C1626043F14AA3F3CE9E /* [CP] Embed Pods Frameworks */,
+				6BC8EBA12FAA78A722B8CB41 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -231,16 +231,20 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		05E32BD80C62977A5F66A042 /* [CP] Check Pods Manifest.lock */ = {
+		68ED4F723227E12155B56132 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			inputFileListPaths = (
 			);
 			inputPaths = (
 				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
 				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-Binatrix-checkManifestLockResult.txt",
 			);
@@ -249,7 +253,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		2E95C1626043F14AA3F3CE9E /* [CP] Embed Pods Frameworks */ = {
+		6BC8EBA12FAA78A722B8CB41 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -263,7 +267,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Binatrix/Pods-Binatrix-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Binatrix/Pods-Binatrix-frameworks.sh\"\n\"${PODS_ROOT}/Fabric/run\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -454,11 +458,12 @@
 		};
 		F215CDD01F7E94E40010E457 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4B1D8C0B68583C7C422F6644 /* Pods-Binatrix.debug.xcconfig */;
+			baseConfigurationReference = 34C87C8333C1EFBDBE4DC7B9 /* Pods-Binatrix.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = Binatrix/Binatrix.entitlements;
 				CODE_SIGN_STYLE = Automatic;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = EB6R5QS764;
 				INFOPLIST_FILE = "$(SRCROOT)/Binatrix/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
@@ -478,7 +483,7 @@
 		};
 		F215CDD11F7E94E40010E457 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = DE8F591B4B68B42EA64BF73C /* Pods-Binatrix.release.xcconfig */;
+			baseConfigurationReference = 23BB3A271D0698046BC65923 /* Pods-Binatrix.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = Binatrix/Binatrix.entitlements;
