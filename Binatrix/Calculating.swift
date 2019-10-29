@@ -141,7 +141,7 @@ class CalculatingDecimal {
         //residue
         biNumbRes = biNumb - Double(Int64(biNumb))
         if biNumbRes != 0 {
-            var decimalNumberArrayResidue = binaryNumberFull.dropFirst(decimalNumberStringTransform.count)
+            let decimalNumberArrayResidue = binaryNumberFull.dropFirst(decimalNumberStringTransform.count)
             for i in 0...decimalNumberArrayResidue.count - 1 {
                 decimalNumberReside += Double(decimalNumberArrayResidue[i + decimalNumberStringTransform.count]) * pow(2.0, Double(1 - 2 - i))
             }

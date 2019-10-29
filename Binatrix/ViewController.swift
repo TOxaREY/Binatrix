@@ -72,9 +72,9 @@ class ViewController: UIViewController {
         copyButtonImage.isHidden = true
         view.endEditing(true)
         image.flash()
-        let font1 = UIFont(name: "Menlo-Bold",size: 20.0)!
+        let font1 = UIFont(name: "SFMono-Bold",size: 20.0)!
         let attributes1 = [NSAttributedString.Key.foregroundColor: UIColor.black, NSAttributedString.Key.font: font1]
-        let font = UIFont(name: "Menlo", size: 20.0)!
+        let font = UIFont(name: "SFMono-Regular", size: 20.0)!
         let attributes = [NSAttributedString.Key.foregroundColor: UIColor.white, NSAttributedString.Key.font: font]
         textF.attributedText = NSAttributedString(string: NSLocalizedString("invalid value", comment: "invalid value") , attributes: attributes1)
         resultDec.attributedText = NSAttributedString(string: NSLocalizedString("convert Dec --> Bin", comment: "convert Dec --> Bin") , attributes: attributes)
@@ -125,6 +125,7 @@ class ViewController: UIViewController {
         view.endEditing(true)
     }
     @IBAction func pasterButton(_ sender: Any) {
+        resultDec.font = UIFont(name:"SFMono-Regular", size: 30.0)
         let pasteBoardString: String? = UIPasteboard.general.string
         if pasteBoardString == nil {
             wrong()
@@ -158,6 +159,7 @@ class ViewController: UIViewController {
         }
     }
     @IBAction func textFBi(_ sender: Any) {
+        resultDec.font = UIFont(name:"SFMono-Regular", size: 30.0)
         if ((textF.text)!).count > 16 || ((textF.text)!).contains("2") ||
             ((textF.text)!).contains("3") ||
             ((textF.text)!).contains("4") ||
@@ -174,7 +176,7 @@ class ViewController: UIViewController {
     }
     var calculatingDec = CalculatingDecimal()
     func calculatingDecFunction() {
-        let font = UIFont(name: "Menlo", size: 20.0)!
+        let font = UIFont(name: "SFMono-Regular", size: 20.0)!
         let attributes = [NSAttributedString.Key.foregroundColor: UIColor.white, NSAttributedString.Key.font: font]
         calculatingDec.binaryNumber = ((textF.text)!).doubleValue
         calculatingDec.calculatingDecimal()
@@ -202,7 +204,7 @@ class ViewController: UIViewController {
         resizeMulti()
         clearButtonImage.isHidden = true
         copyButtonImage.isHidden = true
-        let font = UIFont(name: "Menlo", size: 20.0)!
+        let font = UIFont(name: "SFMono-Regular", size: 20.0)!
         let attributes = [NSAttributedString.Key.foregroundColor: UIColor.darkGray, NSAttributedString.Key.font: font]
         textF.attributedPlaceholder = NSAttributedString(string: NSLocalizedString("enter a binary number", comment: "enter a binary number"), attributes: attributes)
         calculatingDecFunction()
@@ -241,7 +243,7 @@ class ViewController: UIViewController {
         return arrayRunString
     }
     func runString(string:String) {
-        let font = UIFont(name: "Menlo", size: 13.0)!
+        let font = UIFont(name: "SFMono-Regular", size: 13.0)!
         let attributes = [NSAttributedString.Key.foregroundColor: UIColor(red:1.00, green:0.91, blue:0.12, alpha:1.0), NSAttributedString.Key.font: font]
         let count = runStringArray(string: string).count
         var q = 0

@@ -24,6 +24,8 @@
 		F2D068211F90C3FC00512B09 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F2D068231F90C3FC00512B09 /* InfoPlist.strings */; };
 		F2D068271F90C3FD00512B09 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = F2D068291F90C3FD00512B09 /* Localizable.strings */; };
 		F2E337281F9BA33D00B6CAF5 /* RangeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2E337271F9BA33D00B6CAF5 /* RangeManager.swift */; };
+		F2E881342368021B0072ABE6 /* SF-Mono-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = F2E881332368020B0072ABE6 /* SF-Mono-Bold.otf */; };
+		F2E881352368021F0072ABE6 /* SF-Mono-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = F2E881322368020A0072ABE6 /* SF-Mono-Regular.otf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -63,6 +65,8 @@
 		F2E337201F9B9D8000B6CAF5 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Main.strings; sourceTree = "<group>"; };
 		F2E337261F9B9E1600B6CAF5 /* pt-PT */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-PT"; path = "pt-PT.lproj/Main.strings"; sourceTree = "<group>"; };
 		F2E337271F9BA33D00B6CAF5 /* RangeManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RangeManager.swift; sourceTree = "<group>"; };
+		F2E881322368020A0072ABE6 /* SF-Mono-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Mono-Regular.otf"; sourceTree = "<group>"; };
+		F2E881332368020B0072ABE6 /* SF-Mono-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Mono-Bold.otf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,6 +125,8 @@
 				F27A7FD31FC9AD5200624150 /* Binatrix.entitlements */,
 				F2E337271F9BA33D00B6CAF5 /* RangeManager.swift */,
 				F215CDCC1F7E94E40010E457 /* Info.plist */,
+				F2E881332368020B0072ABE6 /* SF-Mono-Bold.otf */,
+				F2E881322368020A0072ABE6 /* SF-Mono-Regular.otf */,
 				F2D068291F90C3FD00512B09 /* Localizable.strings */,
 				F2D068231F90C3FC00512B09 /* InfoPlist.strings */,
 				F215CDC01F7E94E40010E457 /* AppDelegate.swift */,
@@ -175,7 +181,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0900;
-				LastUpgradeCheck = 0930;
+				LastUpgradeCheck = 1110;
 				ORGANIZATIONNAME = "REYNIKOV ANTON";
 				TargetAttributes = {
 					F215CDBC1F7E94E40010E457 = {
@@ -191,7 +197,7 @@
 				};
 			};
 			buildConfigurationList = F215CDB81F7E94E40010E457 /* Build configuration list for PBXProject "Binatrix" */;
-			compatibilityVersion = "Xcode 9.3";
+			compatibilityVersion = "Xcode 8.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -219,8 +225,10 @@
 			files = (
 				F28A50C61F94B58700BF564F /* uno.sks in Resources */,
 				F28024C22055681300D13083 /* GoogleService-Info.plist in Resources */,
+				F2E881352368021F0072ABE6 /* SF-Mono-Regular.otf in Resources */,
 				F2D068271F90C3FD00512B09 /* Localizable.strings in Resources */,
 				F215CDCB1F7E94E40010E457 /* LaunchScreen.storyboard in Resources */,
+				F2E881342368021B0072ABE6 /* SF-Mono-Bold.otf in Resources */,
 				F2D068211F90C3FC00512B09 /* InfoPlist.strings in Resources */,
 				F28A50C81F94B59800BF564F /* zero.sks in Resources */,
 				F215CDC81F7E94E40010E457 /* Assets.xcassets in Resources */,
@@ -390,13 +398,14 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OBJC_BRIDGING_HEADER = "/Users/reynikovanton/Desktop/APP/development/Binatrix/Binatrix/Binatrix-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VALID_ARCHS = "";
 			};
 			name = Debug;
 		};
@@ -445,7 +454,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				ONLY_ACTIVE_ARCH = NO;
 				SDKROOT = iphoneos;
@@ -453,6 +462,7 @@
 				SWIFT_OBJC_BRIDGING_HEADER = "/Users/reynikovanton/Desktop/APP/development/Binatrix/Binatrix/Binatrix-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				VALIDATE_PRODUCT = YES;
+				VALID_ARCHS = "";
 			};
 			name = Release;
 		};
@@ -465,19 +475,20 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = EB6R5QS764;
-				INFOPLIST_FILE = "$(SRCROOT)/Binatrix/Info.plist";
+				INFOPLIST_FILE = Binatrix/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 2.4.1;
+				MARKETING_VERSION = 2.4.2;
 				PRODUCT_BUNDLE_IDENTIFIER = deltaTOxaREY.Binatrix;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
-				VALID_ARCHS = "arm64 arm64e armv7 armv7s";
+				"VALID_ARCHS[sdk=*]" = "arm64 arm64e armv7 armv7s";
+				"VALID_ARCHS[sdk=iphonesimulator*]" = "i386 x86_64";
 			};
 			name = Debug;
 		};
@@ -489,13 +500,13 @@
 				CODE_SIGN_ENTITLEMENTS = Binatrix/Binatrix.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = EB6R5QS764;
-				INFOPLIST_FILE = "$(SRCROOT)/Binatrix/Info.plist";
+				INFOPLIST_FILE = Binatrix/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 2.4.1;
+				MARKETING_VERSION = 2.4.2;
 				PRODUCT_BUNDLE_IDENTIFIER = deltaTOxaREY.Binatrix;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "";

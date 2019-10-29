@@ -46,7 +46,7 @@ class ViewController3: UIViewController {
         view.endEditing(true)
         image.flash()
         resultArifOper.text = lol
-        let font1 = UIFont(name: "Menlo-Bold",size: 20.0)!
+        let font1 = UIFont(name: "SFMono-Bold",size: 20.0)!
         let attributes1 = [NSAttributedString.Key.foregroundColor: UIColor.black, NSAttributedString.Key.font: font1]
         biNuOne.attributedText = NSAttributedString(string: NSLocalizedString("invalid value", comment: "invalid value") , attributes: attributes1)
         DispatchQueue.main.asyncAfter(deadline: .now() + 1.2) {
@@ -59,7 +59,7 @@ class ViewController3: UIViewController {
         view.endEditing(true)
         image.flash()
         resultArifOper.text = lol
-        let font1 = UIFont(name: "Menlo-Bold",size: 20.0)!
+        let font1 = UIFont(name: "SFMono-Bold",size: 20.0)!
         let attributes1 = [NSAttributedString.Key.foregroundColor: UIColor.black, NSAttributedString.Key.font: font1]
         biNuTwo.attributedText = NSAttributedString(string: NSLocalizedString("invalid value", comment: "invalid value") , attributes: attributes1)
         DispatchQueue.main.asyncAfter(deadline: .now() + 1.2) {
@@ -105,6 +105,7 @@ class ViewController3: UIViewController {
         }
     }
     @IBAction func pasterButton(_ sender: Any) {
+        resultArifOper.font = UIFont(name:"SFMono-Regular", size: 30.0)
         let pasteBoardString: String? = UIPasteboard.general.string
         if pasteBoardString == nil {
             wrong()
@@ -138,6 +139,7 @@ class ViewController3: UIViewController {
         }
     }
     @IBAction func pasterButton2(_ sender: Any) {
+        resultArifOper.font = UIFont(name:"SFMono-Regular", size: 30.0)
         let pasteBoardString: String? = UIPasteboard.general.string
         if pasteBoardString == nil {
             wrong2()
@@ -172,6 +174,7 @@ class ViewController3: UIViewController {
     }
     @IBOutlet weak var goToVC: UILabel!
     @IBAction func onlyBin(_ sender: Any) {
+        resultArifOper.font = UIFont(name:"SFMono-Regular", size: 30.0)
         if ((biNuOne.text)!).count > 16 || ((biNuOne.text)!).contains("2") ||
             ((biNuOne.text)!).contains("3") ||
             ((biNuOne.text)!).contains("4") ||
@@ -187,6 +190,7 @@ class ViewController3: UIViewController {
         arifmOperFunction()
     }
     @IBAction func onlyBin2(_ sender: Any) {
+        resultArifOper.font = UIFont(name:"SFMono-Regular", size: 30.0)
         if ((biNuTwo.text)!).count > 16 || ((biNuTwo.text)!).contains("2") ||
             ((biNuTwo.text)!).contains("3") ||
             ((biNuTwo.text)!).contains("4") ||
@@ -246,7 +250,7 @@ class ViewController3: UIViewController {
         }
     }
     func arifmOperFunction() {
-        let font = UIFont(name: "Menlo", size: 20.0)!
+        let font = UIFont(name: "SFMono-Regular", size: 20.0)!
         let attributes = [NSAttributedString.Key.foregroundColor: UIColor.white, NSAttributedString.Key.font: font]
         goToVC.attributedText = NSAttributedString(string: NSLocalizedString("back to convert", comment: "back to convert")  , attributes: attributes)
         if ((biNuOne.text)!).count != 0 || ((biNuTwo.text)!).count != 0 {
@@ -351,7 +355,7 @@ class ViewController3: UIViewController {
         resizeMulti()
         clearButtonImage.isHidden = true
         copyButtonImage.isHidden = true
-        let font = UIFont(name: "Menlo", size: 20.0)!
+        let font = UIFont(name: "SFMono-Regular", size: 20.0)!
         let attributes = [NSAttributedString.Key.foregroundColor: UIColor.darkGray, NSAttributedString.Key.font: font]
         biNuOne.attributedPlaceholder = NSAttributedString(string: NSLocalizedString("enter a binary number", comment: "enter a binary number"), attributes: attributes)
         biNuTwo.attributedPlaceholder = NSAttributedString(string: NSLocalizedString("enter a binary number", comment: "enter a binary number"), attributes: attributes)
@@ -391,7 +395,7 @@ class ViewController3: UIViewController {
         return arrayRunString
     }
     func runString(string:String) {
-        let font = UIFont(name: "Menlo", size: 13.0)!
+        let font = UIFont(name: "SFMono-Regular", size: 13.0)!
         let attributes = [NSAttributedString.Key.foregroundColor: UIColor(red:1.00, green:0.91, blue:0.12, alpha:1.0), NSAttributedString.Key.font: font]
         let count = runStringArray(string: string).count
         var q = 0
