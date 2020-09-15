@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B98D26F9111E4BA7681F6814 /* Pods_Binatrix.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA37D8112088572ED9330DF6 /* Pods_Binatrix.framework */; };
+		1E688E6F318533F4DB84A6EB /* libPods-Binatrix.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 01B05986AE620920689A7D27 /* libPods-Binatrix.a */; };
 		F215CDC31F7E94E40010E457 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F215CDC21F7E94E40010E457 /* ViewController.swift */; };
 		F215CDC61F7E94E40010E457 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F215CDC41F7E94E40010E457 /* Main.storyboard */; };
 		F215CDC81F7E94E40010E457 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F215CDC71F7E94E40010E457 /* Assets.xcassets */; };
@@ -31,8 +31,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		86073A4116CB7B24220EA659 /* Pods-Binatrix.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Binatrix.debug.xcconfig"; path = "Target Support Files/Pods-Binatrix/Pods-Binatrix.debug.xcconfig"; sourceTree = "<group>"; };
-		CA37D8112088572ED9330DF6 /* Pods_Binatrix.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Binatrix.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		01B05986AE620920689A7D27 /* libPods-Binatrix.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Binatrix.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		947A26C8EDACE0623722438D /* Pods-Binatrix.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Binatrix.debug.xcconfig"; path = "Target Support Files/Pods-Binatrix/Pods-Binatrix.debug.xcconfig"; sourceTree = "<group>"; };
 		F203459F1F9DEA3000560BE4 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Main.strings; sourceTree = "<group>"; };
 		F215CDBD1F7E94E40010E457 /* Binatrix.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Binatrix.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F215CDC01F7E94E40010E457 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -78,7 +78,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F264DFDF2074C88F00993184 /* iAd.framework in Frameworks */,
-				B98D26F9111E4BA7681F6814 /* Pods_Binatrix.framework in Frameworks */,
+				1E688E6F318533F4DB84A6EB /* libPods-Binatrix.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -89,7 +89,7 @@
 			isa = PBXGroup;
 			children = (
 				F264DFDE2074C88F00993184 /* iAd.framework */,
-				CA37D8112088572ED9330DF6 /* Pods_Binatrix.framework */,
+				01B05986AE620920689A7D27 /* libPods-Binatrix.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -97,7 +97,7 @@
 		E234FB22A0FEFB9EA61E5B86 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				86073A4116CB7B24220EA659 /* Pods-Binatrix.debug.xcconfig */,
+				947A26C8EDACE0623722438D /* Pods-Binatrix.debug.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -163,12 +163,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F215CDCF1F7E94E40010E457 /* Build configuration list for PBXNativeTarget "Binatrix" */;
 			buildPhases = (
-				2C80652D9E44D2506608EEE3 /* [CP] Check Pods Manifest.lock */,
+				437A5CD0204E9647C38213BA /* [CP] Check Pods Manifest.lock */,
 				F215CDB91F7E94E40010E457 /* Sources */,
 				F215CDBA1F7E94E40010E457 /* Frameworks */,
 				F215CDBB1F7E94E40010E457 /* Resources */,
 				F2D3E7572510C9B6003ACCD9 /* ShellScript */,
-				49D76354586F5664692FBC55 /* [CP] Embed Pods Frameworks */,
+				8E49CAEEF018DF790E3A0260 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -244,7 +244,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		2C80652D9E44D2506608EEE3 /* [CP] Check Pods Manifest.lock */ = {
+		437A5CD0204E9647C38213BA /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -266,7 +266,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		49D76354586F5664692FBC55 /* [CP] Embed Pods Frameworks */ = {
+		8E49CAEEF018DF790E3A0260 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -436,7 +436,7 @@
 		};
 		F215CDD01F7E94E40010E457 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 86073A4116CB7B24220EA659 /* Pods-Binatrix.debug.xcconfig */;
+			baseConfigurationReference = 947A26C8EDACE0623722438D /* Pods-Binatrix.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = Binatrix/Binatrix.entitlements;
