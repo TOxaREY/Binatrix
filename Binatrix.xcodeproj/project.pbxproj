@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		AAA15263A028EB5EE293F828 /* Pods_Binatrix.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 172E57E92666601038B963CE /* Pods_Binatrix.framework */; };
+		B98D26F9111E4BA7681F6814 /* Pods_Binatrix.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA37D8112088572ED9330DF6 /* Pods_Binatrix.framework */; };
 		F215CDC31F7E94E40010E457 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F215CDC21F7E94E40010E457 /* ViewController.swift */; };
 		F215CDC61F7E94E40010E457 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F215CDC41F7E94E40010E457 /* Main.storyboard */; };
 		F215CDC81F7E94E40010E457 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F215CDC71F7E94E40010E457 /* Assets.xcassets */; };
@@ -17,21 +17,22 @@
 		F21CB0AB1F7EABB600DF84B1 /* Calculating.swift in Sources */ = {isa = PBXBuildFile; fileRef = F21CB0AA1F7EABB600DF84B1 /* Calculating.swift */; };
 		F264DFDF2074C88F00993184 /* iAd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F264DFDE2074C88F00993184 /* iAd.framework */; };
 		F269BB7522E0E27200FE6D8A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F215CDC01F7E94E40010E457 /* AppDelegate.swift */; };
-		F28024C22055681300D13083 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F28024C12055681200D13083 /* GoogleService-Info.plist */; };
-		F28A50C41F94B54300BF564F /* Effect.swift in Sources */ = {isa = PBXBuildFile; fileRef = F28A50C31F94B54300BF564F /* Effect.swift */; };
+		F28A50C41F94B54300BF564F /* Effect1.swift in Sources */ = {isa = PBXBuildFile; fileRef = F28A50C31F94B54300BF564F /* Effect1.swift */; };
 		F28A50C61F94B58700BF564F /* uno.sks in Resources */ = {isa = PBXBuildFile; fileRef = F28A50C51F94B58700BF564F /* uno.sks */; };
 		F28A50C81F94B59800BF564F /* zero.sks in Resources */ = {isa = PBXBuildFile; fileRef = F28A50C71F94B59800BF564F /* zero.sks */; };
 		F2D068211F90C3FC00512B09 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F2D068231F90C3FC00512B09 /* InfoPlist.strings */; };
 		F2D068271F90C3FD00512B09 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = F2D068291F90C3FD00512B09 /* Localizable.strings */; };
+		F2D3E7522510C30B003ACCD9 /* Effect2.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2D3E7512510C30B003ACCD9 /* Effect2.swift */; };
+		F2D3E7542510C34B003ACCD9 /* Effect3.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2D3E7532510C34B003ACCD9 /* Effect3.swift */; };
+		F2D3E7562510C829003ACCD9 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F2D3E7552510C829003ACCD9 /* GoogleService-Info.plist */; };
 		F2E337281F9BA33D00B6CAF5 /* RangeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2E337271F9BA33D00B6CAF5 /* RangeManager.swift */; };
 		F2E881342368021B0072ABE6 /* SF-Mono-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = F2E881332368020B0072ABE6 /* SF-Mono-Bold.otf */; };
 		F2E881352368021F0072ABE6 /* SF-Mono-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = F2E881322368020A0072ABE6 /* SF-Mono-Regular.otf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		172E57E92666601038B963CE /* Pods_Binatrix.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Binatrix.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		23BB3A271D0698046BC65923 /* Pods-Binatrix.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Binatrix.release.xcconfig"; path = "Target Support Files/Pods-Binatrix/Pods-Binatrix.release.xcconfig"; sourceTree = "<group>"; };
-		34C87C8333C1EFBDBE4DC7B9 /* Pods-Binatrix.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Binatrix.debug.xcconfig"; path = "Target Support Files/Pods-Binatrix/Pods-Binatrix.debug.xcconfig"; sourceTree = "<group>"; };
+		86073A4116CB7B24220EA659 /* Pods-Binatrix.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Binatrix.debug.xcconfig"; path = "Target Support Files/Pods-Binatrix/Pods-Binatrix.debug.xcconfig"; sourceTree = "<group>"; };
+		CA37D8112088572ED9330DF6 /* Pods_Binatrix.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Binatrix.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F203459F1F9DEA3000560BE4 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Main.strings; sourceTree = "<group>"; };
 		F215CDBD1F7E94E40010E457 /* Binatrix.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Binatrix.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F215CDC01F7E94E40010E457 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -54,14 +55,16 @@
 		F254D7981F9DF91900550114 /* pt-PT */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-PT"; path = "pt-PT.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
 		F264DFDE2074C88F00993184 /* iAd.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = iAd.framework; path = System/Library/Frameworks/iAd.framework; sourceTree = SDKROOT; };
 		F27A7FD31FC9AD5200624150 /* Binatrix.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Binatrix.entitlements; sourceTree = "<group>"; };
-		F28024C12055681200D13083 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		F28A50C31F94B54300BF564F /* Effect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Effect.swift; sourceTree = "<group>"; };
+		F28A50C31F94B54300BF564F /* Effect1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Effect1.swift; sourceTree = "<group>"; };
 		F28A50C51F94B58700BF564F /* uno.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = uno.sks; sourceTree = "<group>"; };
 		F28A50C71F94B59800BF564F /* zero.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = zero.sks; sourceTree = "<group>"; };
 		F2D0681E1F90BD6E00512B09 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Main.strings; sourceTree = "<group>"; };
 		F2D068221F90C3FC00512B09 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		F2D068241F90C3FC00512B09 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		F2D068281F90C3FD00512B09 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
+		F2D3E7512510C30B003ACCD9 /* Effect2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Effect2.swift; sourceTree = "<group>"; };
+		F2D3E7532510C34B003ACCD9 /* Effect3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Effect3.swift; sourceTree = "<group>"; };
+		F2D3E7552510C829003ACCD9 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		F2E337201F9B9D8000B6CAF5 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Main.strings; sourceTree = "<group>"; };
 		F2E337261F9B9E1600B6CAF5 /* pt-PT */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-PT"; path = "pt-PT.lproj/Main.strings"; sourceTree = "<group>"; };
 		F2E337271F9BA33D00B6CAF5 /* RangeManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RangeManager.swift; sourceTree = "<group>"; };
@@ -75,7 +78,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F264DFDF2074C88F00993184 /* iAd.framework in Frameworks */,
-				AAA15263A028EB5EE293F828 /* Pods_Binatrix.framework in Frameworks */,
+				B98D26F9111E4BA7681F6814 /* Pods_Binatrix.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -86,7 +89,7 @@
 			isa = PBXGroup;
 			children = (
 				F264DFDE2074C88F00993184 /* iAd.framework */,
-				172E57E92666601038B963CE /* Pods_Binatrix.framework */,
+				CA37D8112088572ED9330DF6 /* Pods_Binatrix.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -94,8 +97,7 @@
 		E234FB22A0FEFB9EA61E5B86 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				34C87C8333C1EFBDBE4DC7B9 /* Pods-Binatrix.debug.xcconfig */,
-				23BB3A271D0698046BC65923 /* Pods-Binatrix.release.xcconfig */,
+				86073A4116CB7B24220EA659 /* Pods-Binatrix.debug.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -121,7 +123,7 @@
 		F215CDBF1F7E94E40010E457 /* Binatrix */ = {
 			isa = PBXGroup;
 			children = (
-				F28024C12055681200D13083 /* GoogleService-Info.plist */,
+				F2D3E7552510C829003ACCD9 /* GoogleService-Info.plist */,
 				F27A7FD31FC9AD5200624150 /* Binatrix.entitlements */,
 				F2E337271F9BA33D00B6CAF5 /* RangeManager.swift */,
 				F215CDCC1F7E94E40010E457 /* Info.plist */,
@@ -145,7 +147,9 @@
 		F224ECA42361A5830055B35F /* Effect */ = {
 			isa = PBXGroup;
 			children = (
-				F28A50C31F94B54300BF564F /* Effect.swift */,
+				F28A50C31F94B54300BF564F /* Effect1.swift */,
+				F2D3E7512510C30B003ACCD9 /* Effect2.swift */,
+				F2D3E7532510C34B003ACCD9 /* Effect3.swift */,
 				F28A50C51F94B58700BF564F /* uno.sks */,
 				F28A50C71F94B59800BF564F /* zero.sks */,
 			);
@@ -159,11 +163,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F215CDCF1F7E94E40010E457 /* Build configuration list for PBXNativeTarget "Binatrix" */;
 			buildPhases = (
-				68ED4F723227E12155B56132 /* [CP] Check Pods Manifest.lock */,
+				2C80652D9E44D2506608EEE3 /* [CP] Check Pods Manifest.lock */,
 				F215CDB91F7E94E40010E457 /* Sources */,
 				F215CDBA1F7E94E40010E457 /* Frameworks */,
 				F215CDBB1F7E94E40010E457 /* Resources */,
-				6BC8EBA12FAA78A722B8CB41 /* [CP] Embed Pods Frameworks */,
+				F2D3E7572510C9B6003ACCD9 /* ShellScript */,
+				49D76354586F5664692FBC55 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -224,13 +229,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				F28A50C61F94B58700BF564F /* uno.sks in Resources */,
-				F28024C22055681300D13083 /* GoogleService-Info.plist in Resources */,
 				F2E881352368021F0072ABE6 /* SF-Mono-Regular.otf in Resources */,
 				F2D068271F90C3FD00512B09 /* Localizable.strings in Resources */,
 				F215CDCB1F7E94E40010E457 /* LaunchScreen.storyboard in Resources */,
 				F2E881342368021B0072ABE6 /* SF-Mono-Bold.otf in Resources */,
 				F2D068211F90C3FC00512B09 /* InfoPlist.strings in Resources */,
 				F28A50C81F94B59800BF564F /* zero.sks in Resources */,
+				F2D3E7562510C829003ACCD9 /* GoogleService-Info.plist in Resources */,
 				F215CDC81F7E94E40010E457 /* Assets.xcassets in Resources */,
 				F215CDC61F7E94E40010E457 /* Main.storyboard in Resources */,
 			);
@@ -239,7 +244,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		68ED4F723227E12155B56132 /* [CP] Check Pods Manifest.lock */ = {
+		2C80652D9E44D2506608EEE3 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -261,7 +266,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		6BC8EBA12FAA78A722B8CB41 /* [CP] Embed Pods Frameworks */ = {
+		49D76354586F5664692FBC55 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -275,8 +280,26 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Binatrix/Pods-Binatrix-frameworks.sh\"\n\"${PODS_ROOT}/Fabric/run\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Binatrix/Pods-Binatrix-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
+		};
+		F2D3E7572510C9B6003ACCD9 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(BUILT_PRODUCTS_DIR)/$(INFOPLIST_PATH)",
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/FirebaseCrashlytics/run\"\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -285,13 +308,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F28A50C41F94B54300BF564F /* Effect.swift in Sources */,
+				F28A50C41F94B54300BF564F /* Effect1.swift in Sources */,
 				F215CDC31F7E94E40010E457 /* ViewController.swift in Sources */,
 				F215CDD51F7E96040010E457 /* ViewController3.swift in Sources */,
 				F2E337281F9BA33D00B6CAF5 /* RangeManager.swift in Sources */,
 				F269BB7522E0E27200FE6D8A /* AppDelegate.swift in Sources */,
 				F215CDD31F7E95F40010E457 /* ViewController2.swift in Sources */,
 				F21CB0AB1F7EABB600DF84B1 /* Calculating.swift in Sources */,
+				F2D3E7542510C34B003ACCD9 /* Effect3.swift in Sources */,
+				F2D3E7522510C30B003ACCD9 /* Effect2.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -381,7 +406,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -398,7 +423,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -409,66 +434,9 @@
 			};
 			name = Debug;
 		};
-		F215CDCE1F7E94E40010E457 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_COMMA = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
-				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-				CLANG_WARN_STRICT_PROTOTYPES = YES;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_NS_ASSERTIONS = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu11;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				ONLY_ACTIVE_ARCH = NO;
-				SDKROOT = iphoneos;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OBJC_BRIDGING_HEADER = "/Users/reynikovanton/Desktop/APP/development/Binatrix/Binatrix/Binatrix-Bridging-Header.h";
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
-				VALIDATE_PRODUCT = YES;
-				VALID_ARCHS = "";
-			};
-			name = Release;
-		};
 		F215CDD01F7E94E40010E457 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 34C87C8333C1EFBDBE4DC7B9 /* Pods-Binatrix.debug.xcconfig */;
+			baseConfigurationReference = 86073A4116CB7B24220EA659 /* Pods-Binatrix.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = Binatrix/Binatrix.entitlements;
@@ -481,7 +449,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 2.4.2;
+				MARKETING_VERSION = 2.4.3;
 				PRODUCT_BUNDLE_IDENTIFIER = deltaTOxaREY.Binatrix;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "";
@@ -492,30 +460,6 @@
 			};
 			name = Debug;
 		};
-		F215CDD11F7E94E40010E457 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 23BB3A271D0698046BC65923 /* Pods-Binatrix.release.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = Binatrix/Binatrix.entitlements;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = EB6R5QS764;
-				INFOPLIST_FILE = Binatrix/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				MARKETING_VERSION = 2.4.2;
-				PRODUCT_BUNDLE_IDENTIFIER = deltaTOxaREY.Binatrix;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 1;
-				VALID_ARCHS = "arm64 arm64e armv7 armv7s";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -523,19 +467,17 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F215CDCD1F7E94E40010E457 /* Debug */,
-				F215CDCE1F7E94E40010E457 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		F215CDCF1F7E94E40010E457 /* Build configuration list for PBXNativeTarget "Binatrix" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F215CDD01F7E94E40010E457 /* Debug */,
-				F215CDD11F7E94E40010E457 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 /* End XCConfigurationList section */
 	};
