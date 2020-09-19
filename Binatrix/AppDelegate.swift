@@ -8,7 +8,6 @@
 
 import UIKit
 import YandexMobileMetrica
-import Firebase
 
 
 var screenHeight: CGFloat {
@@ -21,7 +20,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         YMMYandexMetrica.activate(with: YMMYandexMetricaConfiguration.init(apiKey: "5eb25519-c142-4785-a244-96ec5cbb2f9b")!)
-        FirebaseApp.configure()
         RateManager.incrementCount()
         return true
     }

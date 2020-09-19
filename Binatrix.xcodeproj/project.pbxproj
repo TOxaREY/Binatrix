@@ -3,11 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		AFD541F8E95E9258219B7D9C /* libPods-Binatrix.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 09F85E1A773BD71B2BC813B3 /* libPods-Binatrix.a */; };
+		B0550CA4C9C4D2A9946DEABC /* Pods_Binatrix.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7147B978E3E0B9C2D4CBBCAA /* Pods_Binatrix.framework */; };
 		F215CDC31F7E94E40010E457 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F215CDC21F7E94E40010E457 /* ViewController.swift */; };
 		F215CDC61F7E94E40010E457 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F215CDC41F7E94E40010E457 /* Main.storyboard */; };
 		F215CDC81F7E94E40010E457 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F215CDC71F7E94E40010E457 /* Assets.xcassets */; };
@@ -24,14 +24,14 @@
 		F2D068271F90C3FD00512B09 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = F2D068291F90C3FD00512B09 /* Localizable.strings */; };
 		F2D3E7522510C30B003ACCD9 /* Effect2.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2D3E7512510C30B003ACCD9 /* Effect2.swift */; };
 		F2D3E7542510C34B003ACCD9 /* Effect3.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2D3E7532510C34B003ACCD9 /* Effect3.swift */; };
-		F2D3E7562510C829003ACCD9 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F2D3E7552510C829003ACCD9 /* GoogleService-Info.plist */; };
 		F2E337281F9BA33D00B6CAF5 /* RangeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2E337271F9BA33D00B6CAF5 /* RangeManager.swift */; };
 		F2E881342368021B0072ABE6 /* SF-Mono-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = F2E881332368020B0072ABE6 /* SF-Mono-Bold.otf */; };
 		F2E881352368021F0072ABE6 /* SF-Mono-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = F2E881322368020A0072ABE6 /* SF-Mono-Regular.otf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		09F85E1A773BD71B2BC813B3 /* libPods-Binatrix.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Binatrix.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6528F2B2B8428A7B9C368FE4 /* Pods-Binatrix.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Binatrix.debug.xcconfig"; path = "Target Support Files/Pods-Binatrix/Pods-Binatrix.debug.xcconfig"; sourceTree = "<group>"; };
+		7147B978E3E0B9C2D4CBBCAA /* Pods_Binatrix.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Binatrix.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F203459F1F9DEA3000560BE4 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Main.strings; sourceTree = "<group>"; };
 		F215CDBD1F7E94E40010E457 /* Binatrix.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Binatrix.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F215CDC01F7E94E40010E457 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -63,13 +63,11 @@
 		F2D068281F90C3FD00512B09 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
 		F2D3E7512510C30B003ACCD9 /* Effect2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Effect2.swift; sourceTree = "<group>"; };
 		F2D3E7532510C34B003ACCD9 /* Effect3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Effect3.swift; sourceTree = "<group>"; };
-		F2D3E7552510C829003ACCD9 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		F2E337201F9B9D8000B6CAF5 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Main.strings; sourceTree = "<group>"; };
 		F2E337261F9B9E1600B6CAF5 /* pt-PT */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-PT"; path = "pt-PT.lproj/Main.strings"; sourceTree = "<group>"; };
 		F2E337271F9BA33D00B6CAF5 /* RangeManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RangeManager.swift; sourceTree = "<group>"; };
 		F2E881322368020A0072ABE6 /* SF-Mono-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Mono-Regular.otf"; sourceTree = "<group>"; };
 		F2E881332368020B0072ABE6 /* SF-Mono-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Mono-Bold.otf"; sourceTree = "<group>"; };
-		FEC205C3CE94DCA70DFA914D /* Pods-Binatrix.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Binatrix.debug.xcconfig"; path = "Target Support Files/Pods-Binatrix/Pods-Binatrix.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,7 +76,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F264DFDF2074C88F00993184 /* iAd.framework in Frameworks */,
-				AFD541F8E95E9258219B7D9C /* libPods-Binatrix.a in Frameworks */,
+				B0550CA4C9C4D2A9946DEABC /* Pods_Binatrix.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -89,7 +87,7 @@
 			isa = PBXGroup;
 			children = (
 				F264DFDE2074C88F00993184 /* iAd.framework */,
-				09F85E1A773BD71B2BC813B3 /* libPods-Binatrix.a */,
+				7147B978E3E0B9C2D4CBBCAA /* Pods_Binatrix.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -97,7 +95,7 @@
 		E234FB22A0FEFB9EA61E5B86 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				FEC205C3CE94DCA70DFA914D /* Pods-Binatrix.debug.xcconfig */,
+				6528F2B2B8428A7B9C368FE4 /* Pods-Binatrix.debug.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -123,7 +121,6 @@
 		F215CDBF1F7E94E40010E457 /* Binatrix */ = {
 			isa = PBXGroup;
 			children = (
-				F2D3E7552510C829003ACCD9 /* GoogleService-Info.plist */,
 				F27A7FD31FC9AD5200624150 /* Binatrix.entitlements */,
 				F2E337271F9BA33D00B6CAF5 /* RangeManager.swift */,
 				F215CDCC1F7E94E40010E457 /* Info.plist */,
@@ -163,12 +160,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F215CDCF1F7E94E40010E457 /* Build configuration list for PBXNativeTarget "Binatrix" */;
 			buildPhases = (
-				07E4BD770BF5C976A46CDF85 /* [CP] Check Pods Manifest.lock */,
+				E004BDBC62EF1CC932118BFA /* [CP] Check Pods Manifest.lock */,
 				F215CDB91F7E94E40010E457 /* Sources */,
 				F215CDBA1F7E94E40010E457 /* Frameworks */,
 				F215CDBB1F7E94E40010E457 /* Resources */,
-				F2D3E7572510C9B6003ACCD9 /* ShellScript */,
-				FA1AAD692D8BF71D163B4136 /* [CP] Embed Pods Frameworks */,
+				E72B8A352A5C74636715082D /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -202,7 +198,7 @@
 				};
 			};
 			buildConfigurationList = F215CDB81F7E94E40010E457 /* Build configuration list for PBXProject "Binatrix" */;
-			compatibilityVersion = "Xcode 8.0";
+			compatibilityVersion = "Xcode 12.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -235,7 +231,6 @@
 				F2E881342368021B0072ABE6 /* SF-Mono-Bold.otf in Resources */,
 				F2D068211F90C3FC00512B09 /* InfoPlist.strings in Resources */,
 				F28A50C81F94B59800BF564F /* zero.sks in Resources */,
-				F2D3E7562510C829003ACCD9 /* GoogleService-Info.plist in Resources */,
 				F215CDC81F7E94E40010E457 /* Assets.xcassets in Resources */,
 				F215CDC61F7E94E40010E457 /* Main.storyboard in Resources */,
 			);
@@ -244,7 +239,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		07E4BD770BF5C976A46CDF85 /* [CP] Check Pods Manifest.lock */ = {
+		E004BDBC62EF1CC932118BFA /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -266,25 +261,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		F2D3E7572510C9B6003ACCD9 /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"$(BUILT_PRODUCTS_DIR)/$(INFOPLIST_PATH)",
-			);
-			outputFileListPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/FirebaseCrashlytics/run\"\n";
-		};
-		FA1AAD692D8BF71D163B4136 /* [CP] Embed Pods Frameworks */ = {
+		E72B8A352A5C74636715082D /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -437,12 +414,12 @@
 		};
 		F215CDD01F7E94E40010E457 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = FEC205C3CE94DCA70DFA914D /* Pods-Binatrix.debug.xcconfig */;
+			baseConfigurationReference = 6528F2B2B8428A7B9C368FE4 /* Pods-Binatrix.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = Binatrix/Binatrix.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = EB6R5QS764;
 				INFOPLIST_FILE = Binatrix/Info.plist;
@@ -451,7 +428,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 2.4.3;
+				MARKETING_VERSION = 2.4.4;
 				PRODUCT_BUNDLE_IDENTIFIER = deltaTOxaREY.Binatrix;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "";

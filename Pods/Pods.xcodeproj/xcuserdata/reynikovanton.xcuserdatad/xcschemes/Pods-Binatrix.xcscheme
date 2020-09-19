@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "1347C76E98746BCD94FACEEAE706937B"
-               BuildableName = "libPods-Binatrix.a"
+               BuildableName = "Pods_Binatrix.framework"
                BlueprintName = "Pods-Binatrix"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
